@@ -1,0 +1,16 @@
+@import "./index.scss";
+
+.projects-map {
+	@include flex;
+	flex-direction: column;
+	width: 100%;
+	.project-card {
+		width: fit-content;
+		width: 100%;
+		margin: 10px;
+		border: 2px solid black;
+		.img-cont {
+			width: 300px;
+		}
+	}
+}

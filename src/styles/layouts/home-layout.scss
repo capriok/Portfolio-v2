@@ -1,0 +1,34 @@
+@import "../index.scss";
+
+.home-header {
+	@include flex;
+	width: 100%;
+	min-height: 100px;
+	background-color: transparent;
+	.head-cont {
+		@include flex;
+		justify-content: space-between;
+		min-width: 800px;
+		max-width: 800px;
+		.title {
+			margin: 0;
+		}
+		.navs {
+			span {
+				margin-right: 20px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.home-layout {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.home-footer {
+	margin-top: 50px;
+}
