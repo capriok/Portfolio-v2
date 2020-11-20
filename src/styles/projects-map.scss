@@ -1,16 +1,52 @@
 @import "./index.scss";
+$width: 400px;
 
 .projects-map {
 	@include flex;
 	flex-direction: column;
 	width: 100%;
 	.project-card {
-		width: fit-content;
+		@include flex;
+		justify-content: space-between;
+		z-index: 1;
+		flex: 1;
 		width: 100%;
 		margin: 10px;
+		border-radius: 5px;
 		border: 2px solid black;
-		.img-cont {
-			width: 300px;
+		.content-cont {
+			z-index: 2;
+			flex: 1;
+			text-align: right;
+			width: 100%;
+			margin: 0 10px;
+			margin-left: -75px;
+			.description-cont {
+				@include flex;
+				justify-content: flex-end;
+				min-height: 60px;
+				padding: 20px 10px;
+				border-radius: 5px;
+				box-shadow: 3px 3px 10px -3px black;
+				background-color: rgb(226, 226, 226);
+				transition: 0.2s;
+				&:hover {
+					transition: 0.2s;
+					box-shadow: 5px 5px 15px -5px black;
+				}
+			}
+		}
+		.thumb-cont {
+			@include flex;
+			justify-content: flex-end;
+			width: 100%;
+			max-width: $width;
+			.img-cont {
+				overflow: hidden;
+				flex: 1;
+				max-width: $width;
+				border-radius: 5px;
+			}
 		}
 	}
 }

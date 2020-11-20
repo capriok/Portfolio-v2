@@ -3,15 +3,18 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 const ProjectCard = ({ project }) => {
-	console.log(project.thumb.childImageSharp.fluid);
 	return (
 		<div className="project-card">
-			<p>{project.title}</p>
-			<p>{project.description}</p>
-			<div className="img-cont">
-				<Image fluid={project.thumb.childImageSharp.fluid} alt={project.title} />
+			<div className="thumb-cont">
+				<div className="img-cont">
+					<Image fluid={project.thumb.childImageSharp.fluid} alt={project.title} />
+				</div>
 			</div>
-			<Link to={`/${project.slug}`} >{project.title}</Link>
+			<div className="content-cont">
+				<h3>{project.title}</h3>
+				<p>{project.description}</p>
+				<p><Link to={`/${project.slug}`}>See In Depth</Link></p>
+			</div>
 		</div>
 	)
 }

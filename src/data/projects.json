@@ -31,7 +31,7 @@
 		"images": [
 			"./images/DRAGGABLE-GIT.jpg",
 			"./images/DRAGGABLE-NPM.jpg",
-			"./images/DRAGGABLE-VISUAL.jpg"
+			"./images/DRAGGABLE-VISUAL.gif"
 		],
 		"resources": [
 			"https://reactjs.org/docs/react-api.html",
@@ -408,7 +408,7 @@
 	{
 		"title": "Arte Bella Engraving",
 		"slug": "arte-bella-engraving",
-		"description": "",
+		"description": "Small business client’s single page website to showcase the company mission statement, services offered and previous work.",
 		"writing": {
 			"process": "The client's desires consisted of two main objectives: simplicity and accessibility. First, I created the foundation, a simple single page website that is easily navigable. The next process was to optimize the website to be fully responsive for any device and or screen size. I found that using React was perfect for this application. Designing the skeleton with only filler content to work with, until the client provided their own, allowed me to create a structure that was extremely dynamic and versatile. When the content was supplied, I thanked myself for creating such an adaptable architecture.",
 			"processSub": "",

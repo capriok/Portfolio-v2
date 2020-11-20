@@ -1,8 +1,41 @@
 @import "./index.scss";
 
 .project-view {
-	width: fit-content;
-	.img-cont {
-		width: 400px;
+	width: 100%;
+	.carousel-cont {
+		@include flex;
+		flex-direction: column;
+		width: 100%;
+		.alice-carousel {
+			width: 100%;
+			.image-cont {
+				user-select: none;
+				@include flex;
+				min-height: 200px;
+				max-width: 400px;
+				margin: 0 10px;
+				.image {
+					user-select: none;
+					cursor: pointer;
+					user-select: none;
+					width: 100%;
+					max-width: 400px;
+					border-radius: 5px;
+					border: 1px solid black;
+				}
+			}
+		}
+		.controls {
+			margin-top: 20px;
+		}
+	}
+	.slide-btn {
+		cursor: pointer;
+		user-select: none;
+		width: 35px;
+		margin: 0 5px;
+	}
+	.next {
+		transform: rotate(180deg);
 	}
 }

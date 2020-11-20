@@ -2,7 +2,10 @@ import React from "react"
 
 import Layout from "../components/layouts/home-layout"
 import SEO from "../components/seo"
-import ProjectsMap from '../components/projects-map'
+import Introduction from '../components/intro'
+import Skills from '../components/skills'
+import FeaturedMap from '../components/featured-map'
+import Contact from '../components/contact'
 
 import "../styles/index.scss"
 
@@ -10,14 +13,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Intro</h1>
-      <p>Sick software developer guy</p>
-      <h1>Specialties</h1>
-      <p>JavaScript, React, C#, ASP.NET Core</p>
-      <h1>Projects</h1>
-      <ProjectsMap />
-      <h1>Contact</h1>
-      <p>Reach out by email</p>
+      <Introduction />
+      <Skills />
+      <FeaturedMap />
+      <Contact />
     </Layout>
   )
 }

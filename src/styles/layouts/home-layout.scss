@@ -14,11 +14,8 @@
 			margin: 0;
 		}
 		.navs {
-			span {
-				margin-right: 20px;
-				&:last-child {
-					margin: 0;
-				}
+			a {
+				margin-left: 25px;
 			}
 		}
 	}

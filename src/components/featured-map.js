@@ -1,18 +1,22 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
-import FeaturedCard from './project-card'
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-import '../styles/projects-map.scss'
+import '../styles/featured-map.scss'
+
+import FeaturedCard from './feature-card'
 
 const ProjectsMap = () => {
   const data = useStaticQuery(graphql`
   {
-    allProjectsJson{
+    allFeaturedJson{
       edges{
         node{
           title
           slug
           description
+          tags
+          source
+          demo
           thumb {
             childImageSharp{
               fluid{
@@ -27,9 +31,10 @@ const ProjectsMap = () => {
 `)
 
   return (
-    <div className="projects-map">
-      {data.allProjectsJson.edges.map(({ node: project }, i) => (
-        <FeaturedCard key={i} project={project} />
+    <div className="featured-map">
+      <h1 className="title">My Best Work</h1>
+      {data.allFeaturedJson.edges.map(({ node: project }, i) => (
+        <FeaturedCard key={i} project={project} i={i} />
       ))}
     </div>
   )

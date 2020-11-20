@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
 
 ::-webkit-scrollbar {
 	position: relative;
@@ -21,18 +24,34 @@
 	scrollbar-color: darken(white, 80%) darken(white, 50%) !important;
 	scrollbar-width: thin !important;
 }
-
 * {
 	box-sizing: border-box;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Nunito", sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+}
+.mono {
+	font-family: "Roboto Mono", monospace;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	font-size: 0.95rem;
+}
 body {
 	padding: 0;
 	margin: 0;
 }
 html {
 	scroll-behavior: smooth;
+	background-color: rgb(240, 240, 240);
 }
 a {
 	text-decoration: none;

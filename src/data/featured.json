@@ -1,0 +1,45 @@
+[
+	{
+		"title": "SQLifting",
+		"slug": "sqlifting",
+		"description": "Exercise smarter with a personalized exercise and workout plan building application",
+		"tags": [
+			"React",
+			"Express.js",
+			"MySQL",
+			"2021"
+		],
+		"source": "https://github.com/capriok/SQLifting",
+		"demo": "https://sqlifting.kylecaprio.dev",
+		"thumb": "./images/SQLIFTING-MANAGER.jpg"
+	},
+	{
+		"title": "Godspeed",
+		"slug": "godspeed",
+		"description": "React component and toolkit library built for quick use and customizability",
+		"tags": [
+			"Styled-Components",
+			"NPM",
+			"Gatsby",
+			"2020",
+			""
+		],
+		"source": "https://github.com/capriok/Godspeed-Docs",
+		"demo": "https://godspeed.netlify.com",
+		"thumb": "./images/GODSPEED-HOME.jpg"
+	},
+	{
+		"title": "KP Construction",
+		"slug": "kp-construction",
+		"description": "Small business client’s contractor portfolio showcasing services offered, expertise and past endeavors",
+		"tags": [
+			"React",
+			"NodeMailer",
+			"Serverless",
+			"2020"
+		],
+		"source": "https://github.com/capriok/KPCon-Client",
+		"demo": "https://www.keithphillingane.com",
+		"thumb": "./images/KPCON-INTRO.jpg"
+	}
+]

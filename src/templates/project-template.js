@@ -9,7 +9,10 @@ export const query = graphql`
 			title
 			description
 			source
+			demo
 			images{
+				extension
+				publicURL
 				childImageSharp{
 					fluid{
 						...GatsbyImageSharpFluid
@@ -19,6 +22,7 @@ export const query = graphql`
 		}
 	}
 `
+
 
 const ProjectTemplate = ({ data }) => {
 	const project = data.projectsJson
