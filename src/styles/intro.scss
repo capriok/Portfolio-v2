@@ -1,4 +1,29 @@
 @import "./index.scss";
 
-.intro {
+.introduction {
+	@include flex;
+	width: 100%;
+	height: calc(100vh - 100px);
+	.intro-cont {
+		width: 60%;
+		margin: 0;
+		.title,
+		.subTitle,
+		.snippet {
+			width: fit-content;
+			margin: 0;
+		}
+		.title {
+			font-size: 5rem;
+		}
+		.subTitle {
+			margin-top: 10px;
+			font-size: 2rem;
+		}
+		.snippet {
+			text-align: left;
+			margin-top: 20px;
+			max-width: 80%;
+		}
+	}
 }

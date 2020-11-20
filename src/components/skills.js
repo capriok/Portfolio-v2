@@ -4,7 +4,7 @@ const Skills = () => {
 	return (
 		<>
 			<h1>Specialization</h1>
-			<p>Okay</p>
+			<p>A bunch of shit</p>
 		</>
 	)
 }
