@@ -9,17 +9,21 @@ import ProjectsMap from '../components/sections/projects-map'
 import Contact from '../components/sections/contact'
 
 import "../styles/index.scss"
+import Stars from '../components/stars'
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <SEO title="Home" />
-      <Introduction />
-      <Skills />
-      <FeaturedMap />
-      <ProjectsMap />
-      <Contact />
-    </Layout>
+    <>
+      <Layout>
+        <SEO title="Home" />
+        <Introduction />
+        <Skills />
+        <FeaturedMap />
+        <ProjectsMap />
+        <Contact />
+      </Layout>
+      <Stars />
+    </>
   )
 }
 

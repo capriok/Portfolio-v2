@@ -10,6 +10,7 @@ $width: 400px;
 		flex-wrap: wrap;
 		align-items: stretch;
 		justify-content: flex-start;
+		margin-bottom: 20px;
 		:nth-child(2),
 		:nth-child(5),
 		:nth-child(8),
@@ -85,7 +86,7 @@ $width: 400px;
 				&:hover {
 					transition: 0.2s;
 					border-left: 5px solid rgb(32, 32, 32);
-					background-color: transparent;
+					background-color: white;
 					.folder-open {
 						display: block;
 						a {
