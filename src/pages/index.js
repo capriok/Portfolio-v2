@@ -9,7 +9,6 @@ import ProjectsMap from '../components/sections/projects-map'
 import Contact from '../components/sections/contact'
 
 import "../styles/index.scss"
-import Stars from '../components/stars'
 
 const IndexPage = () => {
   return (
@@ -22,7 +21,6 @@ const IndexPage = () => {
         <ProjectsMap />
         <Contact />
       </Layout>
-      <Stars />
     </>
   )
 }
