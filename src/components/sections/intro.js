@@ -1,10 +1,10 @@
 import React from 'react'
 
-import '../styles/intro.scss'
+import '../../styles/sections/intro.scss'
 
 const Introduction = () => {
 	return (
-		<div className="introduction">
+		<div className="introduction-section">
 			<div className="intro-cont">
 				<h1 className="title">Kyle Caprio.</h1>
 				<h1 className="subTitle">Software Developer.</h1>

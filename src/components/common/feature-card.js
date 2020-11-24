@@ -20,7 +20,7 @@ const FeaturedCard = ({ project, i }) => {
 				<p className="description-cont">{project.description}</p>
 				<div className="tags">
 					{project.tags.map(t => (
-						<span className="mono">{t}</span>
+						<span key={t} className="mono">{t}</span>
 					))}
 				</div>
 				<div className="navigation">

@@ -1,16 +1,13 @@
-@import "./index.scss";
+@import "../index.scss";
 
 $overlay-opacity: 0.3;
 $image-width: 450px;
 
-.featured-map {
+.featured-map-section {
 	@include flex;
 	flex-direction: column;
 	width: 100%;
 	padding: 50px 0;
-	.title {
-		align-self: flex-start;
-	}
 	.feature-card {
 		@include flex;
 		justify-content: space-between;
@@ -46,6 +43,7 @@ $image-width: 450px;
 				margin: 0 0 20px 0;
 			}
 			.description-cont {
+				cursor: default;
 				@include flex;
 				justify-content: flex-end;
 				min-height: 60px;
@@ -54,7 +52,7 @@ $image-width: 450px;
 				border-radius: 5px;
 				box-shadow: 3px 3px 10px -3px black;
 				color: white;
-				background-color: rgb(32, 32, 32);
+				background-color: rgb(27, 27, 27);
 				transition: 0.2s;
 				&:hover {
 					transition: 0.2s;

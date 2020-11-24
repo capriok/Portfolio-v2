@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
-import arrow from '../assets/arrow1.png'
+import arrow from '../../assets/arrow1.png'
 
 const Carousel = ({ images }) => {
 

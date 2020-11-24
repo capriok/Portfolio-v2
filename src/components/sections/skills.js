@@ -2,10 +2,10 @@ import React from 'react'
 
 const Skills = () => {
 	return (
-		<>
-			<h1>Specialization</h1>
+		<div className="skills-section">
+			<h1 className="section-title">Specialization</h1>
 			<p>A bunch of shit</p>
-		</>
+		</div>
 	)
 }
 

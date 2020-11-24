@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import '../styles/project-view.scss'
-import Carousel from '../components/carousel'
+import Carousel from '../components/common/carousel'
 
 const ProjectView = ({ project }) => {
 	return (

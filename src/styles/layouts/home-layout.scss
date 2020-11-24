@@ -1,6 +1,7 @@
 @import "../index.scss";
 
 .home-header {
+	user-select: none;
 	@include flex;
 	width: 100%;
 	min-height: 100px;
@@ -8,8 +9,8 @@
 	.head-cont {
 		@include flex;
 		justify-content: space-between;
-		min-width: 800px;
-		max-width: 800px;
+		min-width: $max-width;
+		max-width: $max-width;
 		.title {
 			margin: 0;
 		}
@@ -23,7 +24,7 @@
 
 .home-layout {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: $max-width;
 }
 
 .home-footer {

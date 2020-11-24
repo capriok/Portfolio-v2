@@ -1,9 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import '../styles/featured-map.scss'
+import '../../styles/sections/featured-map.scss'
 
-import FeaturedCard from './feature-card'
+import FeaturedCard from '../common/feature-card'
 
 const ProjectsMap = () => {
   const data = useStaticQuery(graphql`
@@ -31,8 +31,8 @@ const ProjectsMap = () => {
 `)
 
   return (
-    <div className="featured-map">
-      <h1 className="title">My Best Work</h1>
+    <div className="featured-map-section">
+      <h1 className="section-title">My Best Work</h1>
       {data.allFeaturedJson.edges.map(({ node: project }, i) => (
         <FeaturedCard key={i} project={project} i={i} />
       ))}

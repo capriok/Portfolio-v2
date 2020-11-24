@@ -1,0 +1,119 @@
+@import "../index.scss";
+$width: 400px;
+
+.projects-map-section {
+	@include flex;
+	flex-direction: column;
+	width: 100%;
+	.cards-cont {
+		@include flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: flex-start;
+		:nth-child(2),
+		:nth-child(5),
+		:nth-child(8),
+		:nth-child(11),
+		:nth-child(14),
+		:nth-child(17) {
+			margin: 0 15px;
+		}
+		.project-anim {
+			flex: 1;
+			min-width: 30%;
+			max-width: 33%;
+			@include flex;
+			align-items: stretch;
+			.project-card {
+				@include flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				padding: 20px;
+				margin-bottom: 20px;
+				border-radius: 5px;
+				border-left: 5px solid rgb(180, 180, 180);
+				border-bottom: 5px solid rgb(180, 180, 180);
+				transition: 0.2s;
+				.header {
+					@include flex;
+					justify-content: space-between;
+					width: 100%;
+					padding-bottom: 20px;
+					svg {
+						font-size: 1.5rem;
+					}
+					h3 {
+						margin: 0;
+					}
+				}
+				.description {
+					cursor: default;
+					flex: 1;
+					padding-bottom: 20px;
+					margin: 0;
+					p {
+						margin: 0;
+					}
+				}
+				.navigation {
+					font-size: 1.5rem;
+					width: 100%;
+					align-self: flex-end;
+					text-align: right;
+					a {
+						transition: 0.2s;
+						margin: 0;
+						margin-left: 10px;
+						&:hover {
+							transition: 0.2s;
+							color: steelblue;
+						}
+					}
+				}
+				.folder-open,
+				.folder-closed {
+					margin: 0;
+					transition: 0.2s;
+				}
+				.folder-open {
+					display: none;
+					margin-left: 1px;
+					transition: 0.2s;
+				}
+				&:hover {
+					transition: 0.2s;
+					border-left: 5px solid rgb(135, 135, 135);
+					border-bottom: 5px solid rgb(135, 135, 135);
+					.folder-open {
+						display: block;
+						a {
+							color: steelblue;
+						}
+					}
+					.folder-closed {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	button {
+		user-select: none;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		font-size: 1.2rem;
+		@include flex;
+		min-width: 75px;
+		padding: 10px;
+		margin: 20px;
+		border-radius: 10px;
+		border-bottom: 5px solid rgb(180, 180, 180);
+		transition: 0.2s;
+		&:hover {
+			transition: 0.2s;
+			border-bottom: 5px solid rgb(135, 135, 135);
+		}
+	}
+}

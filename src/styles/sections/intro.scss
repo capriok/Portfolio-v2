@@ -1,6 +1,6 @@
-@import "./index.scss";
+@import "../index.scss";
 
-.introduction {
+.introduction-section {
 	@include flex;
 	width: 100%;
 	height: calc(100vh - 100px);

@@ -1,7 +1,7 @@
 [
 	{
-		"title": "React-Draggable-Array",
-		"slug": "react-draggable-array",
+		"title": "Draggable-Array",
+		"slug": "draggable-array",
 		"description": "(NPM Package) - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children",
 		"writing": {
 			"process": "Working on it..",
@@ -79,7 +79,7 @@
 		]
 	},
 	{
-		"title": "Keith Phillingane Construction",
+		"title": "KP Construction",
 		"slug": "kp-construction",
 		"description": "Small business client’s contractor portfolio showcasing services offered, area of expertise and highlighting past endeavors",
 		"writing": {
@@ -406,7 +406,7 @@
 		]
 	},
 	{
-		"title": "Arte Bella Engraving",
+		"title": "AB Engraving",
 		"slug": "arte-bella-engraving",
 		"description": "Small business client’s single page website to showcase the company mission statement, services offered and previous work.",
 		"writing": {
@@ -488,8 +488,8 @@
 		]
 	},
 	{
-		"title": "Theme Template Distribution",
-		"slug": "theme-template-distribution",
+		"title": "Theme  Distribution",
+		"slug": "theme-distribution",
 		"description": "Combining aesthetics with user customizability to provide easy to use but unique themes for any user",
 		"writing": {
 			"process": "My aspiration for this endeavor was to provide quality Tumblr themes to people who enjoy customization of their blog without paying top dollar for a template. Combining aesthetics, simplicity, and customizability, I became the go-to guy for themes among my peers. This is when I initially found my passion for web development. Tinkering with code and teaching myself new techniques became the part of my day I looked forward to the most.",
