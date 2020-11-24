@@ -56,7 +56,7 @@ const ProjectsMap = () => {
       </button>
       <button
         onClick={() => setPg(pg + 3)}
-        disabled={pg >= data.allProjectsJson.edges.length}>
+        disabled={pg >= filteredFeatures.length}>
         <MdExpandMore />
       </button>
     </div>

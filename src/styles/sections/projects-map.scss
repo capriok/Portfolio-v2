@@ -32,8 +32,9 @@ $width: 400px;
 				padding: 20px;
 				margin-bottom: 20px;
 				border-radius: 5px;
-				border-left: 5px solid rgba(70, 131, 180, 0.4);
-				border-bottom: 5px solid rgba(70, 131, 180, 0.4);
+				border-left: 5px solid rgb(32, 32, 32);
+				border-bottom: 5px solid rgb(32, 32, 32);
+				background-color: rgba(206, 222, 236, 0.5);
 				transition: 0.2s;
 				.header {
 					@include flex;
@@ -83,8 +84,8 @@ $width: 400px;
 				}
 				&:hover {
 					transition: 0.2s;
-					border-left: 5px solid rgba(27, 106, 172, 0.5);
-					border-bottom: 5px solid rgba(27, 106, 172, 0.5);
+					border-left: 5px solid rgb(32, 32, 32);
+					background-color: transparent;
 					.folder-open {
 						display: block;
 						a {
