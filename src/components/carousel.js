@@ -11,8 +11,10 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 const Carousel = ({ images }) => {
 
 	let ref = useRef()
-	const isMobile = window.innerWidth < 500
-
+	let isMobile
+	if (window !== undefined) {
+		isMobile = window.innerWidth > 500
+	}
 	const handleOnDragStart = (e) => e.preventDefault()
 	const responsive = { 0: { items: 1 }, 1024: { items: 2 } };
 

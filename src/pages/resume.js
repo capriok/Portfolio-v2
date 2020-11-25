@@ -2,12 +2,15 @@ import React from 'react'
 import Layout from '../components/layouts/resume-layout'
 import '../styles/resume.scss'
 
-const Resume = ({ location }) => {
-	const isMobile = window.innerWidth > 500
+const Resume = () => {
+	let isMobile
+	if (window !== undefined) {
+		isMobile = window.innerWidth > 500
+	}
 	return (
 		<>
 			{isMobile
-				? <Layout location={location}>
+				? <Layout >
 					<div className="resume">
 						<object
 							data="https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf"

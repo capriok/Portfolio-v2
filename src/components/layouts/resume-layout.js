@@ -4,9 +4,11 @@ import Header from "../header"
 
 import '../../styles/layouts.scss'
 
-const Layout = ({ location, children }) => {
-  console.log(location);
-  const atHome = location.pathname === '/'
+const Layout = ({ children }) => {
+  let atHome
+  if (window !== undefined) {
+    atHome = window.pathname === '/'
+  }
 
   return (
     <>

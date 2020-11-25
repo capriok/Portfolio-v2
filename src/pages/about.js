@@ -6,8 +6,8 @@ import SEO from '../components/seo'
 
 import '../styles/about.scss'
 
-const About = ({ location }) => (
-  <Layout location={location}>
+const About = () => (
+  <Layout>
     <SEO title="About Me" />
     <div className="about-route">
       <h1 className="section-title">About me</h1>

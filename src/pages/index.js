@@ -10,10 +10,10 @@ import Contact from '../components/sections/contact'
 
 import "../styles/index.scss"
 
-const IndexPage = ({ location }) => {
+const IndexPage = () => {
   return (
     <>
-      <Layout location={location}>
+      <Layout>
         <SEO title="Home" />
         <Introduction />
         <Skills />

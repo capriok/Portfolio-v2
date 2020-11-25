@@ -7,10 +7,12 @@ import '../../styles/footer.scss'
 import Header from "../header"
 import Stars from '../stars'
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
-  console.log(location);
-  const atHome = location.pathname === '/'
+  let atHome
+  if (window !== undefined) {
+    atHome = window.pathname === '/'
+  }
 
   const [dir, setDir] = useState('top')
   const [pos, setPos] = useState(0)
@@ -25,14 +27,21 @@ const Layout = ({ children, location }) => {
   }, [pos, scrollingDir])
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    if (window !== undefined) {
+      window.addEventListener('scroll', handleScroll)
+    }
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      if (window !== undefined) {
+        window.removeEventListener('scroll', handleScroll)
+      }
     };
   }, []);
 
   const handleScroll = () => {
-    const position = window.pageYOffset
+    let position
+    if (window !== undefined) {
+      position = window.pageYOffset
+    }
     setPos(position)
   };
 
