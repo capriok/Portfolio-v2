@@ -9,6 +9,7 @@ import Stars from '../stars'
 
 const Layout = ({ children, location }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
+  console.log(location);
   const atHome = location.pathname === '/'
 
   const [dir, setDir] = useState('top')

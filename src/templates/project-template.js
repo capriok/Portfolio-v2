@@ -31,10 +31,12 @@ export const query = graphql`
 `
 
 
-const ProjectTemplate = ({ data }) => {
+const ProjectTemplate = ({ location, data }) => {
 	const project = data.projectsJson
+
+	console.log(location);
 	return (
-		<Layout>
+		<Layout location={location}>
 			<ProjectView project={project} />
 		</Layout>
 	)
