@@ -9,8 +9,8 @@ import '../styles/carousel.scss'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
 const Carousel = ({ images }) => {
-
 	let ref = useRef()
+
 	let isMobile
 	if (window !== undefined) {
 		isMobile = window.innerWidth > 500

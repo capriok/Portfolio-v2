@@ -8,7 +8,10 @@ import '../../styles/sections/projects-map.scss'
 import ProjectCard from '../project-card'
 
 const ProjectsMap = () => {
-  const atHome = window.location.pathname === '/'
+  let atHome
+  if (window !== undefined) {
+    atHome = window.pathname === '/'
+  }
   const data = useStaticQuery(graphql`
   {
     allFeaturedJson{
