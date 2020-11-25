@@ -10,6 +10,7 @@ import Stars from '../stars'
 const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
+  let position
   if (typeof window !== `undefined`) {
     atHome = window.pathname === '/'
   }
@@ -27,18 +28,13 @@ const Layout = ({ children }) => {
   }, [pos, scrollingDir])
 
   useEffect(() => {
-    if (typeof window !== `undefined`) {
-      window.addEventListener('scroll', handleScroll)
-    }
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      if (typeof window !== `undefined`) {
-        window.removeEventListener('scroll', handleScroll)
-      }
+      window.removeEventListener('scroll', handleScroll)
     };
   }, []);
 
   const handleScroll = () => {
-    let position
     if (typeof window !== `undefined`) {
       position = window.pageYOffset
     }
