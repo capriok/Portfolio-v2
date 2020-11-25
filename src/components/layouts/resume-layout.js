@@ -7,7 +7,7 @@ import '../../styles/layouts.scss'
 const Layout = ({ children }) => {
   let atHome
   if (typeof window !== `undefined`) {
-    atHome = window.pathname === '/'
+    atHome = window.location.pathname === '/'
   }
 
   return (

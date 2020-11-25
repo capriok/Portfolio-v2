@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
   if (typeof window !== `undefined`) {
-    atHome = window.pathname === '/'
+    atHome = window.location.pathname === '/'
   }
 
   const [dir, setDir] = useState('top')
@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
   }, [pos, scrollingDir])
 
   useEffect(() => {
+    console.log(window);
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
