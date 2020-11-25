@@ -7,9 +7,9 @@ import '../../styles/footer.scss'
 import Header from "../header"
 import Stars from '../stars'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
-  const atHome = window.location.pathname === '/'
+  const atHome = location.pathname === '/'
 
   const [dir, setDir] = useState('top')
   const [pos, setPos] = useState(0)
@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Stars />
-      <Header dir={dir} pos={pos} />
+      <Header dir={dir} pos={pos} atHome={atHome} />
       <div className="home-layout">
         <main>{children}</main>
         <footer className="home-footer">

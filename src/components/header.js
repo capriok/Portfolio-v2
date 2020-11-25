@@ -3,8 +3,7 @@ import { Link } from "gatsby"
 
 import '../styles/header.scss'
 
-const Header = ({ dir, pos }) => {
-  const atHome = window.location.pathname === '/'
+const Header = ({ dir, pos, atHome }) => {
 
   const headerClass = () => {
     let CLASS = 'home-header'

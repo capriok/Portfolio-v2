@@ -5,8 +5,8 @@ import SEO from '../components/seo'
 
 import '../styles/index.scss'
 
-const Work = ({ projects }) => (
-	<Layout>
+const Work = ({ location, projects }) => (
+	<Layout location={location}>
 		<SEO title="Work" />
 		<div className="work-route">
 			<ProjectsMap projects={projects} />

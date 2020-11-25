@@ -4,11 +4,12 @@ import Header from "../header"
 
 import '../../styles/layouts.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ location, children }) => {
+  const atHome = location.pathname === '/'
 
   return (
     <>
-      <Header />
+      <Header atHome={atHome} />
       <div className="resume-layout">
         <main>{children}</main>
       </div>
