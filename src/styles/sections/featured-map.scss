@@ -13,6 +13,9 @@ $image-width: 450px;
 		flex: 1;
 		width: 100%;
 		margin-bottom: 125px;
+		&:last-child {
+			margin-bottom: 50px;
+		}
 		.feature-card {
 			@include flex;
 			justify-content: space-between;

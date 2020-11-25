@@ -32,7 +32,7 @@ const ProjectsMap = () => {
 
   return (
     <div className="featured-map-section">
-      <h1 className="section-title">My Best Work</h1>
+      <h1 className="section-title">Featured Collection</h1>
       {data.allFeaturedJson.edges.map(({ node: project }, i) => (
         <FeaturedCard key={i} project={project} i={i} />
       ))}

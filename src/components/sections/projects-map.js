@@ -8,6 +8,7 @@ import '../../styles/sections/projects-map.scss'
 import ProjectCard from '../common/project-card'
 
 const ProjectsMap = () => {
+  const atHome = window.location.pathname === '/'
 
   const data = useStaticQuery(graphql`
   {
@@ -35,6 +36,7 @@ const ProjectsMap = () => {
   const [pg, setPg] = useState(6)
 
   const filteredFeatures = [...data.allProjectsJson.edges].filter(({ node: p }) => {
+    if (!atHome) return p
     const feat = data.allFeaturedJson.edges
     return p.title !== feat[0].node.title
       && p.title !== feat[1].node.title
@@ -43,22 +45,24 @@ const ProjectsMap = () => {
 
   return (
     <div className="projects-map-section">
-      <h1 className="section-title">All of my work</h1>
+      <h1 className="section-title">Full Collection</h1>
       <div className="cards-cont">
-        {filteredFeatures.slice(0, pg).map(({ node: project }, i) => (
+        {filteredFeatures.slice(0, atHome ? pg : filteredFeatures.length).map(({ node: project }, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
-      <button
-        onClick={() => setPg(pg - 3)}
-        disabled={pg === 6}>
-        <MdExpandLess />
-      </button>
-      <button
-        onClick={() => setPg(pg + 3)}
-        disabled={pg >= filteredFeatures.length}>
-        <MdExpandMore />
-      </button>
+      {atHome && <div className="button-cont">
+        <button
+          onClick={() => setPg(pg - 3)}
+          disabled={pg === 6}>
+          <MdExpandLess />
+        </button>
+        <button
+          onClick={() => setPg(pg + 3)}
+          disabled={pg >= filteredFeatures.length}>
+          <MdExpandMore />
+        </button>
+      </div>}
     </div>
   )
 }

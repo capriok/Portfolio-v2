@@ -1,11 +1,15 @@
 @import "../index.scss";
 
 .home-header {
+	z-index: 10;
+	position: sticky;
+	top: 0;
 	user-select: none;
 	@include flex;
 	width: 100%;
 	min-height: 100px;
 	background-color: transparent;
+	transition: 0.3s;
 	.head-cont {
 		@include flex;
 		justify-content: space-between;
@@ -21,6 +25,17 @@
 		}
 	}
 }
+.fill {
+	background-color: white;
+}
+.show {
+	transition: 0.3s;
+	opacity: 1;
+}
+.hide {
+	transition: 0.3s;
+	opacity: 0;
+}
 
 .home-layout {
 	margin: 0 auto;
@@ -28,5 +43,7 @@
 }
 
 .home-footer {
-	margin-top: 50px;
+	margin-top: 100px;
+	@include flex;
+	height: 50px;
 }

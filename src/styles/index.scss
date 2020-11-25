@@ -59,6 +59,23 @@ a {
 	text-decoration: none;
 	color: black;
 }
+button {
+	background-color: rgb(235, 235, 235);
+}
+
+@mixin button-fx {
+	&:hover:not([disabled]) {
+		transition: 0.2s;
+		background-color: rgb(225, 225, 225);
+	}
+	&:active:not([disabled]) {
+		transition: 0.2s;
+		background-color: rgb(215, 215, 215);
+		svg {
+			color: steelblue;
+		}
+	}
+}
 
 .mono {
 	font-family: "Roboto Mono", monospace;
@@ -78,7 +95,8 @@ a {
 .skills-section,
 .featured-map-section,
 .projects-map-section,
-.contact-section {
+.contact-section,
+.about-route {
 	padding: 50px 0;
 }
 

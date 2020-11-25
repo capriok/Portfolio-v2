@@ -1,0 +1,26 @@
+@import "./index.scss";
+
+.about-route {
+	width: 100%;
+	.about-cont {
+		flex: 1;
+		max-width: 700px;
+		height: 100%;
+		margin: 0 auto;
+		h2 {
+			font-size: 1.4rem;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		.info {
+			text-indent: 20px;
+		}
+		ul {
+			li {
+				.type {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

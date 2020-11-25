@@ -1,14 +1,36 @@
+:root {
+	--star-color: rgba(70, 131, 180, 0.8);
+}
+
+$star-color: var(--star-color);
+
 @function stars($n) {
-	$value: "#{random(1000)}px #{random(1000)}px steelblue";
+	$value: "#{random(1000)}px #{random(1000)}px #{$star-color}";
 	@for $i from 2 through $n {
-		$value: "#{$value} , #{random(2000)}px #{random(2000)}px rgba(70, 131, 180, 0.6)";
+		$value: "#{$value} , #{random(2000)}px #{random(2000)}px #{$star-color}";
 	}
 	@return unquote($value);
 }
 
-$stars-small: stars(1000);
-$stars-medium: stars(200);
-$stars-big: stars(100);
+@mixin base {
+	background: transparent;
+	border-radius: 50%;
+	overflow: hidden;
+	&:after {
+		content: " ";
+		position: absolute;
+		top: 2000px;
+		background: transparent;
+	}
+}
+
+$stars-small: stars(750);
+$stars-medium: stars(300);
+$stars-big: stars(250);
+
+$small-speed: 50s;
+$medium-speed: 125s;
+$big-speed: 200s;
 
 .stars-cont {
 	z-index: -10;
@@ -28,58 +50,41 @@ $stars-big: stars(100);
 	}
 
 	.stars > .small {
+		@include base;
 		width: 1px;
 		height: 1px;
-		background: transparent;
 		box-shadow: $stars-small;
-		animation: starsAnimation 100s linear infinite;
-
+		animation: starsAnimation $small-speed linear infinite;
 		&:after {
-			content: " ";
-			position: absolute;
-			top: 2000px;
 			width: 1px;
 			height: 1px;
-			background: transparent;
 			box-shadow: $stars-small;
 		}
 	}
 
 	.stars > .medium {
+		@include base;
 		width: 2px;
 		height: 2px;
-		background: transparent;
 		box-shadow: $stars-medium;
-		animation: starsAnimation 250s linear infinite;
-
+		animation: starsAnimation $medium-speed linear infinite;
 		&:after {
-			content: " ";
-			position: absolute;
-			top: 2000px;
 			width: 2px;
 			height: 2px;
-			background: transparent;
 			box-shadow: $stars-medium;
 		}
 	}
 
 	.stars > .big {
+		@include base;
 		width: 3px;
 		height: 3px;
-		background: transparent;
 		box-shadow: $stars-big;
-		border-radius: 100%;
-		animation: starsAnimation 500s linear infinite;
-
+		animation: starsAnimation $big-speed linear infinite;
 		&:after {
-			content: " ";
-			position: absolute;
-			top: 2000px;
 			width: 3px;
 			height: 3px;
-			background: transparent;
 			box-shadow: $stars-big;
-			border-radius: 100%;
 		}
 	}
 }

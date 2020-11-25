@@ -124,7 +124,7 @@
 	{
 		"title": "SQLifting",
 		"slug": "sqlifting",
-		"description": "Personalized exercise and workout plan application with MySQL backend",
+		"description": "Personalized exercise and workout plan building application with MySQL backend",
 		"writing": {
 			"process": "When starting this project I had one goal in mind, to expand my abilities working with structured databases. I chose PostgreSQL because of the tried and true user experience. Additionally, this project allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational Database Service (RDS) service.",
 			"processSub": "To start, I designed a simple front-end interface to display the data I would be rendering. Next, I spun up my express server, connected the database and started writing my first queries. Hitting the server routes and seeing my queries run for the first time was empowering. I developed much more appreciation for backend development. Throughout my work, I realized how to optimize my queries and improve how I architect the database, which is the most important aspect to me. This app, originally meant to practice querying with SQL, became one I use daily.",
@@ -168,7 +168,7 @@
 	{
 		"title": "Snekkel",
 		"slug": "snekkel",
-		"description": "Grid based snake game featuring directional sprites and difficulty settings",
+		"description": "Grid based snake game featuring dynamic directional sprites and difficulty settings",
 		"writing": {
 			"process": "After making Disarray, my first JavaScript puzzle game, I was excited to make more nostalgia-inspired games. I instantly thought of the classic game I grew up playing, Snake. I first thought of building this using only vanilla JavaScript, which I knew would not be a problem for me, but I couldn't bring myself away from the React ecosystem. It added such an elegant and modern factor to the game. So, I decided to use both while emphasizing vanilla JavaScript for-loops and array manipulation methods rather than React hook state setters.",
 			"processSub": "I began by forming the logic to create a game tick and draw the grid. Next, I randomly assigned the “food” and rendered the snake to the grid. This was fairly straight forward due to the amount of brainstorming and planning I did before writing any code. At first, the snake was merely a color-filled grid tile followed by other color-filled grid tiles acting as its tail. I knew this was not the end result, so I started planning how to implement sprites into my game. This was the most difficult code I've had to write while working with game-style code. But man, it was so fun and rewarding. It involved writing a function to check the snake’s head position and which direction it was facing on the grid. Another function checked the tail pieces’ previous and subsequent position and direction in order to render the correct sprite for a specific piece. The complexity of rendering corner pieces revealed to be pretty difficult. While I spend time finishing this feature, the game may look unfinished but continues to serve as a reminder of how far my skills have come.",
@@ -289,7 +289,7 @@
 	{
 		"title": "Portfolio v1",
 		"slug": "portfolio-v1",
-		"description": "Version One of my sofware developer portfolio",
+		"description": "Version One of my sofware developer portfolio, built with React.js alone",
 		"writing": {
 			"process": "The main goal was to create a space for people to visually see my skills and experience clearly. I strongly believe showcasing personal projects and professional endeavors is key for any software developer. After building the website structure, it came time to reflect on myself and what I've learned and accomplished over the years. This portfolio is something I hold dear to my heart as it is the forefront of what will land me my first job as a developer and change my life forever. This is who I am and what I love doing, take a look.",
 			"processSub": "",
@@ -490,7 +490,7 @@
 	{
 		"title": "Theme  Distribution",
 		"slug": "theme-distribution",
-		"description": "Combining aesthetics with user customizability to provide easy to use but unique themes for any user",
+		"description": "Combining aesthetics with user customizability to provide easy to use but unique themes for any interested user",
 		"writing": {
 			"process": "My aspiration for this endeavor was to provide quality Tumblr themes to people who enjoy customization of their blog without paying top dollar for a template. Combining aesthetics, simplicity, and customizability, I became the go-to guy for themes among my peers. This is when I initially found my passion for web development. Tinkering with code and teaching myself new techniques became the part of my day I looked forward to the most.",
 			"processSub": "",
