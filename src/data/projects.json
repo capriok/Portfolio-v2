@@ -152,9 +152,7 @@
 			"./images/KPCON-INTRO.jpg",
 			"./images/KPCON-DETAIL.jpg",
 			"./images/KPCON-GALLERY.jpg",
-			"./images/KPCON-EMAIL.jpg",
-			"./images/KPCON-HTML.jpg",
-			"./images/KPCON-SERVER.jpg"
+			"./images/KPCON-EMAIL.jpg"
 		],
 		"resources": [
 			"https://nodemailer.com/about"
@@ -319,8 +317,7 @@
 			"./images/DISARRAY-GREETING.jpg",
 			"./images/DISARRAY-START.jpg",
 			"./images/DISARRAY-SOLVED.jpg",
-			"./images/DISARRAY-LEADERBOARD.jpg",
-			"./images/DISARRAY-LOOGIC.jpg"
+			"./images/DISARRAY-LEADERBOARD.jpg"
 		],
 		"resources": []
 	},
@@ -513,8 +510,7 @@
 			"./images/TOOKFEED-HOME.jpg",
 			"./images/TOOKFEED-REGISTER.jpg",
 			"./images/TOOKFEED-OPTIONS.jpg",
-			"./images/TOOKFEED-PROFILE.jpg",
-			"./images/TOOKFEED-SERVER.jpg"
+			"./images/TOOKFEED-PROFILE.jpg"
 		],
 		"resources": [
 			"https://newsapi.org",
