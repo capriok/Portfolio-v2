@@ -20,9 +20,10 @@ const FeaturedCard = ({ project, i }) => {
 			<div className={i !== 1 ? "feature-card" : "feature-card inverted"}>
 				<div className="thumb-cont">
 					<div className="img-cont">
-						<div className="overlay"></div>
+						<Link to={`/${project.slug}`}><div className="overlay"></div></Link>
 						<Image fluid={project.thumb.childImageSharp.fluid} alt={project.title} />
 					</div>
+
 				</div>
 				<div className="content-cont">
 					<Link to={`/${project.slug}`}><h5 className="mono">Featured Project</h5></Link>

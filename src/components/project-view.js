@@ -16,9 +16,11 @@ const ProjectView = ({ project }) => {
 			</div>
 			<p className="description">{project.description}</p>
 			<hr />
-			<h2>The Process</h2>
-			<p className="process">{project.writing.process}</p>
-			<p className="process">{project.writing.processSub}</p>
+			{project.writing.process && <>
+				<h2>The Process</h2>
+				<p className="process">{project.writing.process}</p>
+				<p className="process">{project.writing.processSub}</p>
+			</>}
 			<h2>Take Aways</h2>
 			<ul>
 				{project.writing.conclusion.map((conclusion, i) => (
@@ -31,16 +33,18 @@ const ProjectView = ({ project }) => {
 					<li key={i}>{stack}</li>
 				))}
 			</ul>
-			<h2>Resources</h2>
-			<ul>
-				{project.resources.map((resource, i) => (
-					<li key={i}>
-						<a href={resource} target="_blank" rel="noreferrer">
-							{resource}
-						</a>
-					</li>
-				))}
-			</ul>
+			{project.resources.length > 0 && <>
+				<h2>Resources</h2>
+				<ul>
+					{project.resources.map((resource, i) => (
+						<li key={i}>
+							<a href={resource} target="_blank" rel="noreferrer">
+								{resource}
+							</a>
+						</li>
+					))}
+				</ul>
+			</>}
 			<h2>Links</h2>
 			<div className="links">
 				<Link to={`/`} className="link">

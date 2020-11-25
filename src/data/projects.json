@@ -4,7 +4,7 @@
 		"slug": "board-master",
 		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
 		"writing": {
-			"process": "Working on it..",
+			"process": "",
 			"processSub": "",
 			"conclusion": [
 				"Expanded my knowledge of OOP trechniques and architecture",
@@ -44,7 +44,7 @@
 		"slug": "draggable-array",
 		"description": "(NPM Package) - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children",
 		"writing": {
-			"process": "Working on it..",
+			"process": "",
 			"processSub": "",
 			"conclusion": [
 				"Learned Reacts Top-Level API and how to render components with it",
