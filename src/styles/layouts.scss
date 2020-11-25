@@ -1,4 +1,9 @@
-@import "../index.scss";
+@import "./index.scss";
+
+.home-layout {
+	margin: 0 auto;
+	max-width: $max-width;
+}
 
 .resume-layout {
 	min-width: 100vw;

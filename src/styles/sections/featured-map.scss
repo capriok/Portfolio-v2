@@ -7,7 +7,6 @@ $image-width: 450px;
 	@include flex;
 	flex-direction: column;
 	width: 100%;
-	padding: 50px 0;
 	.feature-anim {
 		z-index: 1;
 		flex: 1;
@@ -34,6 +33,7 @@ $image-width: 450px;
 				margin-left: -75px;
 				transition: 0.2s;
 				h5 {
+					user-select: none;
 					width: fit-content;
 					margin: 0;
 					margin-bottom: 5px;

@@ -1,4 +1,65 @@
 @import "../index.scss";
 
 .skills-section {
+	@include flex;
+	flex-direction: column;
+	width: 100%;
+	.skills-cont {
+		@include flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 30px;
+		max-width: 800px;
+		.navigation {
+			user-select: none;
+			flex: 1;
+			@include flex;
+			align-items: stretch;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			li {
+				cursor: pointer;
+				flex: 1;
+				@include flex;
+				padding: 10px 15px;
+				max-height: 75px;
+				text-align: center;
+				list-style: none;
+				border-bottom: 2px solid steelblue;
+				@include button-fx;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			.active-nav {
+				border-bottom: 2px solid rgb(32, 32, 32);
+			}
+		}
+		section {
+			user-select: none;
+			width: 100%;
+			ul {
+				@include flex;
+				justify-content: space-evenly;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				li {
+					flex: 1;
+					@include flex;
+					flex-direction: column;
+					list-style: none;
+					margin: 20px 0;
+					p {
+						margin: 0;
+						&:first-child {
+							font-size: 2rem;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
 }

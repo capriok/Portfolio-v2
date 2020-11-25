@@ -28,8 +28,7 @@ const About = () => (
           <li><span className="type">Programming Languages:</span><span> JavaScript, TypeScript, C#, ASP.NET Core and Java</span></li>
           <li><span className="type">Front-End Technologies:</span><span> React.js, Redux, Gatsy.js, Next.js, HTML5, CSS and SASS</span></li>
           <li><span className="type">Back-End Technologies:</span><span> SQL, Express.js, Koa.js and Socket.io</span></li>
-          <li><span className="type">Relational databases:</span><span> SQL(Postgres) and GraphQL</span></li>
-          <li><span className="type">Non-Relational databases:</span><span> MySQL, NoSQL, PostgreSQL, MS SQL Server and MongoDB</span></li>
+          <li><span className="type">Databases:</span><span> GraphQL, MySQL, NoSQL, PostgreSQL, MS SQL Server and MongoDB</span></li>
           <li><span className="type">Library use:</span><span> Axios, Lodash and Formik</span></li>
           <li><span className="type">Cloud Platforms:</span><span> AWS, Netlify, Gatsby Cloud and Heroku</span></li>
           <li><span className="type">UI Development:</span><span> Figma and Adobe XD</span></li>
@@ -42,7 +41,7 @@ const About = () => (
         </ul>
         <h2 className="section-title">Experience</h2>
         <ul>
-          <li><span>&lt; 1 year, distributing of web graphics and design to clients.</span></li>
+          <li><span>&lt; 1 year, distributing web graphics and design to clientele.</span></li>
           <li><span>&gt; 1 year, designing, building and maintaining client web applications.</span></li>
           <li><span>&gt; 2 years, contributing to open source user authentication application.</span></li>
         </ul>

@@ -1,4 +1,4 @@
-@import "../index.scss";
+@import "./index.scss";
 
 .home-header {
 	z-index: 10;
@@ -17,6 +17,7 @@
 		max-width: $max-width;
 		.title {
 			margin: 0;
+			font-size: 2rem;
 		}
 		.navs {
 			a {
@@ -35,15 +36,4 @@
 .hide {
 	transition: 0.3s;
 	opacity: 0;
-}
-
-.home-layout {
-	margin: 0 auto;
-	max-width: $max-width;
-}
-
-.home-footer {
-	margin-top: 100px;
-	@include flex;
-	height: 50px;
 }

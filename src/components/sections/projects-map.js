@@ -5,11 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import { MdExpandMore, MdExpandLess } from 'react-icons/md'
 
 import '../../styles/sections/projects-map.scss'
-import ProjectCard from '../common/project-card'
+import ProjectCard from '../project-card'
 
 const ProjectsMap = () => {
   const atHome = window.location.pathname === '/'
-
   const data = useStaticQuery(graphql`
   {
     allFeaturedJson{

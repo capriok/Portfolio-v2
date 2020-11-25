@@ -3,10 +3,14 @@ import Layout from '../components/layouts/home-layout'
 import ProjectsMap from '../components/sections/projects-map'
 import SEO from '../components/seo'
 
+import '../styles/index.scss'
+
 const Projects = ({ projects }) => (
 	<Layout>
 		<SEO title="Work" />
-		<ProjectsMap projects={projects} />
+		<div className="work-route">
+			<ProjectsMap projects={projects} />
+		</div>
 	</Layout>
 )
 

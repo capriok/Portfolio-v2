@@ -1,9 +1,9 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import '../../styles/sections/featured-map.scss'
 
-import FeaturedCard from '../common/feature-card'
+import FeaturedCard from '../feature-card'
 
 const ProjectsMap = () => {
   const data = useStaticQuery(graphql`

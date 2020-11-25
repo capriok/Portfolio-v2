@@ -24,8 +24,8 @@ const ProjectCard = ({ project }) => {
 					<p>{project.description}</p>
 				</div>
 				<div className="navigation">
-					<a href={`${project.source}`} target="_blank"><AiFillGithub /></a>
-					<a href={`${project.demo}`} target="_blank"><RiExternalLinkFill /></a>
+					<a href={`${project.source}`} target="_blank" referrerPolicy="no-referrer" ><AiFillGithub /></a>
+					<a href={`${project.demo}`} target="_blank" referrerPolicy="no-referrer" ><RiExternalLinkFill /></a>
 				</div>
 			</div>
 		</ScrollAnimation>

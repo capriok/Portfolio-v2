@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useScrollDirection } from "react-hooks-lab";
-import '../../styles/layouts/home-layout.scss'
+import '../../styles/layouts.scss'
+import '../../styles/footer.scss'
 
-import Header from "../common/header"
+import Header from "../header"
 import Stars from '../stars'
 
 const Layout = ({ children }) => {

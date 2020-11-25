@@ -1,8 +1,8 @@
 import React from "react"
 
-import Header from "../common/header"
+import Header from "../header"
 
-import '../../styles/layouts/resume-layout.scss'
+import '../../styles/layouts.scss'
 
 const Layout = ({ children }) => {
 

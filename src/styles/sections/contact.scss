@@ -4,6 +4,7 @@
 	@include flex;
 	flex-direction: column;
 	.contact-cont {
+		user-select: none;
 		@include flex;
 		flex-direction: column;
 		padding: 15px;

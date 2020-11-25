@@ -1,0 +1,7 @@
+@import "./index.scss";
+
+.home-footer {
+	margin-top: auto;
+	@include flex;
+	height: 50px;
+}

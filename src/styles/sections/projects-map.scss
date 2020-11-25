@@ -5,7 +5,6 @@ $width: 400px;
 	@include flex;
 	flex-direction: column;
 	width: 100%;
-	margin-bottom: 50px;
 	.cards-cont {
 		@include flex;
 		flex-wrap: wrap;
@@ -37,7 +36,6 @@ $width: 400px;
 				border-radius: 5px;
 				border-left: 5px solid rgb(32, 32, 32);
 				border-bottom: 5px solid rgb(32, 32, 32);
-				// background-color: rgba(206, 222, 236, 0.5);
 				transition: 0.2s;
 				.header {
 					@include flex;
@@ -51,6 +49,7 @@ $width: 400px;
 						flex: 1;
 						text-align: right;
 						h3 {
+							transition: 0.2s;
 							margin: 0;
 						}
 					}
@@ -93,6 +92,14 @@ $width: 400px;
 					transition: 0.2s;
 					border-left: 5px solid rgb(32, 32, 32);
 					background-color: white;
+					.header {
+						a {
+							h3 {
+								transition: 0.2s;
+								margin-right: 10px;
+							}
+						}
+					}
 					.folder-open {
 						display: block;
 						a {
