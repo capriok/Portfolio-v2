@@ -550,8 +550,7 @@
 			"./images/TFK-HOME.jpg",
 			"./images/TFK-PREV1.jpg",
 			"./images/TFK-PREV2.jpg",
-			"./images/TFK-PREV3.jpg",
-			"./images/TFK-CODE.jpg"
+			"./images/TFK-PREV3.jpg"
 		],
 		"resources": [
 			"https://www.jquery.com"
