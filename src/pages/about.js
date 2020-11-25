@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/layouts/home-layout'
+import Contact from '../components/sections/contact'
 import SEO from '../components/seo'
 
 import '../styles/about.scss'
@@ -35,6 +36,7 @@ const About = () => (
           <li><span>&gt; 2 years, contributing to open source user authentication application.</span></li>
         </ul>
       </div>
+      <Contact />
     </div>
   </Layout>
 )

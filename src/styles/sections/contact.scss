@@ -3,7 +3,7 @@
 .contact-section {
 	@include flex;
 	flex-direction: column;
-	.contact-cont {
+	.content-cont {
 		user-select: none;
 		@include flex;
 		flex-direction: column;
@@ -29,6 +29,16 @@
 			@include flex;
 			border-radius: 5px;
 			@include button-fx;
+		}
+		.button-cont {
+			@include flex;
+			a {
+				&:not(:last-child) {
+					margin-right: 5px;
+				}
+				button {
+				}
+			}
 		}
 	}
 }
