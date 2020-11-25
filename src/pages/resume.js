@@ -4,7 +4,7 @@ import '../styles/resume.scss'
 
 const Resume = () => {
 	let isMobile
-	if (window !== undefined) {
+	if (typeof window !== `undefined`) {
 		isMobile = window.innerWidth > 500
 	}
 	return (

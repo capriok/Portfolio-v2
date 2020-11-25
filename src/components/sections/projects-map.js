@@ -9,7 +9,7 @@ import ProjectCard from '../project-card'
 
 const ProjectsMap = () => {
   let atHome
-  if (window !== undefined) {
+  if (typeof window !== `undefined`) {
     atHome = window.pathname === '/'
   }
   const data = useStaticQuery(graphql`

@@ -12,7 +12,7 @@ const Carousel = ({ images }) => {
 	let ref = useRef()
 
 	let isMobile
-	if (window !== undefined) {
+	if (typeof window !== `undefined`) {
 		isMobile = window.innerWidth > 500
 	}
 	const handleOnDragStart = (e) => e.preventDefault()

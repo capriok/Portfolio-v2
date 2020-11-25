@@ -6,7 +6,7 @@ import '../../styles/layouts.scss'
 
 const Layout = ({ children }) => {
   let atHome
-  if (window !== undefined) {
+  if (typeof window !== `undefined`) {
     atHome = window.pathname === '/'
   }
 

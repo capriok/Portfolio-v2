@@ -10,7 +10,7 @@ import Stars from '../stars'
 const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
-  if (window !== undefined) {
+  if (typeof window !== `undefined`) {
     atHome = window.pathname === '/'
   }
 
@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
   }, [pos, scrollingDir])
 
   useEffect(() => {
-    if (window !== undefined) {
+    if (typeof window !== `undefined`) {
       window.addEventListener('scroll', handleScroll)
     }
     return () => {
-      if (window !== undefined) {
+      if (typeof window !== `undefined`) {
         window.removeEventListener('scroll', handleScroll)
       }
     };
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
 
   const handleScroll = () => {
     let position
-    if (window !== undefined) {
+    if (typeof window !== `undefined`) {
       position = window.pageYOffset
     }
     setPos(position)
