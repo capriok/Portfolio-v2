@@ -5,7 +5,6 @@ import { HiOutlineMail } from "react-icons/hi";
 const Contact = () => {
 	return (
 		<div className="contact-section">
-			{/* <h1 className="section-title">Get in touch</h1> */}
 			<div className="contact-cont">
 				<h1>Feel free to reach out.</h1>
 				<p>Direct Email</p>

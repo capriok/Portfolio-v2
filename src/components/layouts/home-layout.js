@@ -7,6 +7,8 @@ import Header from "../header"
 import Stars from '../stars'
 
 const Layout = ({ children }) => {
+  const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
+
   const [dir, setDir] = useState('top')
   const [pos, setPos] = useState(0)
 
@@ -14,7 +16,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     let delay = setTimeout(() => {
-      if (pos >= 300 || scrollingDir === 'up') setDir(scrollingDir)
+      setDir(scrollingDir)
       clearTimeout(delay)
     }, 50)
   }, [pos, scrollingDir])
@@ -32,7 +34,6 @@ const Layout = ({ children }) => {
   };
 
   useEffect(() => {
-    const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
     pos > 500 && value(0.3)
     pos <= 500 && value(0.4)
     pos <= 400 && value(0.5)

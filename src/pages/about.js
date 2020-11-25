@@ -22,22 +22,11 @@ const About = () => (
           like web development as well as functional and object oriented programming.
           In free my time, I immerse myself in learning new programming technologies and how to better myself as a programmer
           but also find joy with meditaion, music, hiking, and spending time under the sun.
-            </p>
-        <h2 className="section-title">Specialities</h2>
-        <ul>
-          <li><span className="type">Programming Languages:</span><span> JavaScript, TypeScript, C#, ASP.NET Core and Java</span></li>
-          <li><span className="type">Front-End Technologies:</span><span> React.js, Redux, Gatsy.js, Next.js, HTML5, CSS and SASS</span></li>
-          <li><span className="type">Back-End Technologies:</span><span> SQL, Express.js, Koa.js and Socket.io</span></li>
-          <li><span className="type">Databases:</span><span> GraphQL, MySQL, NoSQL, PostgreSQL, MS SQL Server and MongoDB</span></li>
-          <li><span className="type">Library use:</span><span> Axios, Lodash and Formik</span></li>
-          <li><span className="type">Cloud Platforms:</span><span> AWS, Netlify, Gatsby Cloud and Heroku</span></li>
-          <li><span className="type">UI Development:</span><span> Figma and Adobe XD</span></li>
-          <li><span className="type">Tools:</span><span> Git, NPM, Webpack, Babel, Lodash, JWT, CORS, Serverless-http and Postman</span></li>
-        </ul>
+        </p>
         <h2 className="section-title">Education</h2>
         <ul>
           <li><span>Associate Degree in Web Programming - Deans List, 4.0 GPA</span></li>
-          <li><span>High School Diploma - Honors List, 3.7 GPA</span></li>
+          <li><span>High School Diploma - Honor Roll, 3.7 GPA</span></li>
         </ul>
         <h2 className="section-title">Experience</h2>
         <ul>

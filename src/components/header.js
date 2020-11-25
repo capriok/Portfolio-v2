@@ -7,9 +7,7 @@ const Header = ({ dir, pos }) => {
 
   const headerClass = () => {
     let CLASS = 'home-header'
-    if (pos >= 300) {
-      CLASS += ' fill'
-    }
+    if (pos >= 300) CLASS += ' fill'
     switch (dir) {
       case 'down':
         return CLASS += ' hide'
@@ -29,7 +27,7 @@ const Header = ({ dir, pos }) => {
         <Link to="/"> <h1 className="title">KC</h1></Link>
         <div className="navs">
           <Link to="/about"><span className="mono">About</span></Link>
-          <Link to="/projects"><span className="mono">Work</span></Link>
+          <Link to="/work"><span className="mono">Work</span></Link>
           <a href="mailto:capriodev@gmail.com" target="_blank" referrerPolicy="np-referrer">
             <span className="mono">Contact</span>
           </a>

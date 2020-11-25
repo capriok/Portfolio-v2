@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 
 import '../styles/index.scss'
 
-const Projects = ({ projects }) => (
+const Work = ({ projects }) => (
 	<Layout>
 		<SEO title="Work" />
 		<div className="work-route">
@@ -14,4 +14,4 @@ const Projects = ({ projects }) => (
 	</Layout>
 )
 
-export default Projects
+export default Work

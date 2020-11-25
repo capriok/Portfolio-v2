@@ -2,6 +2,7 @@
 
 .about-route {
 	width: 100%;
+	min-height: calc(100vh - 325px);
 	.about-cont {
 		flex: 1;
 		max-width: 700px;
