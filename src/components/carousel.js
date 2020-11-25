@@ -1,8 +1,10 @@
+/*eslint  jsx-a11y/no-noninteractive-element-interactions: "off"*/
 import React, { useRef } from 'react'
 import Image from 'gatsby-image'
-
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
+
+import '../styles/carousel.scss'
 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 

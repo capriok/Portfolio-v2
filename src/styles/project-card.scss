@@ -1,0 +1,98 @@
+@import "./index.scss";
+
+.projects-map-section {
+	.project-anim {
+		flex: 1;
+		min-width: 30%;
+		max-width: 33%;
+		min-height: 250px;
+		@include flex;
+		align-items: stretch;
+		.project-card {
+			user-select: none;
+			@include flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border-left: 5px solid rgb(32, 32, 32);
+			border-bottom: 5px solid rgb(32, 32, 32);
+			transition: 0.2s;
+			.header {
+				@include flex;
+				justify-content: space-between;
+				width: 100%;
+				padding-bottom: 20px;
+				svg {
+					font-size: 1.5rem;
+				}
+				a {
+					flex: 1;
+					text-align: right;
+					h3 {
+						transition: 0.2s;
+						margin: 0;
+					}
+				}
+			}
+			.description {
+				cursor: default;
+				flex: 1;
+				padding-bottom: 20px;
+				margin: 0;
+				p {
+					margin: 0;
+				}
+			}
+			.navigation {
+				font-size: 1.5rem;
+				width: 100%;
+				align-self: flex-end;
+				text-align: right;
+				a {
+					transition: 0.2s;
+					margin: 0;
+					margin-left: 10px;
+					&:hover {
+						transition: 0.2s;
+						color: steelblue;
+					}
+				}
+			}
+			.folder-open,
+			.folder-closed {
+				margin: 0;
+				transition: 0.2s;
+			}
+			.folder-open {
+				display: none;
+				margin-left: 1px;
+				transition: 0.2s;
+			}
+			&:hover {
+				transition: 0.2s;
+				border-left: 5px solid rgb(32, 32, 32);
+				background-color: white;
+				.header {
+					a {
+						h3 {
+							transition: 0.2s;
+							margin-right: 10px;
+						}
+					}
+				}
+				.folder-open {
+					display: block;
+					a {
+						color: steelblue;
+					}
+				}
+				.folder-closed {
+					display: none;
+				}
+			}
+		}
+	}
+}

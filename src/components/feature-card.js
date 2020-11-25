@@ -1,8 +1,11 @@
+/*eslint  jsx-a11y/control-has-associated-label: "off"*/
 import React from 'react'
 import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
+
+import '../styles/feature-card.scss'
 
 import { AiFillGithub } from 'react-icons/ai'
 import { RiExternalLinkFill } from 'react-icons/ri'
@@ -31,8 +34,8 @@ const FeaturedCard = ({ project, i }) => {
 						))}
 					</div>
 					<div className="navigation">
-						<a href={`${project.source}`} target="_blank"><AiFillGithub /></a>
-						<a href={`${project.demo}`} target="_blank"><RiExternalLinkFill /></a>
+						<a href={`${project.source}`} target="_blank" rel="noreferrer"><AiFillGithub /></a>
+						<a href={`${project.demo}`} target="_blank" rel="noreferrer"><RiExternalLinkFill /></a>
 					</div>
 				</div>
 			</div>

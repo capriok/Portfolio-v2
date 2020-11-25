@@ -11,7 +11,21 @@
 		],
 		"source": "https://github.com/capriok/SQLifting",
 		"demo": "https://sqlifting.kylecaprio.dev",
-		"thumb": "./images/SQLIFTING-MANAGER.jpg"
+		"thumb": "./images/SQLIFTING-WORKOUT.jpg"
+	},
+	{
+		"title": "Board Master",
+		"slug": "board-master",
+		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
+		"tags": [
+			"React",
+			"Express.js",
+			"Socket.io",
+			"2021"
+		],
+		"source": "https://github.com/capriok/Board-Master",
+		"demo": "https://board-master.kylecaprio.dev",
+		"thumb": "./images/BMASTER-HOME.jpg"
 	},
 	{
 		"title": "Godspeed",
@@ -21,25 +35,10 @@
 			"Styled-Components",
 			"NPM",
 			"Gatsby",
-			"2020",
-			""
+			"2020"
 		],
 		"source": "https://github.com/capriok/Godspeed-Docs",
 		"demo": "https://godspeed.netlify.com",
 		"thumb": "./images/GODSPEED-HOME.jpg"
-	},
-	{
-		"title": "KP Construction",
-		"slug": "kp-construction",
-		"description": "Small business client’s contractor portfolio showcasing services offered, expertise and past endeavors",
-		"tags": [
-			"React",
-			"NodeMailer",
-			"Serverless",
-			"2020"
-		],
-		"source": "https://github.com/capriok/KPCon-Client",
-		"demo": "https://www.keithphillingane.com",
-		"thumb": "./images/KPCON-INTRO.jpg"
 	}
 ]

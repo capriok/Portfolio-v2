@@ -30,7 +30,7 @@ const Header = ({ dir, pos }) => {
         <div className="navs">
           <Link to="/about"><span className="mono">About</span></Link>
           <Link to="/work"><span className="mono">Work</span></Link>
-          <a href="mailto:capriodev@gmail.com" target="_blank" referrerPolicy="np-referrer">
+          <a href="mailto:capriodev@gmail.com" target="_blank" rel="noreferrer">
             <span className="mono">Contact</span>
           </a>
           <Link to="/resume"><span className="mono">Resume</span></Link>

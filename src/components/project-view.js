@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import '../styles/project-view.scss'
-import Carousel from '../components/carousel'
 
+import Carousel from '../components/carousel'
 import { AiFillGithub, AiOutlineHome } from 'react-icons/ai'
 import { RiExternalLinkFill } from 'react-icons/ri'
 
@@ -21,20 +21,24 @@ const ProjectView = ({ project }) => {
 			<p className="process">{project.writing.processSub}</p>
 			<h2>Take Aways</h2>
 			<ul>
-				{project.writing.conclusion.map(conclusion => (
-					<li>{conclusion}</li>
+				{project.writing.conclusion.map((conclusion, i) => (
+					<li key={i}>{conclusion}</li>
 				))}
 			</ul>
 			<h2>Technology stack</h2>
 			<ul>
-				{project.stack.map(stack => (
-					<li>{stack}</li>
+				{project.stack.map((stack, i) => (
+					<li key={i}>{stack}</li>
 				))}
 			</ul>
 			<h2>Resources</h2>
 			<ul>
-				{project.resources.map(resource => (
-					<li><a href={resource}>{resource}</a></li>
+				{project.resources.map((resource, i) => (
+					<li key={i}>
+						<a href={resource} target="_blank" rel="noreferrer">
+							{resource}
+						</a>
+					</li>
 				))}
 			</ul>
 			<h2>Links</h2>
@@ -43,17 +47,11 @@ const ProjectView = ({ project }) => {
 					<p><AiOutlineHome /></p>
 					<p>Home</p>
 				</Link>
-				<a className="link"
-					href={project.source}
-					target="_blank"
-					referrerPolicy="no-referrer">
+				<a className="link" href={project.source} target="_blank" rel="noreferrer">
 					<p><AiFillGithub /></p>
 					<p>Github</p>
 				</a>
-				<a className="link"
-					href={project.demo}
-					target="_blank"
-					referrerPolicy="no-referrer">
+				<a className="link" href={project.demo} target="_blank" rel="noreferrer">
 					<p><RiExternalLinkFill /></p>
 					<p>Demo</p>
 				</a>

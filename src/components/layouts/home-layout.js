@@ -1,3 +1,4 @@
+/*eslint react-hooks/exhaustive-deps: "off"*/
 import React, { useState, useEffect } from 'react'
 import { useScrollDirection } from "react-hooks-lab";
 import '../../styles/layouts.scss'

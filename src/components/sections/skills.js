@@ -1,4 +1,9 @@
+/*eslint  jsx-a11y/no-noninteractive-element-interactions: "off"*/
+/*eslint  jsx-a11y/control-has-associated-label: "off"*/
+/*eslint  jsx-a11y/click-events-have-key-events: "off"*/
 import React, { useState } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 import '../../styles/sections/skills.scss'
 
@@ -44,9 +49,6 @@ import {
 import {
 	GrMysql
 } from 'react-icons/gr';
-
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
 
 const Skills = () => {
 	const [section, setSection] = useState({ b: true })

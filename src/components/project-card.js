@@ -1,7 +1,11 @@
+/*eslint  jsx-a11y/no-noninteractive-element-interactions: "off"*/
+/*eslint  jsx-a11y/control-has-associated-label: "off"*/
 import React from 'react'
 import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
+
+import '../styles/project-card.scss'
 
 import { AiOutlineFolder, AiOutlineFolderOpen } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
@@ -24,8 +28,8 @@ const ProjectCard = ({ project }) => {
 					<p>{project.description}</p>
 				</div>
 				<div className="navigation">
-					<a href={`${project.source}`} target="_blank" referrerPolicy="no-referrer" ><AiFillGithub /></a>
-					<a href={`${project.demo}`} target="_blank" referrerPolicy="no-referrer" ><RiExternalLinkFill /></a>
+					<a href={`${project.source}`} target="_blank" rel="noreferrer" ><AiFillGithub /></a>
+					<a href={`${project.demo}`} target="_blank" rel="noreferrer" ><RiExternalLinkFill /></a>
 				</div>
 			</div>
 		</ScrollAnimation>

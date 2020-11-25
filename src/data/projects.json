@@ -1,5 +1,45 @@
 [
 	{
+		"title": "Board Master",
+		"slug": "board-master",
+		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
+		"writing": {
+			"process": "Working on it..",
+			"processSub": "",
+			"conclusion": [
+				"Expanded my knowledge of OOP trechniques and architecture",
+				"Developed extensive experience with Socket.io API ",
+				"Became more knowledgable with real-time client to server communication"
+			]
+		},
+		"stack": [
+			"React",
+			"Express.js",
+			"Socket.io",
+			"SASS"
+		],
+		"tags": [
+			"React",
+			"Express.js",
+			"Socket.io",
+			"2021"
+		],
+		"source": "https://github.com/capriok/Board-Master",
+		"demo": "https://board-master.kylecaprio.dev",
+		"thumb": "./images/BMASTER-HOME.jpg",
+		"images": [
+			"./images/BMASTER-SHOWCASE.jpg",
+			"./images/BMASTER-HOME.jpg",
+			"./images/BMASTER-CHAT.jpg",
+			"./images/BMASTER-LOBBY.jpg",
+			"./images/BMASTER-MATCH.jpg",
+			"./images/BMASTER-RESULT.jpg"
+		],
+		"resources": [
+			"https://socket.io"
+		]
+	},
+	{
 		"title": "Draggable-Array",
 		"slug": "draggable-array",
 		"description": "(NPM Package) - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children",
@@ -25,9 +65,9 @@
 			"NPM",
 			"2020"
 		],
-		"thumb": "./images/DRAGGABLE-NPM.jpg",
 		"source": "https://github.com/capriok/react-draggable-array",
 		"demo": "https://codesandbox.io/s/react-draggable-array-2kdql",
+		"thumb": "./images/DRAGGABLE-NPM.jpg",
 		"images": [
 			"./images/DRAGGABLE-GIT.jpg",
 			"./images/DRAGGABLE-NPM.jpg",
@@ -65,9 +105,9 @@
 			"SASS",
 			"2020"
 		],
-		"thumb": "./images/CASHFLOW-GREETING.jpg",
 		"source": "https://github.com/capriok/CashFlow",
 		"demo": "https://cashflow.kylecaprio.dev",
+		"thumb": "./images/CASHFLOW-GREETING.jpg",
 		"images": [
 			"./images/CASHFLOW-GREETING.jpg",
 			"./images/CASHFLOW-DATASHEET.jpg",
@@ -95,7 +135,6 @@
 		"stack": [
 			"React",
 			"SASS",
-			"Netlify Serveless Fucntions",
 			"Express.js",
 			"NodeMailer"
 		],
@@ -105,9 +144,9 @@
 			"SASS",
 			"2020"
 		],
-		"thumb": "./images/KPCON-INTRO.jpg",
 		"source": "https://github.com/capriok/KPCon-Client",
 		"demo": "https://www.keithphillingane.com",
+		"thumb": "./images/KPCON-INTRO.jpg",
 		"images": [
 			"./images/KPCON-SHOWCASE.jpg",
 			"./images/KPCON-INTRO.jpg",
@@ -126,7 +165,7 @@
 		"slug": "sqlifting",
 		"description": "Personalized exercise and workout plan building application with MySQL backend",
 		"writing": {
-			"process": "When starting this project I had one goal in mind, to expand my abilities working with structured databases. I chose PostgreSQL because of the tried and true user experience. Additionally, this project allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational Database Service (RDS) service.",
+			"process": "When starting this project I had one goal in mind, to expand my abilities working with structured databases. I chose MySQL because of the tried and true user experience. Additionally, this project allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational Database Service (RDS) service.",
 			"processSub": "To start, I designed a simple front-end interface to display the data I would be rendering. Next, I spun up my express server, connected the database and started writing my first queries. Hitting the server routes and seeing my queries run for the first time was empowering. I developed much more appreciation for backend development. Throughout my work, I realized how to optimize my queries and improve how I architect the database, which is the most important aspect to me. This app, originally meant to practice querying with SQL, became one I use daily.",
 			"conclusion": [
 				"Developed skills working with a structured database",
@@ -138,7 +177,6 @@
 		"stack": [
 			"React",
 			"SASS",
-			"Netlify Serveless Fucntions",
 			"Express.js",
 			"AWS RDS",
 			"MySQL"
@@ -149,15 +187,16 @@
 			"SQL",
 			"2021"
 		],
-		"thumb": "./images/SQLIFTING-MANAGER.jpg",
 		"source": "https://github.com/capriok/SQLifting",
 		"demo": "https://sqlifting.kylecaprio.dev",
+		"thumb": "./images/SQLIFTING-MANAGE.jpg",
 		"images": [
 			"./images/SQLIFTING-SHOWCASE.jpg",
 			"./images/SQLIFTING-GREETING.jpg",
-			"./images/SQLIFTING-MANAGER.jpg",
-			"./images/SQLIFTING-EXBUILDER.jpg",
-			"./images/SQLIFTING-WOBUILDER.jpg",
+			"./images/SQLIFTING-PROFILE.jpg",
+			"./images/SQLIFTING-MANAGE.jpg",
+			"./images/SQLIFTING-ASSEMBLE.jpg",
+			"./images/SQLIFTING-WORKOUT.jpg",
 			"./images/SQLIFTING-INPROGRESS.jpg"
 		],
 		"resources": [
@@ -189,9 +228,9 @@
 			"SASS",
 			"2020"
 		],
-		"thumb": "./images/SNEKKEL-SPRITE.jpg",
 		"source": "https://github.com/capriok/Snekkel",
 		"demo": "https://snekkel.kylecaprio.dev",
+		"thumb": "./images/SNEKKEL-SPRITE.jpg",
 		"images": [
 			"./images/SNEKKEL-SHOWCASE.jpg",
 			"./images/SNEKKEL-GREETING.jpg",
@@ -230,9 +269,9 @@
 			"2020",
 			""
 		],
-		"thumb": "./images/GODSPEED-HOME.jpg",
 		"source": "https://github.com/capriok/Godspeed-Docs",
 		"demo": "https://godspeed.netlify.com",
+		"thumb": "./images/GODSPEED-HOME.jpg",
 		"images": [
 			"./images/GODSPEED-SHOWCASE.jpg",
 			"./images/GODSPEED-HOME.jpg",
@@ -262,7 +301,6 @@
 		"stack": [
 			"React",
 			"SASS",
-			"Netlify Serverless Functions",
 			"Express.js",
 			"MongoDB"
 		],
@@ -273,9 +311,9 @@
 			"MongoDB",
 			"2020"
 		],
-		"thumb": "./images/DISARRAY-START.jpg",
 		"source": "https://github.com/capriok/DisArray",
 		"demo": "https://disarray.kylecaprio.dev",
+		"thumb": "./images/DISARRAY-START.jpg",
 		"images": [
 			"./images/DISARRAY-SHOWCASE.jpg",
 			"./images/DISARRAY-GREETING.jpg",
@@ -299,7 +337,6 @@
 			"React",
 			"JavaScript",
 			"SASS",
-			"Netlify Serverless Functions",
 			"Express.js",
 			"NodeMailer"
 		],
@@ -309,9 +346,9 @@
 			"SASS",
 			"2020"
 		],
+		"source": "https://github.com/capriok/Portfolio-v1",
+		"demo": "https://portfolio-v1.kylecaprio.dev",
 		"thumb": "./images/PORTFOLIO-HOME.jpg",
-		"source": "https://github.com/capriok/Portfolio",
-		"demo": "https://kylecaprio.dev",
 		"images": [
 			"./images/PORTFOLIO-SHOWCASE.jpg",
 			"./images/PORTFOLIO-HOME.jpg",
@@ -341,7 +378,6 @@
 			"React",
 			"JavaScript",
 			"SASS",
-			"Netlify Serverless Functions",
 			"Express.js",
 			"Socket.io"
 		],
@@ -352,9 +388,9 @@
 			"SASS",
 			"2019"
 		],
-		"thumb": "./images/NEETCHAT-HOME.jpg",
 		"source": "https://github.com/hunterfoulk/Neet-Chat",
 		"demo": "https://github.com/hunterfoulk/Neet-Chat",
+		"thumb": "./images/NEETCHAT-HOME.jpg",
 		"images": [
 			"./images/NEETCHAT-HOME.jpg",
 			"./images/NEETCHAT-CHAT.jpg"
@@ -381,7 +417,6 @@
 			"JavaScript",
 			"CSS",
 			"Electron",
-			"Netlify Serverless Functions",
 			"Express.js",
 			"Youtube Data API v3"
 		],
@@ -392,9 +427,9 @@
 			"CSS",
 			"2019"
 		],
-		"thumb": "./images/MTM-PLAYER.jpg",
 		"source": "https://github.com/capriok/MyTube",
 		"demo": "https://mytube-music.kylecaprio.dev",
+		"thumb": "./images/MTM-PLAYER.jpg",
 		"images": [
 			"./images/MTM-SHOWCASE.jpg",
 			"./images/MTM-GOOGLE.jpg",
@@ -423,7 +458,6 @@
 			"React",
 			"JavaScript",
 			"SASS",
-			"Netlify Serveless Fucntions",
 			"Express.js",
 			"NodeMailer"
 		],
@@ -433,9 +467,9 @@
 			"SASS",
 			"2019"
 		],
-		"thumb": "./images/ARTE-BELLA-HOME.jpg",
 		"source": "https://github.com/capriok/Arte-Bella",
 		"demo": "https://artebellaengraving.com",
+		"thumb": "./images/ARTE-BELLA-HOME.jpg",
 		"images": [
 			"./images/ARTE-BELLA-SHOWCASE.jpg",
 			"./images/ARTE-BELLA-HOME.jpg",
@@ -471,9 +505,9 @@
 			"CSS",
 			"2018"
 		],
-		"thumb": "./images/TOOKFEED-HOME.jpg",
 		"source": "https://github.com/capriok/TookFeed",
 		"demo": "https://tookfeed.kylecaprio.dev",
+		"thumb": "./images/TOOKFEED-HOME.jpg",
 		"images": [
 			"./images/TOOKFEED-SHOWCASE.jpg",
 			"./images/TOOKFEED-HOME.jpg",
@@ -513,9 +547,9 @@
 			"Jquery",
 			"2014"
 		],
-		"thumb": "./images/TFK-HOME.jpg",
 		"source": "https://themesfromkyle.tumblr.com",
 		"demo": "https://themesfromkyle.tumblr.com",
+		"thumb": "./images/TFK-HOME.jpg",
 		"images": [
 			"./images/TFK-HOME.jpg",
 			"./images/TFK-PREV1.jpg",

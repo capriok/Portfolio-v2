@@ -7,46 +7,6 @@
 		height: 2px;
 		background-color: #ebebeb;
 	}
-	.carousel-cont {
-		@include flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 0 0 20px;
-		.alice-carousel {
-			width: 100%;
-			ul {
-				padding: 0;
-				margin-bottom: 20px;
-				background-color: cadetblue;
-			}
-			.image-cont {
-				user-select: none;
-				@include flex;
-				min-height: 200px;
-				max-width: 400px;
-				margin: 0 auto;
-				.image {
-					user-select: none;
-					cursor: pointer;
-					user-select: none;
-					width: 100%;
-					max-width: 400px;
-					border-radius: 5px;
-					border: 1px solid black;
-				}
-			}
-		}
-		.controls {
-			@include flex;
-			margin-top: 20px;
-			width: 100%;
-			button {
-				@include flex;
-				margin-right: 5px;
-				@include button-fx;
-			}
-		}
-	}
 	h2 {
 		margin-top: 40px;
 	}
