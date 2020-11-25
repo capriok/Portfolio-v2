@@ -10,7 +10,6 @@ import Stars from '../stars'
 const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
-  let position
   if (typeof window !== `undefined`) {
     atHome = window.pathname === '/'
   }
@@ -35,6 +34,7 @@ const Layout = ({ children }) => {
   }, []);
 
   const handleScroll = () => {
+    let position
     if (typeof window !== `undefined`) {
       position = window.pageYOffset
     }
