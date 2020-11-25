@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "1.0.0",
+  "description": "",
+  "version": "2.0.0",
   "author": "",
   "dependencies": {
     "animate.css": "^3.7.2",
@@ -36,7 +36,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "open http://localhost:8080 && gatsby develop",
+    "develop": "gatsby develop",
     "start": "npm run develop -o",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
