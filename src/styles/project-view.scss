@@ -2,18 +2,29 @@
 
 .project-view {
 	width: 100%;
+	padding-top: 50px;
+	hr {
+		height: 2px;
+		background-color: #ebebeb;
+	}
 	.carousel-cont {
 		@include flex;
 		flex-direction: column;
 		width: 100%;
+		padding: 0 0 20px;
 		.alice-carousel {
 			width: 100%;
+			ul {
+				padding: 0;
+				margin-bottom: 20px;
+				background-color: cadetblue;
+			}
 			.image-cont {
 				user-select: none;
 				@include flex;
 				min-height: 200px;
 				max-width: 400px;
-				margin: 0 10px;
+				margin: 0 auto;
 				.image {
 					user-select: none;
 					cursor: pointer;
@@ -26,16 +37,52 @@
 			}
 		}
 		.controls {
+			@include flex;
 			margin-top: 20px;
+			width: 100%;
+			button {
+				@include flex;
+				margin-right: 5px;
+				@include button-fx;
+			}
 		}
 	}
-	.slide-btn {
-		cursor: pointer;
-		user-select: none;
-		width: 35px;
-		margin: 0 5px;
+	h2 {
+		margin-top: 40px;
 	}
-	.next {
-		transform: rotate(180deg);
+	.process {
+		text-indent: 20px;
+	}
+	ul {
+		padding: 0 30px;
+		li {
+			a {
+				text-decoration: underline;
+				color: steelblue;
+			}
+		}
+	}
+	.links {
+		@include flex;
+		margin: 0 auto;
+		padding: 20px 0 50px;
+		.link {
+			flex: 1;
+			@include flex;
+			flex-direction: column;
+			padding: 10px 0;
+			margin: 0 2px;
+			@include button-fx;
+			border-radius: 5px;
+			background-color: rgb(235, 235, 235);
+			p {
+				@include flex;
+				margin: 0;
+				&:first-child {
+					font-size: 1.5rem;
+					margin-bottom: 10px;
+				}
+			}
+		}
 	}
 }

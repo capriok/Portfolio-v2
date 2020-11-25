@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
-import arrow from '../assets/arrow1.png'
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
 const Carousel = ({ images }) => {
 
@@ -12,7 +12,7 @@ const Carousel = ({ images }) => {
 	const isMobile = window.innerWidth < 500
 
 	const handleOnDragStart = (e) => e.preventDefault()
-	const responsive = { 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 2 } };
+	const responsive = { 0: { items: 1 }, 1024: { items: 2 } };
 
 	return (
 		<>
@@ -43,12 +43,12 @@ const Carousel = ({ images }) => {
 				))}
 			/>
 			<div className="controls">
-				<img src={arrow} alt="arrPrev"
-					className="slide-btn next"
-					onClick={() => ref.slidePrev()} />
-				<img src={arrow} alt="arrNext"
-					className="slide-btn"
-					onClick={() => ref.slideNext()} />
+				<button onClick={() => ref.slidePrev()}>
+					<MdChevronLeft />
+				</button>
+				<button onClick={() => ref.slideNext()} >
+					<MdChevronRight />
+				</button>
 			</div>
 		</>
 	)

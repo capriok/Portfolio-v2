@@ -23,6 +23,7 @@ $width: 400px;
 			flex: 1;
 			min-width: 30%;
 			max-width: 33%;
+			min-height: 250px;
 			@include flex;
 			align-items: stretch;
 			.project-card {
@@ -115,17 +116,8 @@ $width: 400px;
 	}
 	.button-cont {
 		button {
-			font-size: 1.5rem;
-			user-select: none;
-			outline: none;
-			border: none;
-			cursor: pointer;
 			@include flex;
-			min-width: 75px;
-			padding: 10px;
 			margin-bottom: 5px;
-			border-radius: 5px;
-			transition: 0.2s;
 			@include button-fx;
 		}
 	}

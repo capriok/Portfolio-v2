@@ -4,10 +4,12 @@ import { Link } from "gatsby"
 import '../styles/header.scss'
 
 const Header = ({ dir, pos }) => {
+  const atHome = window.location.pathname === '/'
 
   const headerClass = () => {
     let CLASS = 'home-header'
     if (pos >= 300) CLASS += ' fill'
+    if (!atHome && pos > 0) CLASS += ' fill'
     switch (dir) {
       case 'down':
         return CLASS += ' hide'

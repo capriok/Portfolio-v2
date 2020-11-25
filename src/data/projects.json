@@ -25,9 +25,9 @@
 			"NPM",
 			"2020"
 		],
+		"thumb": "./images/DRAGGABLE-NPM.jpg",
 		"source": "https://github.com/capriok/react-draggable-array",
 		"demo": "https://codesandbox.io/s/react-draggable-array-2kdql",
-		"thumb": "./images/DRAGGABLE-NPM.jpg",
 		"images": [
 			"./images/DRAGGABLE-GIT.jpg",
 			"./images/DRAGGABLE-NPM.jpg",
@@ -65,9 +65,9 @@
 			"SASS",
 			"2020"
 		],
+		"thumb": "./images/CASHFLOW-GREETING.jpg",
 		"source": "https://github.com/capriok/CashFlow",
 		"demo": "https://cashflow.kylecaprio.dev",
-		"thumb": "./images/CASHFLOW-GREETING.jpg",
 		"images": [
 			"./images/CASHFLOW-GREETING.jpg",
 			"./images/CASHFLOW-DATASHEET.jpg",
@@ -105,9 +105,9 @@
 			"SASS",
 			"2020"
 		],
+		"thumb": "./images/KPCON-INTRO.jpg",
 		"source": "https://github.com/capriok/KPCon-Client",
 		"demo": "https://www.keithphillingane.com",
-		"thumb": "./images/KPCON-INTRO.jpg",
 		"images": [
 			"./images/KPCON-SHOWCASE.jpg",
 			"./images/KPCON-INTRO.jpg",
@@ -149,9 +149,9 @@
 			"SQL",
 			"2021"
 		],
+		"thumb": "./images/SQLIFTING-MANAGER.jpg",
 		"source": "https://github.com/capriok/SQLifting",
 		"demo": "https://sqlifting.kylecaprio.dev",
-		"thumb": "./images/SQLIFTING-MANAGER.jpg",
 		"images": [
 			"./images/SQLIFTING-SHOWCASE.jpg",
 			"./images/SQLIFTING-GREETING.jpg",
@@ -189,9 +189,9 @@
 			"SASS",
 			"2020"
 		],
+		"thumb": "./images/SNEKKEL-SPRITE.jpg",
 		"source": "https://github.com/capriok/Snekkel",
 		"demo": "https://snekkel.kylecaprio.dev",
-		"thumb": "./images/SNEKKEL-SPRITE.jpg",
 		"images": [
 			"./images/SNEKKEL-SHOWCASE.jpg",
 			"./images/SNEKKEL-GREETING.jpg",
@@ -230,9 +230,9 @@
 			"2020",
 			""
 		],
+		"thumb": "./images/GODSPEED-HOME.jpg",
 		"source": "https://github.com/capriok/Godspeed-Docs",
 		"demo": "https://godspeed.netlify.com",
-		"thumb": "./images/GODSPEED-HOME.jpg",
 		"images": [
 			"./images/GODSPEED-SHOWCASE.jpg",
 			"./images/GODSPEED-HOME.jpg",
@@ -273,9 +273,9 @@
 			"MongoDB",
 			"2020"
 		],
+		"thumb": "./images/DISARRAY-START.jpg",
 		"source": "https://github.com/capriok/DisArray",
 		"demo": "https://disarray.kylecaprio.dev",
-		"thumb": "./images/DISARRAY-START.jpg",
 		"images": [
 			"./images/DISARRAY-SHOWCASE.jpg",
 			"./images/DISARRAY-GREETING.jpg",
@@ -309,9 +309,9 @@
 			"SASS",
 			"2020"
 		],
+		"thumb": "./images/PORTFOLIO-HOME.jpg",
 		"source": "https://github.com/capriok/Portfolio",
 		"demo": "https://kylecaprio.dev",
-		"thumb": "./images/PORTFOLIO-HOME.jpg",
 		"images": [
 			"./images/PORTFOLIO-SHOWCASE.jpg",
 			"./images/PORTFOLIO-HOME.jpg",
@@ -352,9 +352,9 @@
 			"SASS",
 			"2019"
 		],
+		"thumb": "./images/NEETCHAT-HOME.jpg",
 		"source": "https://github.com/hunterfoulk/Neet-Chat",
 		"demo": "https://github.com/hunterfoulk/Neet-Chat",
-		"thumb": "./images/NEETCHAT-HOME.jpg",
 		"images": [
 			"./images/NEETCHAT-HOME.jpg",
 			"./images/NEETCHAT-CHAT.jpg"
@@ -392,9 +392,9 @@
 			"CSS",
 			"2019"
 		],
+		"thumb": "./images/MTM-PLAYER.jpg",
 		"source": "https://github.com/capriok/MyTube",
 		"demo": "https://mytube-music.kylecaprio.dev",
-		"thumb": "./images/MTM-PLAYER.jpg",
 		"images": [
 			"./images/MTM-SHOWCASE.jpg",
 			"./images/MTM-GOOGLE.jpg",
@@ -433,9 +433,9 @@
 			"SASS",
 			"2019"
 		],
+		"thumb": "./images/ARTE-BELLA-HOME.jpg",
 		"source": "https://github.com/capriok/Arte-Bella",
 		"demo": "https://artebellaengraving.com",
-		"thumb": "./images/ARTE-BELLA-HOME.jpg",
 		"images": [
 			"./images/ARTE-BELLA-SHOWCASE.jpg",
 			"./images/ARTE-BELLA-HOME.jpg",
@@ -471,9 +471,9 @@
 			"CSS",
 			"2018"
 		],
+		"thumb": "./images/TOOKFEED-HOME.jpg",
 		"source": "https://github.com/capriok/TookFeed",
 		"demo": "https://tookfeed.kylecaprio.dev",
-		"thumb": "./images/TOOKFEED-HOME.jpg",
 		"images": [
 			"./images/TOOKFEED-SHOWCASE.jpg",
 			"./images/TOOKFEED-HOME.jpg",
@@ -513,9 +513,9 @@
 			"Jquery",
 			"2014"
 		],
+		"thumb": "./images/TFK-HOME.jpg",
 		"source": "https://themesfromkyle.tumblr.com",
 		"demo": "https://themesfromkyle.tumblr.com",
-		"thumb": "./images/TFK-HOME.jpg",
 		"images": [
 			"./images/TFK-HOME.jpg",
 			"./images/TFK-PREV1.jpg",

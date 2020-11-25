@@ -8,6 +8,7 @@ import Stars from '../stars'
 
 const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
+  const atHome = window.location.pathname === '/'
 
   const [dir, setDir] = useState('top')
   const [pos, setPos] = useState(0)
@@ -40,7 +41,7 @@ const Layout = ({ children }) => {
     pos <= 300 && value(0.6)
     pos <= 200 && value(0.7)
     pos <= 100 && value(0.8)
-    window.location.pathname !== '/' && value(0.3)
+    !atHome && value(0.3)
   }, [pos])
 
 

@@ -8,8 +8,15 @@ export const query = graphql`
 		projectsJson(slug:{eq: $slug}) {
 			title
 			description
+			writing{
+				process
+				processSub
+				conclusion
+			}
+			stack
 			source
 			demo
+			resources
 			images{
 				extension
 				publicURL

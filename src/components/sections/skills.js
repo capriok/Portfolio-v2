@@ -11,6 +11,7 @@ import {
 	SiRedux,
 	SiNextDotJs,
 	SiNodeDotJs,
+	SiApollographql,
 	SiSocketDotIo,
 	SiMysql,
 	SiGraphql,
@@ -27,17 +28,22 @@ import {
 import {
 	DiSass,
 	DiDotnet,
-	DiMysql,
 	DiPostgresql
 } from 'react-icons/di';
 import {
 	RiGatsbyLine,
 	RiHtml5Line,
-	RiCss3Fill
+	RiCss3Fill,
 } from 'react-icons/ri';
 import {
 	GiKoala
 } from 'react-icons/gi';
+import {
+	VscDatabase
+} from 'react-icons/vsc';
+import {
+	GrMysql
+} from 'react-icons/gr';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -87,9 +93,10 @@ const Skills = () => {
 
 					{section.c && <section>
 						<ul>
-							<Anim><li><p><DiMysql /></p><p>SQL</p></li></Anim>
-							<Anim><li><p><SiNodeDotJs /></p><p>Express</p></li></Anim>
+							<Anim><li><p><SiNodeDotJs /></p><p>Express.js</p></li></Anim>
 							<Anim><li><p><GiKoala /></p><p>Koa.js</p></li></Anim>
+							<Anim><li><p><GrMysql /></p><p>SQL</p></li></Anim>
+							<Anim><li><p><SiApollographql /></p><p>Apollo</p></li></Anim>
 							<Anim><li><p><SiSocketDotIo /></p><p>Socket.io</p></li></Anim>
 						</ul>
 					</section>}
@@ -97,9 +104,10 @@ const Skills = () => {
 					{section.d && <section>
 						<ul>
 							<Anim><li><p><SiMysql /></p><p>MySQL</p></li></Anim>
-							<Anim><li><p><SiGraphql /></p><p>GraphQL</p></li></Anim>
 							<Anim><li><p><DiPostgresql /></p><p>PostgreSQL</p></li></Anim>
+							<Anim><li><p><SiGraphql /></p><p>GraphQL</p></li></Anim>
 							<Anim><li><p><SiMicrosoftsqlserver /></p><p>SQL Server</p></li></Anim>
+							<Anim><li><p><VscDatabase /></p><p>NoSQL</p></li></Anim>
 							<Anim><li><p><SiMongodb /></p><p>Mongo DB</p></li></Anim>
 							<Anim><li><p><SiMariadbfoundation /></p><p>Maria DB</p></li></Anim>
 						</ul>
