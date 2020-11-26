@@ -24,7 +24,6 @@ $image-width: 450px;
 				margin-bottom: 0;
 			}
 			.content-cont {
-				z-index: 2;
 				position: absolute;
 				top: 0;
 				right: 0;
@@ -55,6 +54,7 @@ $image-width: 450px;
 					margin: 0 0 20px 0;
 				}
 				.description-cont {
+					z-index: 2;
 					cursor: default;
 					@include flex;
 					justify-content: flex-end;
@@ -67,7 +67,6 @@ $image-width: 450px;
 					background-color: rgb(27, 27, 27);
 					transition: 0.2s;
 					&:hover {
-						transition: 0.2s;
 						box-shadow: 5px 5px 15px -3px rgb(66, 66, 66);
 					}
 				}
@@ -93,7 +92,6 @@ $image-width: 450px;
 				}
 			}
 			.thumb-cont {
-				z-index: -1;
 				user-select: none;
 				width: 100%;
 				max-width: $image-width;
@@ -108,7 +106,7 @@ $image-width: 450px;
 					flex: 1;
 					border-radius: 5px;
 					.overlay {
-						z-index: 2;
+						z-index: 1;
 						position: absolute;
 						width: 100%;
 						height: 100%;
@@ -116,8 +114,8 @@ $image-width: 450px;
 						background-color: steelblue;
 						transition: 0.2s;
 						@include media("<=800") {
-							background-color: rgb(192, 211, 224);
 							opacity: 0.8;
+							background-color: rgb(192, 211, 224);
 						}
 						&:hover {
 							opacity: 0;
@@ -127,15 +125,20 @@ $image-width: 450px;
 			}
 			&:hover {
 				.content-cont {
-					margin-left: -85px;
+					max-width: calc(60% + 10px);
 					.description-cont {
 						margin-right: 10px;
 					}
 				}
 				transition: 0.2s;
+				@include media("<=800") {
+					.content-cont {
+						max-width: calc(80% + 10px);
+					}
+				}
 				@include media("<=550") {
 					.content-cont {
-						margin-left: unset;
+						max-width: calc(100%);
 						.description-cont {
 							margin-right: unset;
 						}
@@ -145,11 +148,12 @@ $image-width: 450px;
 		}
 		.inverted {
 			.content-cont {
-				z-index: 2;
 				position: unset;
 				align-items: flex-start;
 				margin-left: unset;
 				text-align: left;
+				margin-right: 0;
+				transition: 0.2s;
 				.tags {
 					span {
 						margin-left: unset;
@@ -161,14 +165,12 @@ $image-width: 450px;
 				position: absolute;
 				top: 0;
 				right: 0;
-				transition: 0.2s;
 			}
 			&:hover {
-				transition: 0.2s;
 				.content-cont {
 					margin-left: unset;
 					.description-cont {
-						margin-right: -10px;
+						margin-right: unset;
 						margin-left: 10px;
 						@include media("<=550") {
 							margin-right: unset;
