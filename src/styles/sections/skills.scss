@@ -29,7 +29,6 @@
 				overflow-x: scroll;
 			}
 			@include media("<=550") {
-				order: 1;
 				flex-direction: column;
 				max-width: fit-content;
 				justify-content: space-evenly;
@@ -54,14 +53,14 @@
 					border-top-left-radius: 0px;
 					border-top-right-radius: 0px;
 					border-bottom: none;
-					border-left: 2px solid steelblue;
+					border-right: 2px solid steelblue;
 				}
 			}
 			.active-nav {
 				border-bottom: 2px solid rgb(32, 32, 32);
 				@include media("<=550") {
 					border-bottom: none;
-					border-left: 2px solid rgb(32, 32, 32);
+					border-right: 2px solid rgb(32, 32, 32);
 				}
 			}
 		}
