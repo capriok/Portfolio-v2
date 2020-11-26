@@ -30,14 +30,10 @@ export const query = graphql`
 	}
 `
 
-
-const ProjectTemplate = ({ data }) => {
-	const project = data.projectsJson
-	return (
-		<Layout>
-			<ProjectView project={project} />
-		</Layout>
-	)
-}
+const ProjectTemplate = ({ data }) => (
+	<Layout>
+		<ProjectView project={data.projectsJson} />
+	</Layout>
+)
 
 export default ProjectTemplate	

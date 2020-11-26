@@ -1,5 +1,4 @@
 import React from 'react'
-import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 
 import Layout from '../components/layouts/home-layout'
 import Contact from '../components/sections/contact'
