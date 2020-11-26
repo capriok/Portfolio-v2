@@ -40,6 +40,9 @@ $image-width: 450px;
 				@include media("<=550") {
 					max-width: 100%;
 				}
+				* {
+					z-index: 2;
+				}
 				h5 {
 					user-select: none;
 					width: fit-content;
@@ -54,7 +57,6 @@ $image-width: 450px;
 					margin: 0 0 20px 0;
 				}
 				.description-cont {
-					z-index: 2;
 					cursor: default;
 					@include flex;
 					justify-content: flex-end;
