@@ -7,7 +7,7 @@ $star-color: var(--star-color);
 @function stars($n) {
 	$value: "#{random(1000)}px #{random(1000)}px #{$star-color}";
 	@for $i from 2 through $n {
-		$value: "#{$value} , #{random(2000)}px #{random(2000)}px #{$star-color}";
+		$value: "#{$value} , #{random(4000)}px #{random(4000)}px #{$star-color}";
 	}
 	@return unquote($value);
 }
@@ -24,9 +24,9 @@ $star-color: var(--star-color);
 	}
 }
 
-$stars-small: stars(750);
-$stars-medium: stars(300);
-$stars-big: stars(250);
+$stars-small: stars(1500);
+$stars-medium: stars(600);
+$stars-big: stars(400);
 
 $small-speed: 50s;
 $medium-speed: 125s;

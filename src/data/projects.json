@@ -404,9 +404,10 @@
 			"process": "I had a vision to develop a music streaming application inspired by YouTube Music. This being the most complex endeavor of mine I knew the importance of keeping a clean code base. The Youtube Data API is the foundation of the application. Core functionality consisted of user authentication, which led to managing complex user objects. The amount of user data started becoming difficult to keep track of so I implemented global state management with the help of React hooks. Once established this opened my eyes to how powerful React actually is. My love for this framework skyrocketed during the development process of this app.",
 			"processSub": "",
 			"conclusion": [
-				"",
-				"",
-				""
+				"Became confident working with an API ( GET, POST, UPDATE, DELETE )",
+				"Learned about user authentication and how to effectively use the state of authentication in my application",
+				"Familiarized myself with complex state management via React hooks ( useContext, useReducer )",
+				"Management of complex core application and component structure"
 			]
 		},
 		"stack": [
