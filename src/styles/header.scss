@@ -25,6 +25,7 @@
 			}
 		}
 	}
+	transition: 0.2s;
 	@include media("<=800") {
 		.navs {
 			@include flex;

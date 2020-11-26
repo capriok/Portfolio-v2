@@ -1,4 +1,5 @@
 import React from 'react'
+import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 
 import Layout from '../components/layouts/home-layout'
 import Contact from '../components/sections/contact'
@@ -12,7 +13,7 @@ const About = () => (
     <div className="about-route">
       <h1 className="section-title">About me</h1>
       <div className="about-cont">
-        <h2 className="section-title">Background</h2>
+        <h2>Background</h2>
         <p className="info">
           My name is Kyle. I'm a self taught software developer turned college student based Arizona.
           I found my passion for learning computer sciences at the age of 16 and have been programming ever since.
@@ -24,16 +25,28 @@ const About = () => (
           In free my time, I immerse myself in learning new programming technologies and how to better myself as a programmer
           but also find joy with meditaion, music, hiking, and spending time under the sun.
         </p>
-        <h2 className="section-title">Education</h2>
+        <h2>Education</h2>
         <ul>
-          <li><span>Associate Degree in Web Programming - Deans List, 4.0 GPA</span></li>
-          <li><span>High School Diploma - Honor Roll, 3.7 GPA</span></li>
+          <li>
+            <p>Associate Degree in Web Programming</p>
+            <p>Deans List, 4.0 GPA</p>
+          </li>
+          <li>
+            <p>High School Diploma</p>
+            <p>Honor Roll, 3.7 GPA</p>
+          </li>
         </ul>
-        <h2 className="section-title">Experience</h2>
+        <h2 >Experience</h2>
         <ul>
-          <li><span>&lt; 1 year, distributing web graphics and design to clientele.</span></li>
-          <li><span>&gt; 1 year, designing, building and maintaining client web applications.</span></li>
-          <li><span>&gt; 2 years, contributing to open source user authentication application.</span></li>
+          <li>
+            <p>Under 1 year</p>
+            <p>Distributing web graphics and design to clientele.</p>
+            <p>Designing, building and maintaining client web applications.</p>
+          </li>
+          <li>
+            <p>Over 2 years</p>
+            <p>Contributing to open source user authentication application.</p>
+          </li>
         </ul>
       </div>
       <Contact />

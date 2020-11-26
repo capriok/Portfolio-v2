@@ -8,7 +8,7 @@ import '../../styles/sections/contact.scss'
 const Contact = () => (
 	<div className="contact-section">
 		<div className="content-cont">
-			<h1>Feel free to reach out.</h1>
+			<h1 className="section-title">Feel free to reach out.</h1>
 			<p>Direct Email</p>
 			<a href="mailto:capriodev@gmail.com" target="_blank" rel="noreferrer">
 				<button><HiOutlineMail /></button>

@@ -27,17 +27,25 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			padding: 20px;
+
 			width: 100%;
 			margin-bottom: 20px;
 			border-radius: 5px;
 			border-left: 5px solid rgb(32, 32, 32);
 			border-bottom: 5px solid rgb(32, 32, 32);
 			transition: 0.2s;
+			@include media("<=550") {
+				padding: 15px;
+			}
 			.header {
 				@include flex;
 				justify-content: space-between;
 				width: 100%;
 				padding-bottom: 20px;
+				transition: 0.2s;
+				@include media("<=550") {
+					padding-bottom: 15px;
+				}
 				svg {
 					font-size: 1.5rem;
 				}
@@ -55,6 +63,10 @@
 				flex: 1;
 				padding-bottom: 20px;
 				margin: 0;
+				transition: 0.2s;
+				@include media("<=550") {
+					padding-bottom: 15px;
+				}
 				p {
 					margin: 0;
 				}

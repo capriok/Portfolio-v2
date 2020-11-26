@@ -5,38 +5,41 @@ $image-width: 450px;
 
 .featured-map-section {
 	.feature-anim {
+		position: relative;
 		z-index: 1;
 		flex: 1;
 		width: 100%;
 		margin-bottom: 125px;
+		transition: 0.2s;
 		&:last-child {
 			margin-bottom: 50px;
 		}
-		transition: 0.3s;
 		@include media("<=550") {
-			margin-bottom: 75px;
+			margin-bottom: 100px;
 		}
 		.feature-card {
 			position: relative;
-			@include flex;
-			justify-content: space-between;
 			min-width: 100%;
 			&:last-child {
 				margin-bottom: 0;
 			}
 			.content-cont {
+				z-index: 2;
+				position: absolute;
+				top: 0;
+				right: 0;
 				@include flex;
-				flex: 1;
 				flex-direction: column;
 				align-items: flex-end;
-				z-index: 2;
 				text-align: right;
 				width: 100%;
-				margin-left: -75px;
+				max-width: 60%;
 				transition: 0.2s;
+				@include media("<=800") {
+					max-width: 80%;
+				}
 				@include media("<=550") {
-					position: absolute;
-					margin-left: unset;
+					max-width: 100%;
 				}
 				h5 {
 					user-select: none;
@@ -90,18 +93,14 @@ $image-width: 450px;
 				}
 			}
 			.thumb-cont {
-				z-index: 1;
-				flex: 1;
+				z-index: -1;
 				user-select: none;
-				justify-content: flex-end;
 				width: 100%;
 				max-width: $image-width;
 				transition: 0.2s;
 				@include media("<=550") {
-					.img-cont {
-						min-width: 100%;
-						opacity: 0;
-					}
+					max-width: 100%;
+					opacity: 0;
 				}
 				.img-cont {
 					position: relative;
@@ -115,24 +114,25 @@ $image-width: 450px;
 						height: 100%;
 						opacity: $overlay-opacity;
 						background-color: steelblue;
-						transition: 0.3s;
 						transition: 0.2s;
+						@include media("<=800") {
+							background-color: rgb(192, 211, 224);
+							opacity: 0.8;
+						}
 						&:hover {
-							transition: 0.2s;
 							opacity: 0;
 						}
 					}
 				}
 			}
 			&:hover {
-				transition: 0.2s;
 				.content-cont {
 					margin-left: -85px;
 					.description-cont {
 						margin-right: 10px;
 					}
 				}
-				transition: 0.3s;
+				transition: 0.2s;
 				@include media("<=550") {
 					.content-cont {
 						margin-left: unset;
@@ -145,12 +145,11 @@ $image-width: 450px;
 		}
 		.inverted {
 			.content-cont {
+				z-index: 2;
+				position: unset;
 				align-items: flex-start;
 				margin-left: unset;
 				text-align: left;
-				.description-cont {
-					justify-content: flex-start;
-				}
 				.tags {
 					span {
 						margin-left: unset;
@@ -159,8 +158,9 @@ $image-width: 450px;
 				}
 			}
 			.thumb-cont {
-				order: 1;
-				margin-left: -75px;
+				position: absolute;
+				top: 0;
+				right: 0;
 				transition: 0.2s;
 			}
 			&:hover {
@@ -170,7 +170,6 @@ $image-width: 450px;
 					.description-cont {
 						margin-right: -10px;
 						margin-left: 10px;
-						transition: 0.3s;
 						@include media("<=550") {
 							margin-right: unset;
 							margin-left: unset;

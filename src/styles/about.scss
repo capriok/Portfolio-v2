@@ -3,6 +3,7 @@
 .about-route {
 	width: 100%;
 	min-height: calc(100vh - 325px);
+	transition: 0.2s;
 	.about-cont {
 		flex: 1;
 		max-width: 700px;
@@ -19,8 +20,28 @@
 		}
 		ul {
 			li {
-				.type {
-					font-weight: 700;
+				padding-bottom: 15px;
+				p {
+					margin: 0;
+					&:not(:first-child) {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+	@include media("<=550") {
+		padding: 0px 15px;
+		.section-title {
+			text-align: center;
+		}
+		.about-cont {
+			ul {
+				padding: 0 20px;
+				li {
+					p {
+						margin: 0;
+					}
 				}
 			}
 		}

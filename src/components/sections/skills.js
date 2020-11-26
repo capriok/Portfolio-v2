@@ -65,11 +65,11 @@ const Skills = () => {
 				<h1 className="section-title">Specialties</h1>
 				<div className="skills-cont">
 					<ul className="navigation">
-						<li className={section.a ? 'active-nav' : ''} onClick={() => setSection({ a: true })}>Programming Languages</li>
-						<li className={section.b ? 'active-nav' : ''} onClick={() => setSection({ b: true })}>Front-end Technologies</li>
-						<li className={section.c ? 'active-nav' : ''} onClick={() => setSection({ c: true })}>Back-end Technologies</li>
-						<li className={section.d ? 'active-nav' : ''} onClick={() => setSection({ d: true })}>Database Infrastructure</li>
-						<li className={section.e ? 'active-nav' : ''} onClick={() => setSection({ e: true })}>Storage and Deployment</li>
+						<li className={section.a ? 'active-nav' : ''} onClick={() => setSection({ a: true })}><span>Programming </span><span>Languages</span></li>
+						<li className={section.b ? 'active-nav' : ''} onClick={() => setSection({ b: true })}><span>Front-end </span><span>Technologies</span></li>
+						<li className={section.c ? 'active-nav' : ''} onClick={() => setSection({ c: true })}><span>Back-end </span><span>Technologies</span></li>
+						<li className={section.d ? 'active-nav' : ''} onClick={() => setSection({ d: true })}><span>Database </span><span>Infrastructure</span></li>
+						<li className={section.e ? 'active-nav' : ''} onClick={() => setSection({ e: true })}><span>Storage and</span><span>Deployment</span></li>
 					</ul>
 					{section.a && <section>
 						<ul>

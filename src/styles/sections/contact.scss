@@ -9,6 +9,9 @@
 		flex-direction: column;
 		padding: 15px;
 		border-radius: 5px;
+		.section-title {
+			margin-left: unset;
+		}
 		h1 {
 			margin-bottom: 20px;
 		}
@@ -24,19 +27,25 @@
 			&:first-child {
 				margin-top: 10px;
 			}
+			transition: 0.2s;
+			@include media("<=550") {
+				font-size: 1rem;
+			}
 		}
 		button {
 			@include flex;
 			border-radius: 5px;
 			@include button-fx;
+			transition: 0.2s;
+			@include media("<=550") {
+				font-size: 1.4rem;
+			}
 		}
 		.button-cont {
 			@include flex;
 			a {
 				&:not(:last-child) {
 					margin-right: 5px;
-				}
-				button {
 				}
 			}
 		}
