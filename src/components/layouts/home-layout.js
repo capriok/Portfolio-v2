@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
   }, [pos, scrollingDir])
 
   useEffect(() => {
-    console.log(window);
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
