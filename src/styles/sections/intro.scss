@@ -25,5 +25,9 @@
 			margin-top: 20px;
 			max-width: 80%;
 		}
+		transition: 0.3s;
+		@include media("<=800") {
+			width: 80%;
+		}
 	}
 }

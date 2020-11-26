@@ -54,6 +54,7 @@ body {
 	margin: 0;
 }
 html {
+	width: 100%;
 	scroll-behavior: smooth;
 }
 a {
@@ -87,6 +88,14 @@ button {
 	}
 }
 
+@import "./breakpoints.scss";
+
+$breakpoints: (
+	"550": 550px,
+	"800": 800px,
+	"1080": 1080px,
+) !default;
+
 .mono {
 	font-family: "Roboto Mono", monospace;
 	font-weight: 500;
@@ -99,6 +108,10 @@ button {
 	margin-left: -40px;
 	margin-bottom: 40px;
 	align-self: flex-start;
+	transition: 0.2s;
+	@include media("<=1080") {
+		margin-left: 0px;
+	}
 }
 
 .introduction-section,
@@ -109,6 +122,10 @@ button {
 .project-view,
 .about-route {
 	margin-bottom: 125px;
+	transition: 0.3s;
+	@include media("<=800") {
+		margin-bottom: 75px;
+	}
 }
 .work-route {
 	margin-top: 50px;
@@ -116,16 +133,4 @@ button {
 .about-route {
 	flex: 1;
 	margin-top: 50px;
-}
-
-@media (max-width: 700px) {
-	h1 {
-		font-size: 1.4rem;
-	}
-	p {
-		font-size: 0.85rem;
-	}
-	span {
-		font-size: 1.2rem;
-	}
 }

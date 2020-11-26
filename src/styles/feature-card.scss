@@ -12,23 +12,32 @@ $image-width: 450px;
 		&:last-child {
 			margin-bottom: 50px;
 		}
+		transition: 0.3s;
+		@include media("<=550") {
+			margin-bottom: 75px;
+		}
 		.feature-card {
+			position: relative;
 			@include flex;
 			justify-content: space-between;
-			align-items: flex-start;
+			min-width: 100%;
 			&:last-child {
 				margin-bottom: 0;
 			}
 			.content-cont {
 				@include flex;
+				flex: 1;
 				flex-direction: column;
 				align-items: flex-end;
 				z-index: 2;
-				flex: 1;
 				text-align: right;
 				width: 100%;
 				margin-left: -75px;
 				transition: 0.2s;
+				@include media("<=550") {
+					position: absolute;
+					margin-left: unset;
+				}
 				h5 {
 					user-select: none;
 					width: fit-content;
@@ -81,13 +90,19 @@ $image-width: 450px;
 				}
 			}
 			.thumb-cont {
-				user-select: none;
 				z-index: 1;
-				@include flex;
+				flex: 1;
+				user-select: none;
 				justify-content: flex-end;
 				width: 100%;
 				max-width: $image-width;
 				transition: 0.2s;
+				@include media("<=550") {
+					.img-cont {
+						min-width: 100%;
+						opacity: 0;
+					}
+				}
 				.img-cont {
 					position: relative;
 					overflow: hidden;
@@ -100,6 +115,7 @@ $image-width: 450px;
 						height: 100%;
 						opacity: $overlay-opacity;
 						background-color: steelblue;
+						transition: 0.3s;
 						transition: 0.2s;
 						&:hover {
 							transition: 0.2s;
@@ -114,6 +130,15 @@ $image-width: 450px;
 					margin-left: -85px;
 					.description-cont {
 						margin-right: 10px;
+					}
+				}
+				transition: 0.3s;
+				@include media("<=550") {
+					.content-cont {
+						margin-left: unset;
+						.description-cont {
+							margin-right: unset;
+						}
 					}
 				}
 			}
@@ -145,7 +170,18 @@ $image-width: 450px;
 					.description-cont {
 						margin-right: -10px;
 						margin-left: 10px;
+						transition: 0.3s;
+						@include media("<=550") {
+							margin-right: unset;
+							margin-left: unset;
+						}
 					}
+				}
+			}
+			@include media("<=550") {
+				transition: 0.2s;
+				.thumb-cont {
+					margin-left: unset;
 				}
 			}
 		}

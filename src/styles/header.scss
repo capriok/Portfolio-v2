@@ -9,11 +9,11 @@
 	width: 100%;
 	min-height: 100px;
 	background-color: transparent;
-	transition: 0.3s;
+	transition: 0.2s;
 	.head-cont {
 		@include flex;
 		justify-content: space-between;
-		min-width: $max-width;
+		width: 100%;
 		max-width: $max-width;
 		.title {
 			margin: 0;
@@ -23,6 +23,21 @@
 			a {
 				margin-left: 25px;
 			}
+		}
+	}
+	@include media("<=800") {
+		.navs {
+			@include flex;
+			justify-content: space-evenly;
+			width: 80%;
+			a {
+				margin-left: unset;
+			}
+		}
+	}
+	@include media("<=1080") {
+		.head-cont {
+			padding: 0 10px;
 		}
 	}
 }

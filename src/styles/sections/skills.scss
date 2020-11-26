@@ -11,6 +11,7 @@
 		min-height: 30px;
 		max-width: 800px;
 		.navigation {
+			overflow-x: scroll;
 			user-select: none;
 			flex: 1;
 			@include flex;
@@ -19,11 +20,14 @@
 			width: 100%;
 			padding: 0;
 			margin: 0;
+			transition: 0.3s;
+
 			li {
 				cursor: pointer;
 				flex: 1;
 				@include flex;
 				padding: 10px 15px;
+				min-width: 20%;
 				max-height: 75px;
 				text-align: center;
 				list-style: none;
@@ -31,6 +35,11 @@
 				@include button-fx;
 				border-top-left-radius: 10px;
 				border-top-right-radius: 10px;
+				@include media("<=800") {
+					overflow-x: scroll;
+					min-width: 100px;
+					font-size: 0.8rem;
+				}
 			}
 			.active-nav {
 				border-bottom: 2px solid rgb(32, 32, 32);
@@ -39,18 +48,31 @@
 		section {
 			user-select: none;
 			width: 100%;
+			transition: 0.3s;
+			@include media("<=800") {
+				overflow-x: scroll;
+			}
 			ul {
 				@include flex;
 				justify-content: space-evenly;
 				width: 100%;
 				margin: 0;
 				padding: 0;
+				@include media("<=800") {
+					justify-content: flex-start;
+				}
 				li {
+					list-style: none;
 					flex: 1;
 					@include flex;
 					flex-direction: column;
-					list-style: none;
-					margin: 20px 0;
+					padding: 20px;
+					margin: 0;
+					@include media("<=800") {
+						overflow-x: scroll;
+						min-width: 20vw;
+						font-size: 0.8rem;
+					}
 					p {
 						margin: 0;
 						&:first-child {

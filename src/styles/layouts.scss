@@ -2,7 +2,18 @@
 
 .home-layout {
 	margin: 0 auto;
+	width: 100vw;
 	max-width: $max-width;
+	transition: 0.2s;
+	@include media("<=1080") {
+		transition: 0.2s;
+		padding: 0 15px 0 10px;
+	}
+	transition: 0.3s;
+	@include media("<=800") {
+		width: 100%;
+		padding: 0 10px;
+	}
 }
 
 .resume-layout {

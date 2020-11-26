@@ -8,6 +8,18 @@
 		min-height: 250px;
 		@include flex;
 		align-items: stretch;
+		transition: 0.2s;
+		@include media("<=800") {
+			min-width: 45%;
+			max-width: 50%;
+			margin-right: 15px;
+		}
+		@include media("<=550") {
+			min-width: 100%;
+			max-width: 100%;
+			margin-right: unset;
+			min-height: 150px;
+		}
 		.project-card {
 			user-select: none;
 			@include flex;
@@ -15,6 +27,7 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			padding: 20px;
+			width: 100%;
 			margin-bottom: 20px;
 			border-radius: 5px;
 			border-left: 5px solid rgb(32, 32, 32);
