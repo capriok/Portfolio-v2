@@ -9,13 +9,14 @@ $image-width: 450px;
 		z-index: 1;
 		flex: 1;
 		width: 100%;
-		margin-bottom: 125px;
 		transition: 0.2s;
-		&:last-child {
-			margin-bottom: 50px;
+		&:not(:last-child) {
+			margin-bottom: 125px;
 		}
 		@include media("<=550") {
-			margin-bottom: 100px;
+			&:not(:last-child) {
+				margin-bottom: 75px;
+			}
 		}
 		.feature-card {
 			position: relative;
@@ -182,7 +183,6 @@ $image-width: 450px;
 				}
 			}
 			@include media("<=550") {
-				transition: 0.2s;
 				.thumb-cont {
 					margin-left: unset;
 				}
