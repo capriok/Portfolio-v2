@@ -5,9 +5,9 @@
 $star-color: var(--star-color);
 
 @function stars($n) {
-	$value: "#{random(1000)}px #{random(1000)}px #{$star-color}";
+	$value: "#{random(4000)}px #{random(4000)}px #{$star-color}";
 	@for $i from 2 through $n {
-		$value: "#{$value} , #{random(4000)}px #{random(4000)}px #{$star-color}";
+		$value: "#{$value} , #{random(3000)}px #{random(4000)}px #{$star-color}";
 	}
 	@return unquote($value);
 }
