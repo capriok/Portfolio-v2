@@ -130,4 +130,7 @@ button {
 .about-route {
 	flex: 1;
 	margin-top: 50px;
+	@include media("<=550") {
+		margin-top: 25px;
+	}
 }

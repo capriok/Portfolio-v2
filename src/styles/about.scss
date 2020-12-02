@@ -20,7 +20,9 @@
 		}
 		ul {
 			li {
-				padding-bottom: 15px;
+				&:not(:last-child) {
+					padding-bottom: 15px;
+				}
 				p {
 					margin: 0;
 					&:not(:first-child) {
@@ -32,6 +34,9 @@
 	}
 	@include media("<=550") {
 		padding: 0px 15px;
+		.about-cont {
+			margin-bottom: 75px;
+		}
 		.section-title {
 			text-align: center;
 		}

@@ -26,6 +26,10 @@
 		}
 	}
 	transition: 0.2s;
+	@include media("<=550") {
+		max-height: 75px;
+		min-height: 75px;
+	}
 	@include media("<=800") {
 		.navs {
 			@include flex;

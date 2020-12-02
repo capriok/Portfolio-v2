@@ -10,8 +10,10 @@ import Stars from '../stars'
 const Layout = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
+  let isMobile
   if (typeof window !== `undefined`) {
     atHome = window.location.pathname === '/'
+    isMobile = window.innerWidth < 550
   }
 
   const [dir, setDir] = useState('top')
@@ -55,7 +57,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Stars />
-      <Header dir={dir} pos={pos} atHome={atHome} />
+      <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
       <div className="home-layout">
         <main>{children}</main>
         <footer className="home-footer">

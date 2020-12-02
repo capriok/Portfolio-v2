@@ -15,7 +15,7 @@ $image-width: 450px;
 		}
 		@include media("<=550") {
 			&:not(:last-child) {
-				margin-bottom: 75px;
+				margin-bottom: 50px;
 			}
 		}
 		.feature-card {
@@ -39,6 +39,7 @@ $image-width: 450px;
 					max-width: 80%;
 				}
 				@include media("<=550") {
+					position: unset;
 					max-width: 100%;
 				}
 				* {
@@ -100,8 +101,7 @@ $image-width: 450px;
 				max-width: $image-width;
 				transition: 0.2s;
 				@include media("<=550") {
-					max-width: 100%;
-					opacity: 0;
+					display: none;
 				}
 				.img-cont {
 					position: relative;

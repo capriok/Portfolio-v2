@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 import '../styles/header.scss'
 
-const Header = ({ dir, pos, atHome }) => {
+const Header = ({ dir, pos, atHome, isMobile }) => {
 
   const headerClass = () => {
     let CLASS = 'home-header'
-    if (pos >= 300) CLASS += ' fill'
+    if (isMobile || pos >= 300) CLASS += ' fill'
     if (!atHome && pos > 0) CLASS += ' fill'
     switch (dir) {
       case 'down':

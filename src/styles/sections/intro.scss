@@ -28,6 +28,12 @@
 		transition: 0.3s;
 		@include media("<=800") {
 			width: 80%;
+			.title {
+				font-size: 4.5rem;
+			}
+			.snippet {
+				max-width: 100%;
+			}
 		}
 	}
 }

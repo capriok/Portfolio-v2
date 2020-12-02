@@ -36,7 +36,8 @@
 			"./images/BMASTER-RESULT.jpg"
 		],
 		"resources": [
-			"https://socket.io"
+			"https://socket.io",
+			"https://devcenter.heroku.com"
 		]
 	},
 	{
@@ -268,7 +269,7 @@
 			""
 		],
 		"source": "https://github.com/capriok/Godspeed-Docs",
-		"demo": "https://godspeed.netlify.com",
+		"demo": "https://godspeed.kylecaprio.dev",
 		"thumb": "./images/GODSPEED-HOME.jpg",
 		"images": [
 			"./images/GODSPEED-SHOWCASE.jpg",
