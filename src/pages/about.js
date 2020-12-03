@@ -39,7 +39,7 @@ const About = () => (
         <ul>
           <li>
             <p>Under 1 year</p>
-            <p>Distributing web graphics and design to clientele.</p>
+            <p>Distributing web graphics and designs to various clients.</p>
             <p>Designing, building and maintaining client web applications.</p>
           </li>
           <li>
