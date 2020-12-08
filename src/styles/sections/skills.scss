@@ -16,8 +16,9 @@
 		}
 		.navigation {
 			flex: 1;
-			overflow-x: scroll;
 			user-select: none;
+			overflow-x: scroll;
+			scrollbar-width: none;
 			@include flex;
 			align-items: stretch;
 			justify-content: center;
@@ -25,6 +26,7 @@
 			padding: 10px 0;
 			margin: 0;
 			transition: 0.2s;
+			scrollbar-color: #0a4c95 #c2d2e4;
 			@include media("<=800") {
 				overflow-x: scroll;
 			}

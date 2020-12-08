@@ -2,6 +2,10 @@ import React from 'react'
 import Layout from '../components/layouts/resume-layout'
 import '../styles/resume.scss'
 
+import Contact from '../components/sections/contact'
+
+const FILE = 'https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf'
+
 const Resume = () => {
 	let isMobile
 	if (typeof window !== `undefined`) {
@@ -9,10 +13,18 @@ const Resume = () => {
 	}
 	return (
 		<Layout>
-			{isMobile
+			<br />
+			<br />
+			<br />
+			<center>Workin on it.</center>
+			<br />
+			<br />
+			<br />
+			<Contact />
+			{/* {isMobile
 				? <div className="resume">
 					<object
-						data="https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf"
+						data={FILE}
 						type="application/pdf"
 						width="100%"
 						height="100%"
@@ -20,12 +32,12 @@ const Resume = () => {
 				</div>
 				: <div className="resume-mobile">
 					<button className="resume-btn" text="View Resume" onClick={() => {
-						window.open('https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf')
+						window.open(FILE)
 					}}>
 						View Resume
 					</button>
 				</div>
-			}
+			} */}
 		</Layout>
 	)
 }
