@@ -55,7 +55,7 @@ const Skills = () => {
 
 	const Tab = ({ children, tab }) => (
 		<li
-			className={section[tab] ? 'active-Tab' : ''}
+			className={section[tab] ? 'active-tab' : ''}
 			onClick={() => setSection({ [tab]: true })}>
 			{children}
 		</li>
@@ -92,7 +92,7 @@ const Skills = () => {
 			<div className="skills-section">
 				<h1 className="section-title">Specialties</h1>
 				<div className="skills-cont">
-					<ul className="navigation">
+					<ul className="tabs">
 						<Tab tab="a"><span>Programming </span><span>Languages</span></Tab>
 						<Tab tab="b"><span>Front-end </span><span>Technologies</span></Tab>
 						<Tab tab="c"><span>Back-end </span><span>Technologies</span></Tab>

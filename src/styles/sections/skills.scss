@@ -14,7 +14,7 @@
 		@include media("<=550") {
 			flex-direction: row;
 		}
-		.navigation {
+		.tabs {
 			flex: 1;
 			user-select: none;
 			overflow-x: scroll;
@@ -58,7 +58,7 @@
 					border-right: 2px solid steelblue;
 				}
 			}
-			.active-nav {
+			.active-tab {
 				border-bottom: 2px solid rgb(32, 32, 32);
 				background-color: rgb(235, 235, 235);
 				@include media("<=550") {
