@@ -51,12 +51,14 @@ import {
 } from 'react-icons/gr';
 
 const Skills = () => {
-	const [section, setSection] = useState({ b: true })
+	const [tab, setTab] = useState({ b: true })
 
-	const Tab = ({ children, tab }) => (
+	const Tab = ({ children, t }) => (
 		<li
-			className={section[tab] ? 'active-tab' : ''}
-			onClick={() => setSection({ [tab]: true })}>
+			className={tab[t] ? 'active-tab' : ''}
+			onClick={() => {
+				!Object.keys(tab).includes(t) && setTab({ [t]: true })
+			}}>
 			{children}
 		</li>
 	)
@@ -75,9 +77,9 @@ const Skills = () => {
 		</ScrollAnimation>
 	)
 
-	const Icons = ({ children, tab }) => (
+	const Icons = ({ children, t }) => (
 		<>
-			{section[tab] &&
+			{tab[t] &&
 				<section>
 					<ul>
 						{children}
@@ -93,19 +95,19 @@ const Skills = () => {
 				<h1 className="section-title">Specialties</h1>
 				<div className="skills-cont">
 					<ul className="tabs">
-						<Tab tab="a"><span>Programming </span><span>Languages</span></Tab>
-						<Tab tab="b"><span>Front-end </span><span>Technologies</span></Tab>
-						<Tab tab="c"><span>Back-end </span><span>Technologies</span></Tab>
-						<Tab tab="d"><span>Database </span><span>Technologies</span></Tab>
-						<Tab tab="e"><span>Storage and</span><span>Deployment</span></Tab>
+						<Tab t="a"><span>Programming </span><span>Languages</span></Tab>
+						<Tab t="b"><span>Front-end </span><span>Technologies</span></Tab>
+						<Tab t="c"><span>Back-end </span><span>Technologies</span></Tab>
+						<Tab t="d"><span>Database </span><span>Technologies</span></Tab>
+						<Tab t="e"><span>Storage and</span><span>Deployment</span></Tab>
 					</ul>
-					<Icons tab="a">
+					<Icons t="a">
 						<Anim Icon={SiJavascript} name="JavaScript" />
 						<Anim Icon={SiTypescript} name="TypeScript" />
 						<Anim Icon={SiCsharp} name="CSharp" />
 						<Anim Icon={SiJava} name="Java" />
 					</Icons>
-					<Icons tab="b">
+					<Icons t="b">
 						<Anim Icon={DiDotnet} name="ASP.NET" />
 						<Anim Icon={SiReact} name="React" />
 						<Anim Icon={SiRedux} name="Redux" />
@@ -115,7 +117,7 @@ const Skills = () => {
 						<Anim Icon={RiCss3Fill} name="CSS" />
 						<Anim Icon={DiSass} name="SASS" />
 					</Icons>
-					<Icons tab="c">
+					<Icons t="c">
 						<Anim Icon={SiNodeDotJs} name="Express.js" />
 						<Anim Icon={GiKoala} name="Koa.js" />
 						<Anim Icon={GrMysql} name="SQL" />
@@ -123,7 +125,7 @@ const Skills = () => {
 						<Anim Icon={SiApollographql} name="Apollo" />
 						<Anim Icon={SiSocketDotIo} name="Socket.io" />
 					</Icons>
-					<Icons tab="d">
+					<Icons t="d">
 						<Anim Icon={SiMysql} name="MySQL" />
 						<Anim Icon={DiPostgresql} name="PostgreSQL" />
 						<Anim Icon={SiMicrosoftsqlserver} name="SQL Server" />
@@ -131,7 +133,7 @@ const Skills = () => {
 						<Anim Icon={SiMongodb} name="Mongo DB" />
 						<Anim Icon={SiMariadbfoundation} name="Maria DB" />
 					</Icons>
-					<Icons tab="e">
+					<Icons t="e">
 						<Anim Icon={SiAmazonaws} name="AWS" />
 						<Anim Icon={SiMicrosoftazure} name="Azure" />
 						<Anim Icon={SiGithub} name="Github" />
