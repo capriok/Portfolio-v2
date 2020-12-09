@@ -84,7 +84,7 @@
 	{
 		"title": "Cash Flow",
 		"slug": "cashflow",
-		"description": "Mobile budgeting application featuring induvidual user accounts with multiple budget sheets, interface customization and more",
+		"description": "Mobile budgeting application featuring individual user accounts with multiple budget sheets, interface customization and more",
 		"writing": {
 			"process": "Building many web applications with JavaScript has brought me to love the language. I have also come to understand the quirks and shortcomings of the language. With this application, I wanted to build something I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to learn everything about it.",
 			"processSub": "As programmers, we strive to write better structured and organized code with less bugs. React and TypeScript are a match made in heaven for that purpose, in my opinion. In very little time, I realized how TypeScript expedites the building process and maintains a better structured code base. I also learned a lot about how React works under the hood when learning about type assertions and generics. This is something I feel is very important to know while developing in the React framework Building. This app has fueled my passion to keep learning and progressing my programmatic skills.",
@@ -362,7 +362,7 @@
 	{
 		"title": "NeetChat",
 		"slug": "neetchat",
-		"description": "Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, typing alerts and private messages.",
+		"description": "Harnessing the power of socket.io to create a chatroom application. Fully functional with individual rooms, typing alerts and private messages.",
 		"writing": {
 			"process": "This was one of the first complex collaborative projects I have done, two main contributors being Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat room application. Socket.io and Express in Node were the foundation of this application. Learning about web sockets was extremely intriguing to me and taught me a lot about how countless other web applications work.",
 			"processSub": "The most difficult feature was the implementation of private messaging. After long sessions of brainstorming, discussing and planning we realized quite a few key foundations of code needed to be rewritten. We pushed through, and were very thankful we did, because the end result of this project and the chemistry built with eachother was something to be very proud of.",

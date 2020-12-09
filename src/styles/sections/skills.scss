@@ -60,6 +60,7 @@
 			}
 			.active-nav {
 				border-bottom: 2px solid rgb(32, 32, 32);
+				background-color: rgb(235, 235, 235);
 				@include media("<=550") {
 					border-bottom: none;
 					border-right: 2px solid rgb(32, 32, 32);
