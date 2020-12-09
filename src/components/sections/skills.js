@@ -68,7 +68,7 @@ const Skills = () => {
 						<li className={section.a ? 'active-nav' : ''} onClick={() => setSection({ a: true })}><span>Programming </span><span>Languages</span></li>
 						<li className={section.b ? 'active-nav' : ''} onClick={() => setSection({ b: true })}><span>Front-end </span><span>Technologies</span></li>
 						<li className={section.c ? 'active-nav' : ''} onClick={() => setSection({ c: true })}><span>Back-end </span><span>Technologies</span></li>
-						<li className={section.d ? 'active-nav' : ''} onClick={() => setSection({ d: true })}><span>Database </span><span>Infrastructure</span></li>
+						<li className={section.d ? 'active-nav' : ''} onClick={() => setSection({ d: true })}><span>Database </span><span>Technologies</span></li>
 						<li className={section.e ? 'active-nav' : ''} onClick={() => setSection({ e: true })}><span>Storage and</span><span>Deployment</span></li>
 					</ul>
 					{section.a && <section>
@@ -98,6 +98,7 @@ const Skills = () => {
 							<Anim><li><p><SiNodeDotJs /></p><p>Express.js</p></li></Anim>
 							<Anim><li><p><GiKoala /></p><p>Koa.js</p></li></Anim>
 							<Anim><li><p><GrMysql /></p><p>SQL</p></li></Anim>
+							<Anim><li><p><SiGraphql /></p><p>GraphQL</p></li></Anim>
 							<Anim><li><p><SiApollographql /></p><p>Apollo</p></li></Anim>
 							<Anim><li><p><SiSocketDotIo /></p><p>Socket.io</p></li></Anim>
 						</ul>
@@ -107,7 +108,6 @@ const Skills = () => {
 						<ul>
 							<Anim><li><p><SiMysql /></p><p>MySQL</p></li></Anim>
 							<Anim><li><p><DiPostgresql /></p><p>PostgreSQL</p></li></Anim>
-							<Anim><li><p><SiGraphql /></p><p>GraphQL</p></li></Anim>
 							<Anim><li><p><SiMicrosoftsqlserver /></p><p>SQL Server</p></li></Anim>
 							<Anim><li><p><VscDatabase /></p><p>NoSQL</p></li></Anim>
 							<Anim><li><p><SiMongodb /></p><p>Mongo DB</p></li></Anim>
