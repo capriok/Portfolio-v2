@@ -32,8 +32,8 @@ const Layout = ({ children }) => {
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
-    };
-  }, []);
+    }
+  }, [])
 
   const handleScroll = () => {
     let position
@@ -52,7 +52,6 @@ const Layout = ({ children }) => {
     pos <= 100 && value(0.8)
     !atHome && value(0.3)
   }, [pos])
-
 
   return (
     <>

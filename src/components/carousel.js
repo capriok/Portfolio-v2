@@ -1,5 +1,7 @@
 /*eslint  jsx-a11y/no-noninteractive-element-interactions: "off"*/
-import React, { useRef } from 'react'
+/*eslint  jsx-a11y/no-static-element-interactions: "off"*/
+/*eslint  jsx-a11y/click-events-have-key-events: "off"*/
+import React, { useEffect, useRef } from 'react'
 import Image from 'gatsby-image'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
@@ -8,15 +10,15 @@ import '../styles/carousel.scss'
 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, set }) => {
 	let ref = useRef()
 
 	let isMobile
 	if (typeof window !== `undefined`) {
-		isMobile = window.innerWidth > 500
+		isMobile = window.innerWidth < 500
 	}
 	const handleOnDragStart = (e) => e.preventDefault()
-	const responsive = { 0: { items: 1 }, 1024: { items: 2 } };
+	const responsive = { 0: { items: 1 }, 1024: { items: 2 } }
 
 	return (
 		<>
@@ -28,7 +30,9 @@ const Carousel = ({ images }) => {
 				disableButtonsControls={true}
 				disableDotsControls={true}
 				items={images.map((image, i) => (
-					<div className="image-cont">
+					<div className="image-cont" onClick={() => {
+						!isMobile && set({ open: true, image: i })
+					}}>
 						{image.extension === 'jpg'
 							? <Image
 								key={i}

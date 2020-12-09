@@ -21,7 +21,7 @@ export const query = graphql`
 				extension
 				publicURL
 				childImageSharp{
-					fluid{
+					fluid(maxWidth: 2000, quality: 100){
 						...GatsbyImageSharpFluid
 					}
 				}
