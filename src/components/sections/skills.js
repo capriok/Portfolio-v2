@@ -53,7 +53,6 @@ import {
 const Skills = () => {
 	const [section, setSection] = useState({ b: true })
 
-
 	const Tab = ({ children, tab }) => (
 		<li
 			className={section[tab] ? 'active-Tab' : ''}
@@ -62,21 +61,19 @@ const Skills = () => {
 		</li>
 	)
 
-	const Anim = ({ Icon, name }) => {
-		return (
-			<ScrollAnimation
-				className="project-anim"
-				initiallyVisible={true}
-				animateIn="pulse"
-				animateOnce={true}
-				duration={.5}>
-				<li>
-					<p><Icon /></p>
-					<p>{name}</p>
-				</li>
-			</ScrollAnimation>
-		)
-	}
+	const Anim = ({ Icon, name }) => (
+		<ScrollAnimation
+			className="project-anim"
+			initiallyVisible={true}
+			animateIn="pulse"
+			animateOnce={true}
+			duration={.5}>
+			<li>
+				<p><Icon /></p>
+				<p>{name}</p>
+			</li>
+		</ScrollAnimation>
+	)
 
 	const Icons = ({ children, tab }) => (
 		<>
