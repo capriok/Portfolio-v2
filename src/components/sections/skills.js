@@ -60,8 +60,28 @@ const Skills = () => {
 			animateIn="pulse"
 			animateOnce={true}
 			duration={.5}>
-			{children}
+			<li>{children}</li>
 		</ScrollAnimation>
+	)
+
+	const Tab = ({ children, tab }) => (
+		<li
+			className={section[tab] ? 'active-Tab' : ''}
+			onClick={() => setSection({ [tab]: true })}>
+			{children}
+		</li>
+	)
+
+	const Icons = ({ children, tab }) => (
+		<>
+			{section[tab] &&
+				<section>
+					<ul>
+						{children}
+					</ul>
+				</section>
+			}
+		</>
 	)
 
 	return (
@@ -70,67 +90,53 @@ const Skills = () => {
 				<h1 className="section-title">Specialties</h1>
 				<div className="skills-cont">
 					<ul className="navigation">
-						<li className={section.a ? 'active-nav' : ''} onClick={() => setSection({ a: true })}><span>Programming </span><span>Languages</span></li>
-						<li className={section.b ? 'active-nav' : ''} onClick={() => setSection({ b: true })}><span>Front-end </span><span>Technologies</span></li>
-						<li className={section.c ? 'active-nav' : ''} onClick={() => setSection({ c: true })}><span>Back-end </span><span>Technologies</span></li>
-						<li className={section.d ? 'active-nav' : ''} onClick={() => setSection({ d: true })}><span>Database </span><span>Technologies</span></li>
-						<li className={section.e ? 'active-nav' : ''} onClick={() => setSection({ e: true })}><span>Storage and</span><span>Deployment</span></li>
+						<Tab tab="a"><span>Programming </span><span>Languages</span></Tab>
+						<Tab tab="b"><span>Front-end </span><span>Technologies</span></Tab>
+						<Tab tab="c"><span>Back-end </span><span>Technologies</span></Tab>
+						<Tab tab="d"><span>Database </span><span>Technologies</span></Tab>
+						<Tab tab="e"><span>Storage and</span><span>Deployment</span></Tab>
 					</ul>
-					{section.a && <section>
-						<ul>
-							<Anim><li><p><SiJavascript /></p><p>JavaScript</p></li></Anim>
-							<Anim><li><p><SiTypescript /></p><p>TypeScript</p></li></Anim>
-							<Anim><li><p><SiCsharp /></p><p>CSharp</p></li></Anim>
-							<Anim><li><p><SiJava /></p><p>Java</p></li></Anim>
-						</ul>
-					</section>}
-
-					{section.b && <section>
-						<ul>
-							<Anim><li><p><DiDotnet /></p><p>ASP.NET</p></li></Anim>
-							<Anim><li><p><SiReact /></p><p>React</p></li></Anim>
-							<Anim><li><p><SiRedux /></p><p>Redux</p></li></Anim>
-							<Anim><li><p><RiGatsbyLine /></p><p>Gatsby</p></li></Anim>
-							<Anim><li><p><SiNextDotJs /></p><p>Next</p></li></Anim>
-							<Anim><li><p><RiHtml5Line /></p><p>HTML</p></li></Anim>
-							<Anim><li><p><RiCss3Fill /></p><p>CSS</p></li></Anim>
-							<Anim><li><p><DiSass /></p><p>SASS</p></li></Anim>
-						</ul>
-					</section>}
-
-					{section.c && <section>
-						<ul>
-							<Anim><li><p><SiNodeDotJs /></p><p>Express.js</p></li></Anim>
-							<Anim><li><p><GiKoala /></p><p>Koa.js</p></li></Anim>
-							<Anim><li><p><GrMysql /></p><p>SQL</p></li></Anim>
-							<Anim><li><p><SiGraphql /></p><p>GraphQL</p></li></Anim>
-							<Anim><li><p><SiApollographql /></p><p>Apollo</p></li></Anim>
-							<Anim><li><p><SiSocketDotIo /></p><p>Socket.io</p></li></Anim>
-						</ul>
-					</section>}
-
-					{section.d && <section>
-						<ul>
-							<Anim><li><p><SiMysql /></p><p>MySQL</p></li></Anim>
-							<Anim><li><p><DiPostgresql /></p><p>PostgreSQL</p></li></Anim>
-							<Anim><li><p><SiMicrosoftsqlserver /></p><p>SQL Server</p></li></Anim>
-							<Anim><li><p><VscDatabase /></p><p>NoSQL</p></li></Anim>
-							<Anim><li><p><SiMongodb /></p><p>Mongo DB</p></li></Anim>
-							<Anim><li><p><SiMariadbfoundation /></p><p>Maria DB</p></li></Anim>
-						</ul>
-					</section>}
-
-					{section.e && <section>
-						<ul>
-							<Anim><li><p><SiAmazonaws /></p><p>AWS</p></li></Anim>
-							<Anim><li><p><SiMicrosoftazure /></p><p>Azure</p></li></Anim>
-							<Anim><li><p><SiGithub /></p><p>Github</p></li></Anim>
-							<Anim><li><p><SiNetlify /></p><p>Netlify</p></li></Anim>
-							<Anim><li><p><SiNpm /></p><p>NPM</p></li></Anim>
-							<Anim><li><p><RiGatsbyLine /></p><p>Gatsby Cloud</p></li></Anim>
-							<Anim><li><p><SiHeroku /></p><p>Heroku</p></li></Anim>
-						</ul>
-					</section>}
+					<Icons tab="a">
+						<Anim><p><SiJavascript /></p><p>JavaScript</p></Anim>
+						<Anim><p><SiTypescript /></p><p>TypeScript</p></Anim>
+						<Anim><p><SiCsharp /></p><p>CSharp</p></Anim>
+						<Anim><p><SiJava /></p><p>Java</p></Anim>
+					</Icons>
+					<Icons tab="b">
+						<Anim><p><DiDotnet /></p><p>ASP.NET</p></Anim>
+						<Anim><p><SiReact /></p><p>React</p></Anim>
+						<Anim><p><SiRedux /></p><p>Redux</p></Anim>
+						<Anim><p><RiGatsbyLine /></p><p>Gatsby</p></Anim>
+						<Anim><p><SiNextDotJs /></p><p>Next</p></Anim>
+						<Anim><p><RiHtml5Line /></p><p>HTML</p></Anim>
+						<Anim><p><RiCss3Fill /></p><p>CSS</p></Anim>
+						<Anim><p><DiSass /></p><p>SASS</p></Anim>
+					</Icons>
+					<Icons tab="c">
+						<Anim><p><SiNodeDotJs /></p><p>Express.js</p></Anim>
+						<Anim><p><GiKoala /></p><p>Koa.js</p></Anim>
+						<Anim><p><GrMysql /></p><p>SQL</p></Anim>
+						<Anim><p><SiGraphql /></p><p>GraphQL</p></Anim>
+						<Anim><p><SiApollographql /></p><p>Apollo</p></Anim>
+						<Anim><p><SiSocketDotIo /></p><p>Socket.io</p></Anim>
+					</Icons>
+					<Icons tab="d">
+						<Anim><p><SiMysql /></p><p>MySQL</p></Anim>
+						<Anim><p><DiPostgresql /></p><p>PostgreSQL</p></Anim>
+						<Anim><p><SiMicrosoftsqlserver /></p><p>SQL Server</p></Anim>
+						<Anim><p><VscDatabase /></p><p>NoSQL</p></Anim>
+						<Anim><p><SiMongodb /></p><p>Mongo DB</p></Anim>
+						<Anim><p><SiMariadbfoundation /></p><p>Maria DB</p></Anim>
+					</Icons>
+					<Icons tab="e">
+						<Anim><p><SiAmazonaws /></p><p>AWS</p></Anim>
+						<Anim><p><SiMicrosoftazure /></p><p>Azure</p></Anim>
+						<Anim><p><SiGithub /></p><p>Github</p></Anim>
+						<Anim><p><SiNetlify /></p><p>Netlify</p></Anim>
+						<Anim><p><SiNpm /></p><p>NPM</p></Anim>
+						<Anim><p><RiGatsbyLine /></p><p>Gatsby Cloud</p></Anim>
+						<Anim><p><SiHeroku /></p><p>Heroku</p></Anim>
+					</Icons>
 				</div>
 			</div>
 		</div >
