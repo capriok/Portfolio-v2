@@ -16,6 +16,7 @@ const ProjectCard = ({ project }) => (
 		className="project-anim"
 		initiallyVisible={true}
 		animateIn="pulse"
+		animateOnce={true}
 		duration={.5}>
 		<div className="project-card">
 			<div className="header">

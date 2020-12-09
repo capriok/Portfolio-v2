@@ -15,6 +15,7 @@ const FeaturedCard = ({ project, i }) => (
 		className="feature-anim"
 		initiallyVisible={true}
 		animateIn="pulse"
+		animateOnce={true}
 		duration={.5}>
 		<div className={i !== 1 ? "feature-card" : "feature-card inverted"}>
 			<div className="thumb-cont">

@@ -54,7 +54,12 @@ const Skills = () => {
 	const [section, setSection] = useState({ b: true })
 
 	const Anim = ({ children }) => (
-		<ScrollAnimation className="project-anim" initiallyVisible={true} animateIn="pulse" duration={.5}>
+		<ScrollAnimation
+			className="project-anim"
+			initiallyVisible={true}
+			animateIn="pulse"
+			animateOnce={true}
+			duration={.5}>
 			{children}
 		</ScrollAnimation>
 	)
