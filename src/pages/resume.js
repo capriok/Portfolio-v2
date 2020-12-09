@@ -13,13 +13,7 @@ const Resume = () => {
 	}
 	return (
 		<Layout>
-			<br />
-			<br />
-			<br />
-			<center>Workin on it.</center>
-			<br />
-			<br />
-			<br />
+			<center style={{ margin: "50px 0" }}>Workin on it.</center>
 			<Contact />
 			{isMobile
 				? <div className="resume">
