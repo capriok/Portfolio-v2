@@ -56,9 +56,7 @@ const Skills = () => {
 	const Tab = ({ children, t }) => (
 		<li
 			className={tab[t] ? 'active-tab' : ''}
-			onClick={() => {
-				!Object.keys(tab).includes(t) && setTab({ [t]: true })
-			}}>
+			onClick={() => !Object.keys(tab).includes(t) && setTab({ [t]: true })}>
 			{children}
 		</li>
 	)
