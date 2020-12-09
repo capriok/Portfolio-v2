@@ -4,7 +4,7 @@ import '../styles/resume.scss'
 
 import Contact from '../components/sections/contact'
 
-// const FILE = 'https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf'
+// const PDF = process.env.GATSBY_RESUME
 
 const Resume = () => {
 	let isMobile
@@ -24,7 +24,7 @@ const Resume = () => {
 			{isMobile
 				? <div className="resume">
 					{/* <object
-						data={FILE}
+						data={PDF}
 						type="application/pdf"
 						width="100%"
 						height="100%"
@@ -32,7 +32,7 @@ const Resume = () => {
 				</div>
 				: <div className="resume-mobile">
 					{/* <button className="resume-btn" text="View Resume" onClick={() => {
-						window.open(FILE)
+						window.open(PDF)
 					}}>
 						View Resume
 					</button> */}
