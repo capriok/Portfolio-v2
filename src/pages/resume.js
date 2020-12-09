@@ -4,7 +4,7 @@ import '../styles/resume.scss'
 
 import Contact from '../components/sections/contact'
 
-const FILE = 'https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf'
+// const FILE = 'https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf'
 
 const Resume = () => {
 	let isMobile
@@ -21,23 +21,23 @@ const Resume = () => {
 			<br />
 			<br />
 			<Contact />
-			{/* {isMobile
+			{isMobile
 				? <div className="resume">
-					<object
+					{/* <object
 						data={FILE}
 						type="application/pdf"
 						width="100%"
 						height="100%"
-					>Resume</object>
+					>Resume</object> */}
 				</div>
 				: <div className="resume-mobile">
-					<button className="resume-btn" text="View Resume" onClick={() => {
+					{/* <button className="resume-btn" text="View Resume" onClick={() => {
 						window.open(FILE)
 					}}>
 						View Resume
-					</button>
+					</button> */}
 				</div>
-			} */}
+			}
 		</Layout>
 	)
 }

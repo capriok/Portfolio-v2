@@ -53,16 +53,6 @@ import {
 const Skills = () => {
 	const [section, setSection] = useState({ b: true })
 
-	const Anim = ({ children }) => (
-		<ScrollAnimation
-			className="project-anim"
-			initiallyVisible={true}
-			animateIn="pulse"
-			animateOnce={true}
-			duration={.5}>
-			<li>{children}</li>
-		</ScrollAnimation>
-	)
 
 	const Tab = ({ children, tab }) => (
 		<li
@@ -71,6 +61,22 @@ const Skills = () => {
 			{children}
 		</li>
 	)
+
+	const Anim = ({ Icon, name }) => {
+		return (
+			<ScrollAnimation
+				className="project-anim"
+				initiallyVisible={true}
+				animateIn="pulse"
+				animateOnce={true}
+				duration={.5}>
+				<li>
+					<p><Icon /></p>
+					<p>{name}</p>
+				</li>
+			</ScrollAnimation>
+		)
+	}
 
 	const Icons = ({ children, tab }) => (
 		<>
@@ -97,45 +103,45 @@ const Skills = () => {
 						<Tab tab="e"><span>Storage and</span><span>Deployment</span></Tab>
 					</ul>
 					<Icons tab="a">
-						<Anim><p><SiJavascript /></p><p>JavaScript</p></Anim>
-						<Anim><p><SiTypescript /></p><p>TypeScript</p></Anim>
-						<Anim><p><SiCsharp /></p><p>CSharp</p></Anim>
-						<Anim><p><SiJava /></p><p>Java</p></Anim>
+						<Anim Icon={SiJavascript} name="JavaScript" />
+						<Anim Icon={SiTypescript} name="TypeScript" />
+						<Anim Icon={SiCsharp} name="CSharp" />
+						<Anim Icon={SiJava} name="Java" />
 					</Icons>
 					<Icons tab="b">
-						<Anim><p><DiDotnet /></p><p>ASP.NET</p></Anim>
-						<Anim><p><SiReact /></p><p>React</p></Anim>
-						<Anim><p><SiRedux /></p><p>Redux</p></Anim>
-						<Anim><p><RiGatsbyLine /></p><p>Gatsby</p></Anim>
-						<Anim><p><SiNextDotJs /></p><p>Next</p></Anim>
-						<Anim><p><RiHtml5Line /></p><p>HTML</p></Anim>
-						<Anim><p><RiCss3Fill /></p><p>CSS</p></Anim>
-						<Anim><p><DiSass /></p><p>SASS</p></Anim>
+						<Anim Icon={DiDotnet} name="ASP.NET" />
+						<Anim Icon={SiReact} name="React" />
+						<Anim Icon={SiRedux} name="Redux" />
+						<Anim Icon={RiGatsbyLine} name="Gatsby" />
+						<Anim Icon={SiNextDotJs} name="Next" />
+						<Anim Icon={RiHtml5Line} name="HTML" />
+						<Anim Icon={RiCss3Fill} name="CSS" />
+						<Anim Icon={DiSass} name="SASS" />
 					</Icons>
 					<Icons tab="c">
-						<Anim><p><SiNodeDotJs /></p><p>Express.js</p></Anim>
-						<Anim><p><GiKoala /></p><p>Koa.js</p></Anim>
-						<Anim><p><GrMysql /></p><p>SQL</p></Anim>
-						<Anim><p><SiGraphql /></p><p>GraphQL</p></Anim>
-						<Anim><p><SiApollographql /></p><p>Apollo</p></Anim>
-						<Anim><p><SiSocketDotIo /></p><p>Socket.io</p></Anim>
+						<Anim Icon={SiNodeDotJs} name="Express.js" />
+						<Anim Icon={GiKoala} name="Koa.js" />
+						<Anim Icon={GrMysql} name="SQL" />
+						<Anim Icon={SiGraphql} name="GraphQL" />
+						<Anim Icon={SiApollographql} name="Apollo" />
+						<Anim Icon={SiSocketDotIo} name="Socket.io" />
 					</Icons>
 					<Icons tab="d">
-						<Anim><p><SiMysql /></p><p>MySQL</p></Anim>
-						<Anim><p><DiPostgresql /></p><p>PostgreSQL</p></Anim>
-						<Anim><p><SiMicrosoftsqlserver /></p><p>SQL Server</p></Anim>
-						<Anim><p><VscDatabase /></p><p>NoSQL</p></Anim>
-						<Anim><p><SiMongodb /></p><p>Mongo DB</p></Anim>
-						<Anim><p><SiMariadbfoundation /></p><p>Maria DB</p></Anim>
+						<Anim Icon={SiMysql} name="MySQL" />
+						<Anim Icon={DiPostgresql} name="PostgreSQL" />
+						<Anim Icon={SiMicrosoftsqlserver} name="SQL Server" />
+						<Anim Icon={VscDatabase} name="NoSQL" />
+						<Anim Icon={SiMongodb} name="Mongo DB" />
+						<Anim Icon={SiMariadbfoundation} name="Maria DB" />
 					</Icons>
 					<Icons tab="e">
-						<Anim><p><SiAmazonaws /></p><p>AWS</p></Anim>
-						<Anim><p><SiMicrosoftazure /></p><p>Azure</p></Anim>
-						<Anim><p><SiGithub /></p><p>Github</p></Anim>
-						<Anim><p><SiNetlify /></p><p>Netlify</p></Anim>
-						<Anim><p><SiNpm /></p><p>NPM</p></Anim>
-						<Anim><p><RiGatsbyLine /></p><p>Gatsby Cloud</p></Anim>
-						<Anim><p><SiHeroku /></p><p>Heroku</p></Anim>
+						<Anim Icon={SiAmazonaws} name="AWS" />
+						<Anim Icon={SiMicrosoftazure} name="Azure" />
+						<Anim Icon={SiGithub} name="Github" />
+						<Anim Icon={SiNetlify} name="Netlify" />
+						<Anim Icon={SiNpm} name="NPM" />
+						<Anim Icon={RiGatsbyLine} name="Gatsby Cloud" />
+						<Anim Icon={SiHeroku} name="Heroku" />
 					</Icons>
 				</div>
 			</div>
