@@ -19,8 +19,11 @@
 	.image {
 		z-index: 110;
 		width: 100%;
-		max-width: 2000px;
+		max-width: 80%;
 		border-radius: 10px;
+		@include media("<=800") {
+			max-width: 95%;
+		}
 	}
 	.controls {
 		z-index: 100;

@@ -41,13 +41,19 @@ const FullView = ({ images, view, set }) => {
 
 	function prevImage() {
 		set(v => {
-			return { open: true, image: v.image === first ? last : v.image - 1 }
+			return {
+				open: true,
+				image: v.image === first ? last : v.image - 1
+			}
 		})
 	}
 
 	function nextImage() {
 		set(v => {
-			return { open: true, image: v.image === last ? first : v.image + 1 }
+			return {
+				open: true,
+				image: v.image === last ? first : v.image + 1
+			}
 		})
 	}
 
