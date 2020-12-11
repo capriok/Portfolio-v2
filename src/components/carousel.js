@@ -1,7 +1,7 @@
 /*eslint  jsx-a11y/no-noninteractive-element-interactions: "off"*/
 /*eslint  jsx-a11y/no-static-element-interactions: "off"*/
 /*eslint  jsx-a11y/click-events-have-key-events: "off"*/
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import Image from 'gatsby-image'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
