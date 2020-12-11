@@ -5,11 +5,11 @@ import SEO from '../components/seo'
 
 import '../styles/index.scss'
 
-const Work = ({ projects }) => (
+const Work: React.FC = () => (
 	<Layout>
 		<SEO title="Work" />
 		<div className="work-route">
-			<ProjectsMap projects={projects} />
+			<ProjectsMap />
 		</div>
 	</Layout>
 )

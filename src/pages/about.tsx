@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 import '../styles/about.scss'
 
-const About = () => (
+const About: React.FC = () => (
   <Layout>
     <SEO title="About Me" />
     <div className="about-route">

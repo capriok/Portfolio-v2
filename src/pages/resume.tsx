@@ -6,14 +6,14 @@ import Contact from '../components/sections/contact'
 
 // const PDF = process.env.GATSBY_RESUME
 
-const Resume = () => {
-	let isMobile
+const Resume: React.FC = () => {
+	let isMobile: boolean
 	if (typeof window !== `undefined`) {
 		isMobile = window.innerWidth > 500
 	}
 	return (
 		<Layout>
-			<center style={{ margin: "50px 0" }}>Workin on it.</center>
+			<div style={{ margin: '50px 0', display: 'flex', justifyContent: 'center' }}>Workin on it.</div>
 			<Contact />
 			{isMobile
 				? <div className="resume">

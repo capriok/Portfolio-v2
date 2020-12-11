@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/stars.scss'
 
-const Stars = () => (
+const Stars: React.FC = () => (
 	<div className="stars-cont">
 		<div className="stars">
 			<div className="small"></div>

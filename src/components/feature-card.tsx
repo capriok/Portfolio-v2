@@ -10,14 +10,19 @@ import '../styles/feature-card.scss'
 import { AiFillGithub } from 'react-icons/ai'
 import { RiExternalLinkFill } from 'react-icons/ri'
 
-const FeaturedCard = ({ project, i }) => (
+interface Props {
+	project: Feature
+	index: number
+}
+
+const FeaturedCard: React.FC<Props> = ({ project, index }) => (
 	<ScrollAnimation
 		className="feature-anim"
 		initiallyVisible={true}
 		animateIn="pulse"
 		animateOnce={true}
 		duration={.5}>
-		<div className={i !== 1 ? "feature-card" : "feature-card inverted"}>
+		<div className={index !== 1 ? "feature-card" : "feature-card inverted"}>
 			<div className="thumb-cont">
 				<div className="img-cont">
 					<Link to={`/${project.slug}`}><div className="overlay"></div></Link>

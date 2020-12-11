@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../../styles/sections/intro.scss'
 
-const Introduction = () => (
+const Introduction: React.FC = () => (
 	<div className="introduction-section">
 		<div className="intro-cont">
 			<h1 className="title">Kyle Caprio.</h1>

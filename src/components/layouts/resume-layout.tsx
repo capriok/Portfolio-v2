@@ -4,7 +4,7 @@ import Header from "../header"
 
 import '../../styles/layouts.scss'
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   let atHome
   if (typeof window !== `undefined`) {
     atHome = window.location.pathname === '/'

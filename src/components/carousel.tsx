@@ -2,7 +2,7 @@
 /*eslint  jsx-a11y/no-static-element-interactions: "off"*/
 /*eslint  jsx-a11y/click-events-have-key-events: "off"*/
 import React, { useRef } from 'react'
-import Image from 'gatsby-image'
+import Img from 'gatsby-image'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
@@ -10,8 +10,13 @@ import '../styles/carousel.scss'
 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
-const Carousel = ({ images, set }) => {
-	let ref = useRef()
+interface Props {
+	images: Image[]
+	set: SetViewState
+}
+
+const Carousel: React.FC<Props> = ({ images, set }) => {
+	let ref: any = useRef()
 
 	let isMobile
 	if (typeof window !== `undefined`) {
@@ -30,22 +35,22 @@ const Carousel = ({ images, set }) => {
 				disableButtonsControls={true}
 				disableDotsControls={true}
 				items={images.map((image, i) => (
-					<div className="image-cont" onClick={() => {
-						!isMobile && set({ open: true, image: i })
-					}}>
+					<div className="image-cont"
+						onDragStart={handleOnDragStart}
+						onClick={() => {
+							!isMobile && set({ open: true, image: i })
+						}}>
 						{image.extension === 'jpg'
-							? <Image
+							? <Img
 								key={i}
 								className="image"
 								fluid={image.childImageSharp.fluid}
-								alt={image.publicURL}
-								onDragStart={handleOnDragStart} />
+								alt={image.publicURL} />
 							: <img
 								className="image"
 								key={i}
 								src={image.publicURL}
-								alt={image.publicURL}
-								onDragStart={handleOnDragStart} />
+								alt={image.publicURL} />
 						}
 					</div>
 				))}

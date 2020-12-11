@@ -10,18 +10,16 @@ import Contact from '../components/sections/contact'
 
 import "../styles/index.scss"
 
-const IndexPage = () => {
+const IndexPage: React.FC = () => {
   return (
-    <>
-      <Layout>
-        <SEO title="Kyle Caprio" />
-        <Introduction />
-        <Skills />
-        <FeaturedMap />
-        <ProjectsMap />
-        <Contact />
-      </Layout>
-    </>
+    <Layout>
+      <SEO title="Kyle Caprio" />
+      <Introduction />
+      <Skills />
+      <FeaturedMap />
+      <ProjectsMap />
+      <Contact />
+    </Layout>
   )
 }
 

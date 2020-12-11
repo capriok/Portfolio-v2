@@ -3,9 +3,16 @@ import { Link } from "gatsby"
 
 import '../styles/header.scss'
 
-const Header = ({ dir, pos, atHome, isMobile }) => {
+interface Props {
+  dir?: string
+  pos?: number
+  atHome?: boolean
+  isMobile?: boolean
+}
 
-  const headerClass = () => {
+const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
+
+  function headerClass(): string {
     let CLASS = 'home-header'
     if (isMobile || pos >= 300) CLASS += ' fill'
     if (!atHome && pos > 0) CLASS += ' fill'

@@ -50,8 +50,8 @@ import {
 	GrMysql
 } from 'react-icons/gr';
 
-const Skills = () => {
-	const [tab, setTab] = useState({ b: true })
+const Skills: React.FC = () => {
+	const [tab, setTab] = useState<object>({ b: true })
 
 	const Tab = ({ children, t }) => (
 		<li

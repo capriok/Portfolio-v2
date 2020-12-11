@@ -4,12 +4,16 @@ import { Link } from 'gatsby'
 import '../styles/project-view.scss'
 
 import FullView from './full-view'
-import Carousel from '../components/carousel'
+import Carousel from './carousel'
 import { AiFillGithub, AiOutlineHome } from 'react-icons/ai'
 import { RiExternalLinkFill } from 'react-icons/ri'
 
-const ProjectView = ({ project }) => {
-	const [viewState, setView] = useState({ open: false, image: null })
+interface Props {
+	project: Project
+}
+
+const ProjectView: React.FC<Props> = ({ project }) => {
+	const [viewState, setView] = useState<ViewState>({ open: false, image: 0 })
 
 	return (
 		<div className="project-view">

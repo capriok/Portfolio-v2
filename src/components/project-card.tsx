@@ -11,7 +11,11 @@ import { AiOutlineFolder, AiOutlineFolderOpen } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 import { RiExternalLinkFill } from 'react-icons/ri'
 
-const ProjectCard = ({ project }) => (
+interface Props {
+	project: Project
+}
+
+const ProjectCard: React.FC<Props> = ({ project }) => (
 	<ScrollAnimation
 		className="project-anim"
 		initiallyVisible={true}

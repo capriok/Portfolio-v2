@@ -18,6 +18,9 @@
 				min-height: 200px;
 				max-width: 400px;
 				margin: 0 auto;
+				@include media("<=550") {
+					margin: 0 5px;
+				}
 				.image {
 					user-select: none;
 					cursor: pointer;

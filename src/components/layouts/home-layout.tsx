@@ -7,7 +7,7 @@ import '../../styles/footer.scss'
 import Header from "../header"
 import Stars from '../stars'
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
   let atHome
   let isMobile
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   const [dir, setDir] = useState('top')
   const [pos, setPos] = useState(0)
 
-  const scrollingDir = useScrollDirection();
+  const scrollingDir = useScrollDirection()
 
   useEffect(() => {
     let delay = setTimeout(() => {
@@ -35,14 +35,6 @@ const Layout = ({ children }) => {
     }
   }, [])
 
-  const handleScroll = () => {
-    let position
-    if (typeof window !== `undefined`) {
-      position = window.pageYOffset
-    }
-    setPos(position)
-  };
-
   useEffect(() => {
     pos > 500 && value(0.3)
     pos <= 500 && value(0.4)
@@ -52,6 +44,14 @@ const Layout = ({ children }) => {
     pos <= 100 && value(0.8)
     !atHome && value(0.3)
   }, [pos])
+
+  function handleScroll(): void {
+    let position
+    if (typeof window !== `undefined`) {
+      position = window.pageYOffset
+    }
+    setPos(position)
+  }
 
   return (
     <>

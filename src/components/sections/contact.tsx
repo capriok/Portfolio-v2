@@ -5,7 +5,7 @@ import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
 
 import '../../styles/sections/contact.scss'
 
-const Contact = () => (
+const Contact: React.FC = () => (
 	<div className="contact-section">
 		<div className="content-cont">
 			<h1 className="section-title">Feel free to reach out.</h1>

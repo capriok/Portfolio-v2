@@ -1,20 +1,21 @@
 /*eslint  jsx-a11y/no-static-element-interactions: "off"*/
 /*eslint  jsx-a11y/click-events-have-key-events: "off"*/
 /*eslint  react-hooks/exhaustive-deps: "off"*/
-import React, { useEffect, useLayoutEffect } from 'react'
-import Image from 'gatsby-image'
+import React, { useEffect } from 'react'
+import Img from 'gatsby-image'
 import '../styles/full-view.scss'
 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
-const FullView = ({ images, view, set }) => {
+interface Props {
+	images: Image[]
+	view: ViewState
+	set: SetViewState
+}
+
+const FullView: React.FC<Props> = ({ images, view, set }) => {
 	const first = 0
 	const last = images.length - 1
-
-	useLayoutEffect(() => {
-		document.body.style.overflow = 'hidden'
-		return () => document.body.style.overflow = 'initial'
-	}, [])
 
 	useEffect(() => {
 		window.addEventListener('keydown', handleKey)
@@ -23,7 +24,7 @@ const FullView = ({ images, view, set }) => {
 		}
 	}, [])
 
-	function handleKey(e) {
+	function handleKey(e: KeyboardEvent): void {
 		switch (e.key) {
 			case 'ArrowLeft':
 				prevImage()
@@ -39,26 +40,22 @@ const FullView = ({ images, view, set }) => {
 		}
 	}
 
-	function prevImage() {
-		set(v => {
-			return {
-				...view,
-				image: v.image === first ? last : v.image - 1
-			}
+	function prevImage(): void {
+		set({
+			open: true,
+			image: view.image === first ? last : view.image - 1
 		})
 	}
 
-	function nextImage() {
-		set(v => {
-			return {
-				...view,
-				image: v.image === last ? first : v.image + 1
-			}
+	function nextImage(): void {
+		set({
+			open: true,
+			image: view.image === last ? first : view.image + 1
 		})
 	}
 
-	function close() {
-		set({ open: false, image: null })
+	function close(): void {
+		set({ open: false, image: 0 })
 	}
 
 	return (
@@ -67,7 +64,7 @@ const FullView = ({ images, view, set }) => {
 				<div className="full-view">
 					{view.open && <div className="view-clickout" onClick={() => close()} />}
 					{images[view.image].extension === 'jpg'
-						? <Image
+						? <Img
 							className="image"
 							fadeIn={true}
 							fluid={images[view.image].childImageSharp.fluid}
