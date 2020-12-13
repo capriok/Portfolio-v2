@@ -49,7 +49,7 @@ const ProjectsMap = () => {
     <div className="projects-map-section">
       <h1 className="section-title">Full Collection</h1>
       <div className="cards-cont">
-        {filteredFeatures.slice(0, atHome ? pg : filteredFeatures.length).map(({ node: project }, i) => (
+        {data.allProjectsJson.edges.slice(0, atHome ? pg : data.allProjectsJson.edges.length).map(({ node: project }, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
@@ -61,7 +61,7 @@ const ProjectsMap = () => {
         </button>
         <button
           onClick={() => setPg(pg + 3)}
-          disabled={pg >= filteredFeatures.length}>
+          disabled={pg >= data.allProjectsJson.edges.length}>
           <MdExpandMore />
         </button>
       </div>}
