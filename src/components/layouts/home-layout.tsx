@@ -9,7 +9,18 @@ import Switch from '../switch'
 import Stars from '../stars'
 
 const Layout: React.FC = ({ children }) => {
-  const value = v => document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
+  const [dir, setDir] = useState<string>('top')
+  const [pos, setPos] = useState<number>(0)
+
+  const [theme, setTheme] = useState<ThemeState>({ bright: true, night: false })
+
+  const scrollingDir = useScrollDirection()
+
+  const value = v => {
+    theme.bright
+      ? document.documentElement.style.setProperty('--star-color', `rgba(70, 131, 180, ${v})`)
+      : document.documentElement.style.setProperty('--star-color', `rgba(255, 255, 255, ${v})`)
+  }
   let atHome
   let isMobile
   if (typeof window !== `undefined`) {
@@ -17,12 +28,6 @@ const Layout: React.FC = ({ children }) => {
     isMobile = window.innerWidth < 550
   }
 
-  const [dir, setDir] = useState<string>('top')
-  const [pos, setPos] = useState<number>(0)
-
-  const [theme, setTheme] = useState<ThemeState>({ bright: true, night: false })
-
-  const scrollingDir = useScrollDirection()
 
   useEffect(() => {
     let delay = setTimeout(() => {

@@ -24,11 +24,13 @@ const Switch: React.FC<Props> = ({ theme, setTheme }) => {
 		document.documentElement.style.setProperty('--app-background', '#fff')
 		document.documentElement.style.setProperty('--app-alt-bg', '#ebebeb')
 		document.documentElement.style.setProperty('--app-text', '#000')
+		document.documentElement.style.setProperty('--star-color', '#4683b4cc')
 	}
 	function nightMode() {
 		document.documentElement.style.setProperty('--app-background', '#000')
 		document.documentElement.style.setProperty('--app-alt-bg', '#161616')
 		document.documentElement.style.setProperty('--app-text', '#fff')
+		document.documentElement.style.setProperty('--star-color', 'rgba(255, 255, 255, 0.8)')
 	}
 
 	useEffect(() => {

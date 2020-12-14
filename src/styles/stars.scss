@@ -1,5 +1,5 @@
 :root {
-	--star-color: rgba(70, 131, 180, 0.8);
+	--star-color: #4683b4cc;
 }
 
 $star-color: var(--star-color);
@@ -28,8 +28,8 @@ $stars-small: stars(1600);
 $stars-medium: stars(1200);
 $stars-big: stars(800);
 
-$small-speed: 50s;
-$medium-speed: 100s;
+$small-speed: 75s;
+$medium-speed: 125s;
 $big-speed: 200s;
 
 .stars-cont {
