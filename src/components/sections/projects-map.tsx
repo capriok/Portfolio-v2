@@ -49,8 +49,6 @@ const ProjectsMap = () => {
     setProjects(filteredProjects)
   }, [])
 
-
-
   return (
     <div className="projects-map-section">
       <h1 className="section-title">Full Collection</h1>

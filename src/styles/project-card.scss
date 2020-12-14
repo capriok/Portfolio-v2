@@ -99,7 +99,7 @@
 			&:hover {
 				transition: 0.2s;
 				border-left: 5px solid rgb(32, 32, 32);
-				background-color: white;
+				background-color: $app-background;
 				.header {
 					a {
 						h3 {

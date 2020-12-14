@@ -37,4 +37,10 @@ interface ViewState {
 	image: number
 }
 
+interface ThemeState {
+	bright: boolean
+	night: boolean
+}
+
 type SetViewState = React.Dispatch<ViewState>
+type SetTheme = React.Dispatch<ThemeState>

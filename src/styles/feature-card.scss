@@ -67,12 +67,9 @@ $image-width: 450px;
 					margin: 0 0 20px 0;
 					border-radius: 5px;
 					box-shadow: 3px 3px 10px -3px black;
-					color: white;
+					color: white !important;
 					background-color: rgb(27, 27, 27);
 					transition: 0.2s;
-					&:hover {
-						box-shadow: 5px 5px 15px -3px rgb(66, 66, 66);
-					}
 				}
 				.tags {
 					user-select: none;

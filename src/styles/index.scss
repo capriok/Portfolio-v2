@@ -30,16 +30,26 @@
 @mixin button-fx {
 	&:hover:not([disabled]) {
 		transition: 0.2s;
-		background-color: rgb(225, 225, 225);
+		background-color: $app-alt-bg;
 	}
 	&:active:not([disabled]) {
 		transition: 0.2s;
-		background-color: rgb(215, 215, 215);
+		background-color: $app-alt-bg;
 		svg {
 			color: steelblue;
 		}
 	}
 }
+
+:root {
+	--app-background: #ffffff;
+	--app-alt-bg: #ebebeb;
+	--app-text: #000;
+}
+$app-background: var(--app-background);
+$app-alt-bg: var(--app-alt-bg);
+$app-text: var(--app-text);
+
 $max-width: 900px;
 
 @import "./breakpoints.scss";
@@ -51,12 +61,14 @@ $breakpoints: (
 ) !default;
 
 * {
+	color: $app-text;
 	box-sizing: border-box;
 	font-family: "Nunito", sans-serif;
 }
 body {
 	padding: 0;
 	margin: 0;
+	background-color: $app-background;
 }
 html {
 	width: 100%;
