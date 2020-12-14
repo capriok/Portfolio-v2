@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 
 
@@ -8,6 +8,9 @@ import '../../styles/sections/projects-map.scss'
 import ProjectCard from '../project-card'
 
 const ProjectsMap = () => {
+  const [pg, setPg] = useState<number>(6)
+  const [projects, setProjects] = useState<any[]>([])
+
   let atHome
   if (typeof window !== `undefined`) {
     atHome = window.location.pathname === '/'
@@ -35,21 +38,24 @@ const ProjectsMap = () => {
   }
 `)
 
-  const [pg, setPg] = useState(6)
+  useEffect(() => {
+    const slugs = data.allFeaturedJson.edges.map(({ node: f }) => f.slug)
 
-  const slugs = data.allFeaturedJson.edges.map(({ node: f }) => f.slug)
+    let filteredProjects = [...data.allProjectsJson.edges].filter(({ node: p }) => {
+      if (!atHome) return p
+      if (slugs.some(s => s === p.slug)) return
+      return p
+    })
+    setProjects(filteredProjects)
+  }, [])
 
-  let filteredProjects = [...data.allProjectsJson.edges].filter(({ node: p }) => {
-    if (!atHome) return p
-    if (slugs.some(s => s === p.slug)) return
-    return p
-  })
+
 
   return (
     <div className="projects-map-section">
       <h1 className="section-title">Full Collection</h1>
       <div className="cards-cont">
-        {filteredProjects.slice(0, atHome ? pg : filteredProjects.length).map(({ node: project }, i) => (
+        {projects.slice(0, atHome ? pg : projects.length).map(({ node: project }, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
@@ -61,7 +67,7 @@ const ProjectsMap = () => {
         </button>
         <button
           onClick={() => setPg(pg + 3)}
-          disabled={pg >= filteredProjects.length}>
+          disabled={pg >= projects.length}>
           <MdExpandMore />
         </button>
       </div>}
