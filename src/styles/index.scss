@@ -22,25 +22,6 @@
 	scrollbar-width: thin !important;
 }
 
-@mixin flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-@mixin button-fx {
-	&:hover:not([disabled]) {
-		transition: 0.2s;
-		background-color: $app-alt-bg;
-	}
-	&:active:not([disabled]) {
-		transition: 0.2s;
-		background-color: $app-alt-bg;
-		svg {
-			color: steelblue;
-		}
-	}
-}
-
 :root {
 	--app-background: #ffffff;
 	--app-alt-bg: #ebebeb;
@@ -61,13 +42,13 @@ $breakpoints: (
 ) !default;
 
 * {
-	color: $app-text;
 	box-sizing: border-box;
 	font-family: "Nunito", sans-serif;
 }
 body {
 	padding: 0;
 	margin: 0;
+	color: $app-text;
 	background-color: $app-background;
 }
 html {
@@ -89,7 +70,7 @@ h6 {
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: $app-text;
 }
 button {
 	font-size: 1.5rem;
@@ -101,7 +82,7 @@ button {
 	padding: 10px 0;
 	border-radius: 5px;
 	transition: 0.2s;
-	background-color: rgb(235, 235, 235);
+	background-color: $app-alt-bg;
 }
 .mono {
 	font-family: "Roboto Mono", monospace;
@@ -144,5 +125,24 @@ button {
 	margin-top: 50px;
 	@include media("<=550") {
 		margin-top: 25px;
+	}
+}
+
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin button-fx {
+	color: $app-text;
+	&:hover:not([disabled]) {
+		transition: 0.2s;
+		background-color: $app-alt-bg;
+	}
+	&:active:not([disabled]) {
+		transition: 0.2s;
+		svg {
+			color: steelblue;
+		}
 	}
 }

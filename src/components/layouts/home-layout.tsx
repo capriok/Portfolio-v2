@@ -51,7 +51,7 @@ const Layout: React.FC = ({ children }) => {
     pos <= 200 && value(0.7)
     pos <= 100 && value(0.8)
     !atHome && value(0.3)
-  }, [pos])
+  }, [pos, theme])
 
   function handleScroll(): void {
     let position

@@ -34,7 +34,7 @@
 			margin: 0 2px;
 			@include button-fx;
 			border-radius: 5px;
-			background-color: rgb(235, 235, 235);
+			background-color: $app-alt-bg;
 			p {
 				@include flex;
 				margin: 0;
