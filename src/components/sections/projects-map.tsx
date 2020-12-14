@@ -17,7 +17,7 @@ const ProjectsMap = () => {
     allFeaturedJson{
       edges{
         node{
-          title
+          slug
         }
       }
     }
@@ -37,21 +37,19 @@ const ProjectsMap = () => {
 
   const [pg, setPg] = useState(6)
 
-  const filteredFeatures = [...data.allProjectsJson.edges].filter(({ node: p }) => {
-    if (!atHome) return p
-    const feat = data.allFeaturedJson.edges
-    return p.title !== feat[0].node.title
-      && p.title !== feat[1].node.title
-      && p.title !== feat[2].node.title
-  })
+  const slugs = data.allFeaturedJson.edges.map(({ node: f }) => f.slug)
 
-  console.log(filteredFeatures)
+  let filteredProjects = [...data.allProjectsJson.edges].filter(({ node: p }) => {
+    if (!atHome) return p
+    if (slugs.some(s => s === p.slug)) return
+    return p
+  })
 
   return (
     <div className="projects-map-section">
       <h1 className="section-title">Full Collection</h1>
       <div className="cards-cont">
-        {filteredFeatures.slice(0, atHome ? pg : filteredFeatures.length).map(({ node: project }, i) => (
+        {filteredProjects.slice(0, atHome ? pg : filteredProjects.length).map(({ node: project }, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
@@ -63,7 +61,7 @@ const ProjectsMap = () => {
         </button>
         <button
           onClick={() => setPg(pg + 3)}
-          disabled={pg >= filteredFeatures.length}>
+          disabled={pg >= filteredProjects.length}>
           <MdExpandMore />
         </button>
       </div>}
