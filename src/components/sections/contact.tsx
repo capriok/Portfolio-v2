@@ -1,7 +1,7 @@
 /*eslint  jsx-a11y/control-has-associated-label: "off"*/
 import React from 'react'
 import { HiOutlineMail } from "react-icons/hi";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 import '../../styles/sections/contact.scss'
 
@@ -22,9 +22,6 @@ const Contact: React.FC = () => (
 				</a>
 				<a href="https://www.linkedin.com/in/kyle-caprio" target="_blank" rel="noreferrer">
 					<button><SiLinkedin /></button>
-				</a>
-				<a href="https://twitter.com/kylecaprio_" target="_blank" rel="noreferrer">
-					<button><SiTwitter /></button>
 				</a>
 			</div>
 		</div>
