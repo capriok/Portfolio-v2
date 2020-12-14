@@ -26,7 +26,6 @@
 			padding: 10px 0;
 			margin: 0;
 			transition: 0.2s;
-			scrollbar-color: #0a4c95 #c2d2e4;
 			@include media("<=800") {
 				overflow-x: scroll;
 			}
@@ -59,11 +58,11 @@
 				}
 			}
 			.active-tab {
-				border-bottom: 2px solid rgb(32, 32, 32);
-				background-color: rgb(235, 235, 235);
+				border-bottom: 2px solid $app-text;
+				background-color: $app-alt-bg;
 				@include media("<=550") {
 					border-bottom: none;
-					border-right: 2px solid rgb(32, 32, 32);
+					border-right: 2px solid $app-text;
 				}
 			}
 		}

@@ -33,6 +33,7 @@
 			@include flex;
 			border-radius: 5px;
 			@include button-fx;
+			background-color: $app-background;
 			transition: 0.2s;
 			@include media("<=550") {
 				font-size: 1.4rem;

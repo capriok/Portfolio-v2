@@ -5,6 +5,7 @@ import '../../styles/layouts.scss'
 import '../../styles/footer.scss'
 
 import Header from "../header"
+import Switch from '../switch'
 import Stars from '../stars'
 
 const Layout: React.FC = ({ children }) => {
@@ -16,8 +17,10 @@ const Layout: React.FC = ({ children }) => {
     isMobile = window.innerWidth < 550
   }
 
-  const [dir, setDir] = useState('top')
-  const [pos, setPos] = useState(0)
+  const [dir, setDir] = useState<string>('top')
+  const [pos, setPos] = useState<number>(0)
+
+  const [theme, setTheme] = useState<ThemeState>({ bright: true, night: false })
 
   const scrollingDir = useScrollDirection()
 
@@ -55,6 +58,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
+      <Switch theme={theme} setTheme={setTheme} />
       <Stars />
       <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
       <div className="home-layout">

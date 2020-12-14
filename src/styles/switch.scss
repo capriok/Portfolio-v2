@@ -1,0 +1,25 @@
+@import "./index.scss";
+
+.switch {
+	z-index: 1000;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	@include flex;
+	border-bottom-right-radius: 50%;
+	p {
+		opacity: 0;
+		border-radius: 50%;
+		cursor: pointer;
+		@include flex;
+		padding: 15px;
+		font-size: 2rem;
+		transition: 0.4s;
+		&:hover {
+			transition: 0.4s;
+			opacity: 1;
+		}
+	}
+}

@@ -28,6 +28,7 @@
 			@include flex;
 			margin-bottom: 5px;
 			@include button-fx;
+			background-color: $app-background;
 		}
 	}
 }
