@@ -28,7 +28,6 @@ const Layout: React.FC = ({ children }) => {
     isMobile = window.innerWidth < 550
   }
 
-
   useEffect(() => {
     let delay = setTimeout(() => {
       setDir(scrollingDir)
@@ -63,7 +62,7 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
-      <Switch theme={theme} setTheme={setTheme} />
+      <Switch isMobile={isMobile} theme={theme} setTheme={setTheme} />
       <Stars />
       <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
       <div className="home-layout">

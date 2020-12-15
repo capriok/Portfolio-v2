@@ -88,61 +88,59 @@ const Skills: React.FC = () => {
 	)
 
 	return (
-		<div>
-			<div className="skills-section">
-				<h1 className="section-title">Specialties</h1>
-				<div className="skills-cont">
-					<ul className="tabs">
-						<Tab t="a"><span>Programming </span><span>Languages</span></Tab>
-						<Tab t="b"><span>Front-end </span><span>Technologies</span></Tab>
-						<Tab t="c"><span>Back-end </span><span>Technologies</span></Tab>
-						<Tab t="d"><span>Database </span><span>Technologies</span></Tab>
-						<Tab t="e"><span>Storage and</span><span>Deployment</span></Tab>
-					</ul>
-					<Icons t="a">
-						<Anim Icon={SiJavascript} name="JavaScript" />
-						<Anim Icon={SiTypescript} name="TypeScript" />
-						<Anim Icon={SiCsharp} name="CSharp" />
-						<Anim Icon={SiJava} name="Java" />
-					</Icons>
-					<Icons t="b">
-						<Anim Icon={DiDotnet} name="ASP.NET" />
-						<Anim Icon={SiReact} name="React" />
-						<Anim Icon={SiRedux} name="Redux" />
-						<Anim Icon={RiGatsbyLine} name="Gatsby" />
-						<Anim Icon={SiNextDotJs} name="Next" />
-						<Anim Icon={RiHtml5Line} name="HTML" />
-						<Anim Icon={RiCss3Fill} name="CSS" />
-						<Anim Icon={DiSass} name="SASS" />
-					</Icons>
-					<Icons t="c">
-						<Anim Icon={SiNodeDotJs} name="Express.js" />
-						<Anim Icon={GiKoala} name="Koa.js" />
-						<Anim Icon={GrMysql} name="SQL" />
-						<Anim Icon={SiGraphql} name="GraphQL" />
-						<Anim Icon={SiApollographql} name="Apollo" />
-						<Anim Icon={SiSocketDotIo} name="Socket.io" />
-					</Icons>
-					<Icons t="d">
-						<Anim Icon={SiMysql} name="MySQL" />
-						<Anim Icon={DiPostgresql} name="PostgreSQL" />
-						<Anim Icon={SiMicrosoftsqlserver} name="SQL Server" />
-						<Anim Icon={VscDatabase} name="NoSQL" />
-						<Anim Icon={SiMongodb} name="Mongo DB" />
-						<Anim Icon={SiMariadbfoundation} name="Maria DB" />
-					</Icons>
-					<Icons t="e">
-						<Anim Icon={SiAmazonaws} name="AWS" />
-						<Anim Icon={SiMicrosoftazure} name="Azure" />
-						<Anim Icon={SiGithub} name="Github" />
-						<Anim Icon={SiNetlify} name="Netlify" />
-						<Anim Icon={SiNpm} name="NPM" />
-						<Anim Icon={RiGatsbyLine} name="Gatsby Cloud" />
-						<Anim Icon={SiHeroku} name="Heroku" />
-					</Icons>
-				</div>
+		<div className="skills-section">
+			<h1 className="section-title">Specialties</h1>
+			<div className="skills-cont">
+				<ul className="tabs">
+					<Tab t="a"><span>Programming </span><span>Languages</span></Tab>
+					<Tab t="b"><span>Front-end </span><span>Technologies</span></Tab>
+					<Tab t="c"><span>Back-end </span><span>Technologies</span></Tab>
+					<Tab t="d"><span>Database </span><span>Technologies</span></Tab>
+					<Tab t="e"><span>Storage and</span><span>Deployment</span></Tab>
+				</ul>
+				<Icons t="a">
+					<Anim Icon={SiJavascript} name="JavaScript" />
+					<Anim Icon={SiTypescript} name="TypeScript" />
+					<Anim Icon={SiCsharp} name="CSharp" />
+					<Anim Icon={SiJava} name="Java" />
+				</Icons>
+				<Icons t="b">
+					<Anim Icon={DiDotnet} name="ASP.NET" />
+					<Anim Icon={SiReact} name="React" />
+					<Anim Icon={SiRedux} name="Redux" />
+					<Anim Icon={RiGatsbyLine} name="Gatsby" />
+					<Anim Icon={SiNextDotJs} name="Next" />
+					<Anim Icon={RiHtml5Line} name="HTML" />
+					<Anim Icon={RiCss3Fill} name="CSS" />
+					<Anim Icon={DiSass} name="SASS" />
+				</Icons>
+				<Icons t="c">
+					<Anim Icon={SiNodeDotJs} name="Express.js" />
+					<Anim Icon={GiKoala} name="Koa.js" />
+					<Anim Icon={GrMysql} name="SQL" />
+					<Anim Icon={SiGraphql} name="GraphQL" />
+					<Anim Icon={SiApollographql} name="Apollo" />
+					<Anim Icon={SiSocketDotIo} name="Socket.io" />
+				</Icons>
+				<Icons t="d">
+					<Anim Icon={SiMysql} name="MySQL" />
+					<Anim Icon={DiPostgresql} name="PostgreSQL" />
+					<Anim Icon={SiMicrosoftsqlserver} name="SQL Server" />
+					<Anim Icon={VscDatabase} name="NoSQL" />
+					<Anim Icon={SiMongodb} name="Mongo DB" />
+					<Anim Icon={SiMariadbfoundation} name="Maria DB" />
+				</Icons>
+				<Icons t="e">
+					<Anim Icon={SiAmazonaws} name="AWS" />
+					<Anim Icon={SiMicrosoftazure} name="Azure" />
+					<Anim Icon={SiGithub} name="Github" />
+					<Anim Icon={SiNetlify} name="Netlify" />
+					<Anim Icon={SiNpm} name="NPM" />
+					<Anim Icon={RiGatsbyLine} name="Gatsby Cloud" />
+					<Anim Icon={SiHeroku} name="Heroku" />
+				</Icons>
 			</div>
-		</div >
+		</div>
 	)
 }
 

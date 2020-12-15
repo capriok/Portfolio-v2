@@ -6,12 +6,12 @@ import { IoMdPartlySunny } from 'react-icons/io'
 import { IoMdCloudyNight } from 'react-icons/io'
 
 interface Props {
+	isMobile: boolean
 	theme: ThemeState
 	setTheme: SetTheme
 }
 
-const Switch: React.FC<Props> = ({ theme, setTheme }) => {
-
+const Switch: React.FC<Props> = ({ isMobile, theme, setTheme }) => {
 	const BRIGHT = { bright: true, night: false }
 	const NIGHT = { bright: false, night: true }
 
@@ -56,10 +56,10 @@ const Switch: React.FC<Props> = ({ theme, setTheme }) => {
 
 	return (
 		<>
-			<div className="switch">
+			{!isMobile && <div className="switch">
 				{theme.bright && <p onClick={() => set(NIGHT)}><IoMdPartlySunny /></p>}
 				{theme.night && <p onClick={() => set(BRIGHT)}><IoMdCloudyNight /></p>}
-			</div>
+			</div>}
 		</>
 	)
 }
