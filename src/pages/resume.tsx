@@ -13,7 +13,7 @@ const Resume: React.FC = () => {
 	}
 	return (
 		<Layout>
-			<div style={{ margin: '50px 0', display: 'flex', justifyContent: 'center' }}>Workin on it.</div>
+			<div style={{ margin: '50px 0', display: 'flex', justifyContent: 'center' }}>Workin on it</div>
 			<Contact />
 			{isMobile
 				? <div className="resume">
