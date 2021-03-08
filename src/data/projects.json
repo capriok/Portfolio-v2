@@ -25,9 +25,11 @@
 		],
 		"source": "https://github.com/capriok/WorkPoints",
 		"demo": "https://marketplace.visualstudio.com/items?itemName=capriok.workpoints",
-		"thumb": "./images/BMASTER-HOME.jpg",
+		"thumb": "./images/WORKPOINTS-MARKETPLACE.jpg",
 		"images": [
-			"./images/BMASTER-SHOWCASE.jpg"
+			"./images/WORKPOINTS-SHOWCASE.jpg",
+			"./images/WORKPOINTS-MARKETPLACE.jpg",
+			"./images/WORKPOINTS-VISUAL.gif"
 		],
 		"resources": [
 			"https://code.visualstudio.com/api",
@@ -39,7 +41,7 @@
 		"slug": "env-locker",
 		"description": "C# Windows Forms application that securely stores project environment variables behind a 4-digit user authentication passcode.",
 		"writing": {
-			"process": "",
+			"process": "Soon ™",
 			"processSub": "",
 			"conclusion": [
 				"Familiarized myself with WinForms application and APIs",
@@ -48,7 +50,7 @@
 			]
 		},
 		"stack": [
-			"C#",
+			"C Sharp",
 			"ASP.NET Core",
 			"Windows Forms"
 		],
@@ -57,11 +59,11 @@
 			"C#",
 			"2021"
 		],
-		"source": "https://github.com/capriok/EnvLocker",
-		"demo": "https://env-locker.kylecaprio.dev",
-		"thumb": "./images/BMASTER-HOME.jpg",
+		"source": "https://github.com/capriok/Env-Locker",
+		"demo": "https://kylecaprio.dev/env-locker",
+		"thumb": "./images/NOT-FOUND.jpg",
 		"images": [
-			"./images/BMASTER-SHOWCASE.jpg"
+			"./images/NOT-FOUND.jpg"
 		],
 		"resources": [
 			"https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"

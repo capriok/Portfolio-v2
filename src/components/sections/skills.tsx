@@ -97,7 +97,7 @@ const Skills: React.FC = () => {
 				<Icons t="a">
 					<Anim Icon={SiJavascript} name="JavaScript" />
 					<Anim Icon={SiTypescript} name="TypeScript" />
-					<Anim Icon={SiCsharp} name="CSharp" />
+					<Anim Icon={SiCsharp} name="C Sharp" />
 					<Anim Icon={SiJava} name="Java" />
 					<Anim Icon={FaPhp} name="PHP" />
 				</Icons>

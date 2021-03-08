@@ -13,6 +13,7 @@
 				margin-bottom: 20px;
 			}
 			.image-cont {
+				overflow: hidden;
 				user-select: none;
 				@include flex;
 				min-height: 200px;
@@ -27,6 +28,7 @@
 					user-select: none;
 					width: 100%;
 					max-width: 400px;
+					max-height: 200px;
 					border-radius: 5px;
 					border: 1px solid black;
 				}
