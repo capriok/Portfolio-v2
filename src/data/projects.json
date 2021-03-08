@@ -1,11 +1,79 @@
 [
 	{
+		"title": "WorkPoints",
+		"slug": "workpoints",
+		"description": "VSCode Extension - Create and cycle through points in which you are working within files by the use of keyboard shortcuts.",
+		"writing": {
+			"process": "This project is a Visual Studio Code extension available for use by anyone. Like many ideas, I came up with this extension to help solve a common real-world problem. When working in large files, thousands of lines, it is easy to and lose track of the points in which youre working when scrolling between lines far from one another. This extension makes available functionality to create workpoints in files and the ability to cycle through these workpoints. The extension uses three keyboard shortcuts that handle all functionality: Ctrl + , | Ctrl + . | Ctrl + Shift + / . The first two shortcuts are to cycle through workpoints in a file, left and right, placing the cursor on the line and revealing it in the center of your view. Whereas the last shortcut is used to add/ remove workpoints from current cursor position in an active file.",
+			"processSub": "",
+			"conclusion": [
+				"Improved skills working with Webpack and Mocha",
+				"Developed experience with the VSCode Extension API",
+				"Learned more about how VSCode operates under the hood"
+			]
+		},
+		"stack": [
+			"VSCode",
+			"TypeScript",
+			"Webpack",
+			"Mocha"
+		],
+		"tags": [
+			"VSCode Extension",
+			"TypeScript",
+			"2021"
+		],
+		"source": "https://github.com/capriok/WorkPoints",
+		"demo": "https://marketplace.visualstudio.com/items?itemName=capriok.workpoints",
+		"thumb": "./images/BMASTER-HOME.jpg",
+		"images": [
+			"./images/BMASTER-SHOWCASE.jpg"
+		],
+		"resources": [
+			"https://code.visualstudio.com/api",
+			"https://marketplace.visualstudio.com/"
+		]
+	},
+	{
+		"title": "EnvLocker",
+		"slug": "env-locker",
+		"description": "C# Windows Forms application that securely stores project environment variables behind a 4-digit user authentication passcode.",
+		"writing": {
+			"process": "",
+			"processSub": "",
+			"conclusion": [
+				"Familiarized myself with WinForms application and APIs",
+				"Improved skills of writing fluent and robust C# code",
+				"Learned a lot about windows operating system and file storage"
+			]
+		},
+		"stack": [
+			"C#",
+			"ASP.NET Core",
+			"Windows Forms"
+		],
+		"tags": [
+			"Windows Forms",
+			"C#",
+			"2021"
+		],
+		"source": "https://github.com/capriok/EnvLocker",
+		"demo": "https://env-locker.kylecaprio.dev",
+		"thumb": "./images/BMASTER-HOME.jpg",
+		"images": [
+			"./images/BMASTER-SHOWCASE.jpg"
+		],
+		"resources": [
+			"https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"
+		]
+	},
+	{
 		"title": "Board Master",
 		"slug": "board-master",
 		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
 		"writing": {
-			"process": "",
-			"processSub": "",
+			"process": "Inspired by typings.gg, this optimized typing-skill application is loaded with features. I went into this application with the idea of creating a head-to-head typing application to challenge yourself and others. Once I started the coding phase, many ideas started popping out at me to build such as a lobby system and chat capabilities. Other features I am proud of are the lobby options, scoring system, and practice lobbies while you wait around in the challenge lobby. When a player joins a lobby in a room, the player can choose the amount of words and with the max word length that the challenge will render. The scoring system calculates your accuracy and words per minute; corrected and uncorrected errors are accounted for in the scoring calculation algorithm.",
+			"processSub": "I chose to write both the client and server in TypeScript which taught me an incredible amount about TypeScript. This presented me with a good opportunity to work with TypeScript namespaces and classes as well as Node.js design concepts which I dont normally work with in the React Ecosystem.",
 			"conclusion": [
 				"Expanded my knowledge of OOP trechniques and architecture",
 				"Developed extensive experience with Socket.io API ",
@@ -43,9 +111,9 @@
 	{
 		"title": "Draggable-Array",
 		"slug": "draggable-array",
-		"description": "(NPM Package) - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children",
+		"description": "NPM Package - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children",
 		"writing": {
-			"process": "",
+			"process": "I had an idea when working on SQLifting, a personal workout application, to make a reusable component with drag and drop functionality to organize elements in an array. I ran into a plethora of issues trying to do this with NPM Packages, so my idea reformed into making a NPM package of my own that anyone could use. After writing the base functionality using the Browser Drag API + Reacts top-level API, it became clear this was going to be a easy to make, powerful utility component. This project came easy to me because I love making things for people to use while learning more about several different concepts and aspects that will make me a better programmer.",
 			"processSub": "",
 			"conclusion": [
 				"Learned Reacts Top-Level API and how to render components with it",
@@ -241,7 +309,7 @@
 	{
 		"title": "Godspeed",
 		"slug": "godspeed",
-		"description": "(NPM Package) - React UI Component and toolkit library",
+		"description": "NPM Package - React UI Component and toolkit library",
 		"writing": {
 			"process": "With my earliest experiences working in React, I found component design to be the most intersting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
 			"processSub": "Every developer knows styling components can be very tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized endeavors to work on.",

@@ -16,10 +16,21 @@
 	width: 100vw;
 	margin-top: 50px;
 	max-width: 100vw;
-	.res-btn {
+	display: none;
+	.resume-btn {
 		* {
 			font-weight: 400;
 		}
 		padding: 7px 15px;
+		font-size: 14px;
+	}
+}
+
+@include media("<=550") {
+	.resume {
+		display: none;
+	}
+	.resume-mobile {
+		display: flex;
 	}
 }

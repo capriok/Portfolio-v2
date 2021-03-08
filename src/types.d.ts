@@ -42,5 +42,5 @@ interface ThemeState {
 	night: boolean
 }
 
-type SetViewState = React.Dispatch<ViewState>
-type SetTheme = React.Dispatch<ThemeState>
+type SetViewState = React.Dispatch<React.SetStateAction<ViewState>>
+type SetTheme = React.Dispatch<React.SetStateAction<ThemeState>>

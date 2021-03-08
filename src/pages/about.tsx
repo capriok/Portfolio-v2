@@ -14,7 +14,7 @@ const About: React.FC = () => (
       <div className="about-cont">
         <h2>Background</h2>
         <p className="info">
-          My name is Kyle. I'm a self taught software developer turned college student based Arizona.
+          My name is Kyle. I'm a self taught software developer turned college student based in Arizona.
           I found my passion for learning computer sciences at the age of 16 and have been programming ever since.
           I've dedicated countless hours to learning and expanding this passion.
           Being able to effectively teach myself is something I am most proud of about myself.

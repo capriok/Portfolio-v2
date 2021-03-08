@@ -33,6 +33,7 @@ import {
 import {
 	DiSass,
 	DiDotnet,
+	DiPhp,
 	DiPostgresql
 } from 'react-icons/di';
 import {
@@ -40,15 +41,10 @@ import {
 	RiHtml5Line,
 	RiCss3Fill,
 } from 'react-icons/ri';
-import {
-	GiKoala
-} from 'react-icons/gi';
-import {
-	VscDatabase
-} from 'react-icons/vsc';
-import {
-	GrMysql
-} from 'react-icons/gr';
+import { GiKoala } from 'react-icons/gi';
+import { VscDatabase } from 'react-icons/vsc';
+import { GrMysql } from 'react-icons/gr';
+import { FaPhp } from 'react-icons/fa'
 
 const Skills: React.FC = () => {
 	const [tab, setTab] = useState<object>({ b: true })
@@ -103,9 +99,9 @@ const Skills: React.FC = () => {
 					<Anim Icon={SiTypescript} name="TypeScript" />
 					<Anim Icon={SiCsharp} name="CSharp" />
 					<Anim Icon={SiJava} name="Java" />
+					<Anim Icon={FaPhp} name="PHP" />
 				</Icons>
 				<Icons t="b">
-					<Anim Icon={DiDotnet} name="ASP.NET" />
 					<Anim Icon={SiReact} name="React" />
 					<Anim Icon={SiRedux} name="Redux" />
 					<Anim Icon={RiGatsbyLine} name="Gatsby" />
@@ -115,6 +111,7 @@ const Skills: React.FC = () => {
 					<Anim Icon={DiSass} name="SASS" />
 				</Icons>
 				<Icons t="c">
+					<Anim Icon={DiDotnet} name="ASP.NET" />
 					<Anim Icon={SiNodeDotJs} name="Express.js" />
 					<Anim Icon={GiKoala} name="Koa.js" />
 					<Anim Icon={GrMysql} name="SQL" />

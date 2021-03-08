@@ -41,21 +41,27 @@ const FullView: React.FC<Props> = ({ images, view, set }) => {
 	}
 
 	function prevImage(): void {
-		set({
-			open: true,
-			image: view.image === first ? last : view.image - 1
+		set((v) => {
+			return {
+				open: true,
+				image: v.image === first ? last : v.image - 1
+			}
 		})
 	}
 
 	function nextImage(): void {
-		set({
-			open: true,
-			image: view.image === last ? first : view.image + 1
+		set((v) => {
+			return {
+				open: true,
+				image: v.image === last ? first : v.image + 1
+			}
 		})
 	}
 
 	function close(): void {
-		set({ open: false, image: 0 })
+		set(() => {
+			return { open: false, image: 0 }
+		})
 	}
 
 	return (

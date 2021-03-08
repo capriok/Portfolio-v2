@@ -36,7 +36,7 @@ const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
         <div className="navs">
           <Link to="/about"><span className="mono">About</span></Link>
           <Link to="/work"><span className="mono">Work</span></Link>
-          <a href="mailto:capriodev@gmail.com" target="_blank" rel="noreferrer">
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm" target="_blank" rel="noreferrer">
             <span className="mono">Contact</span>
           </a>
           <Link to="/resume"><span className="mono">Resume</span></Link>

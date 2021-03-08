@@ -2,7 +2,7 @@
 	{
 		"title": "SQLifting",
 		"slug": "sqlifting",
-		"description": "Exercise smarter with a personalized exercise and workout plan building application",
+		"description": "Exercise smarter with a personalized exercise and workout plan building application, packed with analytic and social features",
 		"tags": [
 			"React",
 			"Express.js",
@@ -30,7 +30,7 @@
 	{
 		"title": "Godspeed",
 		"slug": "godspeed",
-		"description": "React component and toolkit library built for quick use and customizability",
+		"description": "NPM Package- React component and toolkit library built for simplicity, quick use and extensive customizability",
 		"tags": [
 			"Styled-Components",
 			"NPM",

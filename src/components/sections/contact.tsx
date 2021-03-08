@@ -10,7 +10,7 @@ const Contact: React.FC = () => (
 		<div className="content-cont">
 			<h1 className="section-title">Feel free to reach out.</h1>
 			<p>Direct Email</p>
-			<a href="mailto:capriodev@gmail.com" target="_blank" rel="noreferrer">
+			<a href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm" target="_blank" rel="noreferrer">
 				<button><HiOutlineMail /></button>
 			</a>
 		</div>

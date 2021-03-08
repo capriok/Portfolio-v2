@@ -15,9 +15,9 @@ const Switch: React.FC<Props> = ({ isMobile, theme, setTheme }) => {
 	const BRIGHT = { bright: true, night: false }
 	const NIGHT = { bright: false, night: true }
 
-	function set(MODE: ThemeState) {
-		setTheme(MODE)
-		localStorage.setItem('theme-settings', JSON.stringify(MODE))
+	function set(mode: ThemeState) {
+		setTheme(mode)
+		localStorage.setItem('theme-settings', JSON.stringify(mode))
 	}
 
 	const paintTheme = (arr) => {
