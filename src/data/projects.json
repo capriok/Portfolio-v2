@@ -4,7 +4,7 @@
 		"slug": "workpoints",
 		"description": "VSCode Extension - Create and cycle through points in which you are working within files by the use of keyboard shortcuts.",
 		"writing": {
-			"process": "This project is a Visual Studio Code extension available for use by anyone. Like many ideas, I came up with this extension to help solve a common real-world problem. When working in large files, thousands of lines, it is easy to and lose track of the points in which youre working when scrolling between lines far from one another. This extension makes available functionality to create workpoints in files and the ability to cycle through these workpoints. The extension uses three keyboard shortcuts that handle all functionality: Ctrl + , | Ctrl + . | Ctrl + Shift + / . The first two shortcuts are to cycle through workpoints in a file, left and right, placing the cursor on the line and revealing it in the center of your view. Whereas the last shortcut is used to add/ remove workpoints from current cursor position in an active file.",
+			"process": "This project is a Visual Studio Code extension available for use by anyone. Like many ideas, I came up with this extension to help solve a common real-world problem. When working in large files, thousands of lines, it is easy to and lose track of the points in which youre working when scrolling between lines far from one another. This extension makes available functionality to create workpoints in files and the ability to cycle through these workpoints. The extension uses three keyboard shortcuts that handle all functionality: Ctrl + , | Ctrl + . | Ctrl + Shift + / . The first two shortcuts cycle through workpoints in a file, placing the cursor on the line and revealing it in the center of your view. In adition, the last shortcut is used to add/ remove workpoints from current cursor position in a file.",
 			"processSub": "",
 			"conclusion": [
 				"Improved skills working with Webpack and Mocha",
@@ -232,7 +232,7 @@
 	{
 		"title": "SQLifting",
 		"slug": "sqlifting",
-		"description": "Personalized exercise and workout plan building application with MySQL backend",
+		"description": "Exercise smarter with a personalized exercise and workout plan building application, packed with analytic and social features",
 		"writing": {
 			"process": "When starting this project I had one goal in mind, to expand my abilities working with structured databases. I chose MySQL because of the tried and true user experience. Additionally, this project allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational Database Service (RDS) service.",
 			"processSub": "To start, I designed a simple front-end interface to display the data I would be rendering. Next, I spun up my express server, connected the database and started writing my first queries. Hitting the server routes and seeing my queries run for the first time was empowering. I developed much more appreciation for backend development. Throughout my work, I realized how to optimize my queries and improve how I architect the database, which is the most important aspect to me. This app, originally meant to practice querying with SQL, became one I use daily.",
@@ -311,7 +311,7 @@
 	{
 		"title": "Godspeed",
 		"slug": "godspeed",
-		"description": "NPM Package - React UI Component and toolkit library",
+		"description": "NPM Package - React component and toolkit library simply built for quick use and extensive customizability",
 		"writing": {
 			"process": "With my earliest experiences working in React, I found component design to be the most intersting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
 			"processSub": "Every developer knows styling components can be very tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized endeavors to work on.",
