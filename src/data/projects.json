@@ -1,5 +1,44 @@
 [
 	{
+		"title": "AutoSearch",
+		"slug": "autosearch",
+		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
+		"writing": {
+			"process": "",
+			"processSub": "",
+			"conclusion": [
+				"Built upon my knowledge of DevOps processes",
+				"Learned to effectively use Rollup.js and Jest",
+				"Exercised the use of modern React architecture best practices"
+			]
+		},
+		"stack": [
+			"TypeScript",
+			"NPM",
+			"Rollup",
+			"Jest"
+		],
+		"tags": [
+			"NPM Package",
+			"TypeScript",
+			"Rollup",
+			"2021"
+		],
+		"source": "https://github.com/capriok/WorkPoints",
+		"demo": "https://marketplace.visualstudio.com/items?itemName=capriok.workpoints",
+		"thumb": "./images/AUTOSEARCH-SANDBOX.jpg",
+		"images": [
+			"./images/AUTOSEARCH-SHOWCASE.jpg",
+			"./images/AUTOSEARCH-SANDBOX.jpg",
+			"./images/AUTOSEARCH-VISUAL.gif"
+		],
+		"resources": [
+			"https://docs.npmjs.com/cli/v6/commands/npm-publish",
+			"https://www.rollupjs.org/guide/en",
+			"https://jestjs.io/docs/api"
+		]
+	},
+	{
 		"title": "WorkPoints",
 		"slug": "workpoints",
 		"description": "VSCode Extension - Create and cycle through points in which you are working within files by the use of keyboard shortcuts.",
@@ -33,7 +72,7 @@
 		],
 		"resources": [
 			"https://code.visualstudio.com/api",
-			"https://marketplace.visualstudio.com/"
+			"https://marketplace.visualstudio.com"
 		]
 	},
 	{
@@ -148,7 +187,7 @@
 			"https://reactjs.org/docs/react-api.html",
 			"https://www.typescriptlang.org/docs/home.html",
 			"https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API",
-			"https://www.npmjs.com/"
+			"https://www.npmjs.com"
 		]
 	},
 	{
