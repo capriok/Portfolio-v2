@@ -6,7 +6,6 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-
 # Matches multiple files with brace expansion notation
 # Set default charset
 [*.{ts,tsx,html,sass,scss,css}]
