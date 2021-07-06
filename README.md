@@ -1,1 +1,1 @@
-<h1 align="center">[Portfolio](https://www.kylecaprio.dev/)</h1>
+<h1 align="center"><a href="https://www.kylecaprio.dev/">Portfolio<a/></h1>
