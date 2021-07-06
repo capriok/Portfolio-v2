@@ -28,17 +28,17 @@
 		"thumb": "./images/BMASTER-HOME.jpg"
 	},
 	{
-		"title": "Godspeed",
-		"slug": "godspeed",
-		"description": "NPM Package - React component and toolkit library simply built for quick use and extensive customizability",
+		"title": "AutoSearch",
+		"slug": "autosearch",
+		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
 		"tags": [
-			"Styled-Components",
-			"NPM",
-			"Gatsby",
-			"2020"
+			"NPM Package",
+			"TypeScript",
+			"Rollup",
+			"2021"
 		],
-		"source": "https://github.com/capriok/Godspeed",
-		"demo": "https://godspeed.kylecaprio.dev",
-		"thumb": "./images/GODSPEED-HOME.jpg"
+		"source": "https://github.com/capriok/autoSearch",
+		"demo": "https://codesandbox.io/s/autosearch-ltzg7",
+		"thumb": "./images/AUTOSEARCH-SANDBOX.jpg"
 	}
 ]

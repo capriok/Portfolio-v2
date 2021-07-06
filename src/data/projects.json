@@ -4,7 +4,7 @@
 		"slug": "autosearch",
 		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
 		"writing": {
-			"process": "",
+			"process": "Soon ™",
 			"processSub": "",
 			"conclusion": [
 				"Built upon my knowledge of DevOps processes",
@@ -24,8 +24,8 @@
 			"Rollup",
 			"2021"
 		],
-		"source": "https://github.com/capriok/WorkPoints",
-		"demo": "https://marketplace.visualstudio.com/items?itemName=capriok.workpoints",
+		"source": "https://github.com/capriok/autoSearch",
+		"demo": "https://codesandbox.io/s/autosearch-ltzg7",
 		"thumb": "./images/AUTOSEARCH-SANDBOX.jpg",
 		"images": [
 			"./images/AUTOSEARCH-SHOWCASE.jpg",
