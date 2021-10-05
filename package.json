@@ -52,7 +52,6 @@
     "clean": "gatsby clean"
   },
   "repository": {
-    "type": "git",
-    "url": ""
+    "type": "git"
   }
 }
