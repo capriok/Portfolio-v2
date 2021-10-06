@@ -1,9 +1,22 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "",
   "version": "2.0.0",
-  "author": "",
+  "author": "kyle caprio",
+  "scripts": {
+    "start": "npm run develop -o",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "repository": {
+    "type": "git"
+  },
   "dependencies": {
     "animate.css": "^3.7.2",
     "gatsby": "^2.28.2",
@@ -39,20 +52,5 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "typescript": "^4.1.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop -o",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
   }
 }

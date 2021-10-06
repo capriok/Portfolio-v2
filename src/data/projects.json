@@ -1,5 +1,40 @@
 [
 	{
+		"title": "Sweetie",
+		"slug": "sweetie",
+		"description": "A personal home dashboard hosted on a Raspberry Pi featuring a calender, weather stats, lists, and pet and plant schedules.",
+		"writing": {
+			"process": "Soon ™",
+			"processSub": "",
+			"conclusion": [
+				"Learned about Raspberry Pis and micro services",
+				"Built upon experience working with linux OS",
+				"Evolved my coding style and preferred project structure"
+			]
+		},
+		"stack": [
+			"TypeScript",
+			"React",
+			"Express.js",
+			"MongoDB"
+		],
+		"tags": [
+			"TypeScript",
+			"React",
+			"2021"
+		],
+		"source": "https://github.com/capriok/sweetie",
+		"demo": "https://github.com/capriok/sweetie",
+		"thumb": "./images/NOT-FOUND.jpg",
+		"images": [
+			"./images/NOT-FOUND.jpg"
+		],
+		"resources": [
+			"https://www.typescriptlang.org/docs/home.html",
+			"https://devcenter.heroku.com"
+		]
+	},
+	{
 		"title": "AutoSearch",
 		"slug": "autosearch",
 		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
@@ -122,6 +157,7 @@
 			]
 		},
 		"stack": [
+			"TypeScript",
 			"React",
 			"Express.js",
 			"Socket.io",
@@ -163,7 +199,7 @@
 			]
 		},
 		"stack": [
-			"React with TypeScript",
+			"TypeScript",
 			"React Top Level API",
 			"Browser Drag API",
 			"NPM",
@@ -206,7 +242,8 @@
 			]
 		},
 		"stack": [
-			"React with TypeScript",
+			"TypeScript",
+			"React",
 			"SASS"
 		],
 		"tags": [
