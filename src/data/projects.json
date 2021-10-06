@@ -25,9 +25,12 @@
 		],
 		"source": "https://github.com/capriok/sweetie",
 		"demo": "https://github.com/capriok/sweetie",
-		"thumb": "./images/NOT-FOUND.jpg",
+		"thumb": "./images/SWEETIE-SHOWCASE.jpg",
 		"images": [
-			"./images/NOT-FOUND.jpg"
+			"./images/SWEETIE-SHOWCASE.jpg",
+			"./images/SWEETIE-PRODUCT.jpg",
+			"./images/SWEETIE-MOBILE1.jpg",
+			"./images/SWEETIE-MOBILE2.jpg"
 		],
 		"resources": [
 			"https://www.typescriptlang.org/docs/home.html",
