@@ -16,7 +16,7 @@
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url:"https://github.com/capriok/Portfolio-v2"
+    "url:""
   },
   "dependencies": {
     "animate.css": "^3.7.2",
