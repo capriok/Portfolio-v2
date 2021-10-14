@@ -43,4 +43,5 @@ interface ThemeState {
 }
 
 type SetViewState = React.Dispatch<React.SetStateAction<ViewState>>
+
 type SetTheme = React.Dispatch<React.SetStateAction<ThemeState>>
