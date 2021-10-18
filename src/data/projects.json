@@ -4,8 +4,8 @@
 		"slug": "sweetie",
 		"description": "A personal home dashboard hosted on a Raspberry Pi featuring a calender, weather stats, lists, and pet and plant schedules.",
 		"writing": {
-			"process": "Soon ™",
-			"processSub": "",
+			"process": "This personal project is proprietary to my home life as it encompasses things that are specific to us around the house. The application is my first code to phycial product. I am running the server and the client application on a Rasberry Pi on Rasbian. The Pi starts itself up at 8am and shuts off at 12am which ensures power optimization. The automation of the system is what makes it what it is.",
+			"processSub": "There is also an application called the Suite that allows creation and alteration of calender events, tasks, grocery lists and anything else Sweetie uses or displays. Sweetie has websocket connections polling with the server to ensure it stays updated when the Suite application updates the MongoDB database. Sweetie will refresh itself and request the most updated data from the server when certain triggers are hit.",
 			"conclusion": [
 				"Learned about Raspberry Pis and micro services",
 				"Built upon experience working with linux OS",
@@ -13,6 +13,7 @@
 			]
 		},
 		"stack": [
+			"Raspberry Pi",
 			"TypeScript",
 			"React",
 			"Express.js",
@@ -42,7 +43,7 @@
 		"slug": "autosearch",
 		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
 		"writing": {
-			"process": "Soon ™",
+			"process": "This project started out as requirement for another application I was building at the time but quickly evolved into its own fully-scaled and dynamic search autocomplete component. I had a great time building this all while trying to apply the best practices I know thus far in my programming career. I learned a great deal from designing, implementing and testing the component. The most valuable lesson or aspect of this project was the implementation of callback functions to supply action and navigation info outside of the component.",
 			"processSub": "",
 			"conclusion": [
 				"Built upon my knowledge of DevOps processes",
@@ -114,39 +115,6 @@
 		]
 	},
 	{
-		"title": "EnvLocker",
-		"slug": "env-locker",
-		"description": "C# Windows Forms application that securely stores project environment variables behind a 4-digit user authentication passcode.",
-		"writing": {
-			"process": "Soon ™",
-			"processSub": "",
-			"conclusion": [
-				"Familiarized myself with WinForms application and APIs",
-				"Improved skills of writing fluent and robust C# code",
-				"Learned a lot about windows operating system and file storage"
-			]
-		},
-		"stack": [
-			"C Sharp",
-			"ASP.NET Core",
-			"Windows Forms"
-		],
-		"tags": [
-			"Windows Forms",
-			"C#",
-			"2021"
-		],
-		"source": "https://github.com/capriok/Env-Locker",
-		"demo": "https://kylecaprio.dev/env-locker",
-		"thumb": "./images/NOT-FOUND.jpg",
-		"images": [
-			"./images/NOT-FOUND.jpg"
-		],
-		"resources": [
-			"https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"
-		]
-	},
-	{
 		"title": "Board Master",
 		"slug": "board-master",
 		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
@@ -186,6 +154,45 @@
 		"resources": [
 			"https://socket.io",
 			"https://devcenter.heroku.com"
+		]
+	},
+	{
+		"title": "Apex Performance",
+		"slug": "apex-performance",
+		"description": "Local professional athlete training faclity client website showcasing services offered and roster of available personnel.",
+		"writing": {
+			"process": "A good friend at Apex Performance Facility gave me the opportunity to design and host their comapny website. The website is simple and direct to the point per specifications from the client. Essential inquiry information about services offered and personnel available for training was the main focus.",
+			"processSub": "Furthermore, the client also contacted me and a partner to create a training software for the business thus FitTrainer was born to accomadate this need. The software we built helps to keep track of clients, appoointments, goal progress, and performance. Next.js was a clear solution for this application as it would need to be very dynamic as well as performant to a modern scale.",
+			"conclusion": [
+				"Improved skills working in Next.js environment",
+				"Built a widely used application, encouraging feeling.",
+				"Strengthened client based social relations.",
+				"Built upon personal professional reputation."
+			]
+		},
+		"stack": [
+			"TypeScript",
+			"Next.js",
+			"Express.js",
+			"Netlify"
+		],
+		"tags": [
+			"Next.js",
+			"TypeScript",
+			"Freelance",
+			"2021"
+		],
+		"source": "https://github.com/capriok/ApexPerformance",
+		"demo": "https://kylecaprio.dev/apex-performance",
+		"thumb": "./images/APEXAPF-SHOWCASE.jpg",
+		"images": [
+			"./images/APEXAPF-SHOWCASE.jpg",
+			"./images/APEXFT-LAPTOP.jpg",
+			"./images/APEXFT-TABLET.jpg"
+		],
+		"resources": [
+			"https://www.typescriptlang.org/docs/home.html",
+			"https://nextjs.org/docs"
 		]
 	},
 	{
@@ -230,45 +237,6 @@
 		]
 	},
 	{
-		"title": "Cash Flow",
-		"slug": "cashflow",
-		"description": "Mobile budgeting application featuring individual user accounts with multiple budget sheets, interface customization and more",
-		"writing": {
-			"process": "Building many web applications with JavaScript has brought me to love the language. I have also come to understand the quirks and shortcomings of the language. With this application, I wanted to build something I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to learn everything about it.",
-			"processSub": "As programmers, we strive to write better structured and organized code with less bugs. React and TypeScript are a match made in heaven for that purpose, in my opinion. In very little time, I realized how TypeScript expedites the building process and maintains a better structured code base. I also learned a lot about how React works under the hood when learning about type assertions and generics. This is something I feel is very important to know while developing in the React framework Building. This app has fueled my passion to keep learning and progressing my programmatic skills.",
-			"conclusion": [
-				"Learned TypeScript fundementals ( Interfaces, Type Assertion, Generics, Unions and Intersections )",
-				"Expanded knowledge about how React works under the hood",
-				"Progressed experience with debugging and error handling",
-				"Improved skills working with and manipulating deeply nested object properties",
-				"Became far more confident in writing code without reference"
-			]
-		},
-		"stack": [
-			"TypeScript",
-			"React",
-			"SASS"
-		],
-		"tags": [
-			"TypeScript",
-			"React",
-			"SASS",
-			"2020"
-		],
-		"source": "https://github.com/capriok/CashFlow",
-		"demo": "https://cashflow.kylecaprio.dev",
-		"thumb": "./images/CASHFLOW-GREETING.jpg",
-		"images": [
-			"./images/CASHFLOW-GREETING.jpg",
-			"./images/CASHFLOW-DATASHEET.jpg",
-			"./images/CASHFLOW-NEWBUDGET.jpg",
-			"./images/CASHFLOW-DELETE.jpg"
-		],
-		"resources": [
-			"https://www.typescriptlang.org/docs/home.html"
-		]
-	},
-	{
 		"title": "KP Construction",
 		"slug": "kp-construction",
 		"description": "Small business client’s contractor portfolio showcasing services offered, area of expertise and highlighting past endeavors",
@@ -306,6 +274,78 @@
 		],
 		"resources": [
 			"https://nodemailer.com/about"
+		]
+	},
+	{
+		"title": "EnvLocker",
+		"slug": "env-locker",
+		"description": "C# Windows Forms application that securely stores project environment variables behind a 4-digit user authentication passcode.",
+		"writing": {
+			"process": "Soon ™",
+			"processSub": "",
+			"conclusion": [
+				"Familiarized myself with WinForms application and APIs",
+				"Improved skills of writing fluent and robust C# code",
+				"Learned a lot about windows operating system and file storage"
+			]
+		},
+		"stack": [
+			"C Sharp",
+			"ASP.NET Core",
+			"Windows Forms"
+		],
+		"tags": [
+			"Windows Forms",
+			"C#",
+			"2021"
+		],
+		"source": "https://github.com/capriok/Env-Locker",
+		"demo": "https://kylecaprio.dev/env-locker",
+		"thumb": "./images/NOT-FOUND.jpg",
+		"images": [
+			"./images/NOT-FOUND.jpg"
+		],
+		"resources": [
+			"https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"
+		]
+	},
+	{
+		"title": "Cash Flow",
+		"slug": "cashflow",
+		"description": "Mobile budgeting application featuring individual user accounts with multiple budget sheets, interface customization and more",
+		"writing": {
+			"process": "Building many web applications with JavaScript has brought me to love the language. I have also come to understand the quirks and shortcomings of the language. With this application, I wanted to build something I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to learn everything about it.",
+			"processSub": "As programmers, we strive to write better structured and organized code with less bugs. React and TypeScript are a match made in heaven for that purpose, in my opinion. In very little time, I realized how TypeScript expedites the building process and maintains a better structured code base. I also learned a lot about how React works under the hood when learning about type assertions and generics. This is something I feel is very important to know while developing in the React framework Building. This app has fueled my passion to keep learning and progressing my programmatic skills.",
+			"conclusion": [
+				"Learned TypeScript fundementals ( Interfaces, Type Assertion, Generics, Unions and Intersections )",
+				"Expanded knowledge about how React works under the hood",
+				"Progressed experience with debugging and error handling",
+				"Improved skills working with and manipulating deeply nested object properties",
+				"Became far more confident in writing code without reference"
+			]
+		},
+		"stack": [
+			"TypeScript",
+			"React",
+			"SASS"
+		],
+		"tags": [
+			"TypeScript",
+			"React",
+			"SASS",
+			"2020"
+		],
+		"source": "https://github.com/capriok/CashFlow",
+		"demo": "https://cashflow.kylecaprio.dev",
+		"thumb": "./images/CASHFLOW-GREETING.jpg",
+		"images": [
+			"./images/CASHFLOW-GREETING.jpg",
+			"./images/CASHFLOW-DATASHEET.jpg",
+			"./images/CASHFLOW-NEWBUDGET.jpg",
+			"./images/CASHFLOW-DELETE.jpg"
+		],
+		"resources": [
+			"https://www.typescriptlang.org/docs/home.html"
 		]
 	},
 	{

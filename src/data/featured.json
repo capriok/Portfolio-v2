@@ -28,17 +28,17 @@
 		"thumb": "./images/BMASTER-HOME.jpg"
 	},
 	{
-		"title": "AutoSearch",
-		"slug": "autosearch",
-		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
+		"title": "Apex Performance",
+		"slug": "apex-performance",
+		"description": "Local professional athlete training faclity client website showcasing services offered and roster of available personnel.",
 		"tags": [
-			"NPM Package",
+			"Next.js",
 			"TypeScript",
-			"Rollup",
+			"Freelance",
 			"2021"
 		],
-		"source": "https://github.com/capriok/autoSearch",
-		"demo": "https://codesandbox.io/s/autosearch-ltzg7",
-		"thumb": "./images/AUTOSEARCH-SANDBOX.jpg"
+		"source": "https://github.com/capriok/ApexPerformance",
+		"demo": "https://kylecaprio.dev/apex-performance",
+		"thumb": "./images/APEXAPF-SHOWCASE.jpg"
 	}
 ]
