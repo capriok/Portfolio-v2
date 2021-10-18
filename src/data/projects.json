@@ -183,10 +183,12 @@
 			"2021"
 		],
 		"source": "https://github.com/capriok/ApexPerformance",
-		"demo": "https://kylecaprio.dev/apex-performance",
+		"demo": "https://apextrainingapp.com",
 		"thumb": "./images/APEXAPF-SHOWCASE.jpg",
 		"images": [
 			"./images/APEXAPF-SHOWCASE.jpg",
+			"./images/APEXFT-SHOWCASE.jpg",
+			"./images/APEXFT-SHOWCASE2.jpg",
 			"./images/APEXFT-LAPTOP.jpg",
 			"./images/APEXFT-TABLET.jpg"
 		],
@@ -274,6 +276,51 @@
 		],
 		"resources": [
 			"https://nodemailer.com/about"
+		]
+	},
+	{
+		"title": "Godspeed",
+		"slug": "godspeed",
+		"description": "NPM Package - React component and toolkit library simply built for quick use and extensive customizability",
+		"writing": {
+			"process": "With my earliest experiences working in React, I found component design to be the most intersting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
+			"processSub": "Every developer knows styling components can be very tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized endeavors to work on.",
+			"conclusion": [
+				"Expanded my knowledge about the inner workings of which NPM packages are made",
+				"Developed a comfort with working inside complex enterprise tailored code bases",
+				"Learned a lot about prop-types and error handling to esure correct use opf the package",
+				"Learned Gatsby.js to make the documention website"
+			]
+		},
+		"stack": [
+			"Styled-Components",
+			"React",
+			"JavaScript",
+			"NPM",
+			"Gatsby",
+			"SASS"
+		],
+		"tags": [
+			"Gatsby",
+			"React",
+			"JavaScript",
+			"NPM",
+			"2020",
+			""
+		],
+		"source": "https://github.com/capriok/Godspeed",
+		"demo": "https://godspeed.kylecaprio.dev",
+		"thumb": "./images/GODSPEED-HOME.jpg",
+		"images": [
+			"./images/GODSPEED-SHOWCASE.jpg",
+			"./images/GODSPEED-HOME.jpg",
+			"./images/GODSPEED-BUTTON.jpg",
+			"./images/GODSPEED-INPUT.jpg",
+			"./images/GODSPEED-MODAL.jpg"
+		],
+		"resources": [
+			"https://www.styled-components.com",
+			"https://www.npmjs.com"
 		]
 	},
 	{
@@ -426,51 +473,6 @@
 			"./images/SNEKKEL-DIFFICULTY.jpg"
 		],
 		"resources": []
-	},
-	{
-		"title": "Godspeed",
-		"slug": "godspeed",
-		"description": "NPM Package - React component and toolkit library simply built for quick use and extensive customizability",
-		"writing": {
-			"process": "With my earliest experiences working in React, I found component design to be the most intersting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
-			"processSub": "Every developer knows styling components can be very tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized endeavors to work on.",
-			"conclusion": [
-				"Expanded my knowledge about the inner workings of which NPM packages are made",
-				"Developed a comfort with working inside complex enterprise tailored code bases",
-				"Learned a lot about prop-types and error handling to esure correct use opf the package",
-				"Learned Gatsby.js to make the documention website"
-			]
-		},
-		"stack": [
-			"Styled-Components",
-			"React",
-			"JavaScript",
-			"NPM",
-			"Gatsby",
-			"SASS"
-		],
-		"tags": [
-			"Gatsby",
-			"React",
-			"JavaScript",
-			"NPM",
-			"2020",
-			""
-		],
-		"source": "https://github.com/capriok/Godspeed",
-		"demo": "https://godspeed.kylecaprio.dev",
-		"thumb": "./images/GODSPEED-HOME.jpg",
-		"images": [
-			"./images/GODSPEED-SHOWCASE.jpg",
-			"./images/GODSPEED-HOME.jpg",
-			"./images/GODSPEED-BUTTON.jpg",
-			"./images/GODSPEED-INPUT.jpg",
-			"./images/GODSPEED-MODAL.jpg"
-		],
-		"resources": [
-			"https://www.styled-components.com",
-			"https://www.npmjs.com"
-		]
 	},
 	{
 		"title": "DisArray",
