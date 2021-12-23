@@ -4,6 +4,8 @@ import '../styles/resume.scss'
 
 const PDF = process.env.GATSBY_RESUME
 
+console.log(process.env.GATSBY_RESUME);
+
 const Resume: React.FC = () => (
 	<Layout>
 		<div className="resume">

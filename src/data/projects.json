@@ -2,9 +2,9 @@
 	{
 		"title": "Sweetie",
 		"slug": "sweetie",
-		"description": "A personal home dashboard hosted on a Raspberry Pi featuring a calender, weather stats, lists, and pet and plant schedules.",
+		"description": "A personal home dashboard hosted on a Raspberry Pi featuring a calendar, weather stats, lists, and pet and plant schedules.",
 		"writing": {
-			"process": "This personal project is proprietary to my home life as it encompasses things that are specific to us around the house. The application is my first code to phycial product. I am running the server and the client application on a Rasberry Pi on Rasbian. The Pi starts itself up at 8am and shuts off at 12am which ensures power optimization. The automation of the system is what makes it what it is.",
+			"process": "This personal project is proprietary to my home life as it encompasses things that are specific to us around the house. The application is my first code to physical product. I am running the server and the client application on a Rasberry Pi on Rasbian. The Pi starts itself up at 8am and shuts off at 12am which ensures power optimization. The automation of the system is what makes it what it is.",
 			"processSub": "There is also an application called the Suite that allows creation and alteration of calender events, tasks, grocery lists and anything else Sweetie uses or displays. Sweetie has websocket connections polling with the server to ensure it stays updated when the Suite application updates the MongoDB database. Sweetie will refresh itself and request the most updated data from the server when certain triggers are hit.",
 			"conclusion": [
 				"Learned about Raspberry Pis and micro services",
@@ -41,7 +41,7 @@
 	{
 		"title": "AutoSearch",
 		"slug": "autosearch",
-		"description": "NPM Pacakge - React autocomplete and search component featuring keyboard navigation and easy customization.",
+		"description": "NPM Package - React autocomplete and search component featuring keyboard navigation and easy customization.",
 		"writing": {
 			"process": "This project started out as requirement for another application I was building at the time but quickly evolved into its own fully-scaled and dynamic search autocomplete component. I had a great time building this all while trying to apply the best practices I know thus far in my programming career. I learned a great deal from designing, implementing and testing the component. The most valuable lesson or aspect of this project was the implementation of callback functions to supply action and navigation info outside of the component.",
 			"processSub": "",
@@ -82,7 +82,7 @@
 		"slug": "workpoints",
 		"description": "VSCode Extension - Create and cycle through points in which you are working within files by the use of keyboard shortcuts.",
 		"writing": {
-			"process": "This project is a Visual Studio Code extension available for use by anyone. Like many ideas, I came up with this extension to help solve a common real-world problem. When working in large files, thousands of lines, it is easy to and lose track of the points in which youre working when scrolling between lines far from one another. This extension makes available functionality to create workpoints in files and the ability to cycle through these workpoints. The extension uses three keyboard shortcuts that handle all functionality: Ctrl + , | Ctrl + . | Ctrl + Shift + / . The first two shortcuts cycle through workpoints in a file, placing the cursor on the line and revealing it in the center of your view. In adition, the last shortcut is used to add/ remove workpoints from current cursor position in a file.",
+			"process": "This project is a Visual Studio Code extension available for use by anyone. Like many ideas, I came up with this extension to help solve a common real-world problem. When working in large files, thousands of lines, it is easy to and lose track of the points in which youre working when scrolling between lines far from one another. This extension makes available functionality to create workpoints in files and the ability to cycle through these workpoints. The extension uses three keyboard shortcuts that handle all functionality: Ctrl + , | Ctrl + . | Ctrl + Shift + / . The first two shortcuts cycle through workpoints in a file, placing the cursor on the line and revealing it in the center of your view. In addition, the last shortcut is used to add/ remove workpoints from current cursor position in a file.",
 			"processSub": "",
 			"conclusion": [
 				"Improved skills working with Webpack and Mocha",
@@ -122,9 +122,9 @@
 			"process": "Inspired by typings.gg, this optimized typing-skill application is loaded with features. I went into this application with the idea of creating a head-to-head typing application to challenge yourself and others. Once I started the coding phase, many ideas started popping out at me to build such as a lobby system and chat capabilities. Other features I am proud of are the lobby options, scoring system, and practice lobbies while you wait around in the challenge lobby. When a player joins a lobby in a room, the player can choose the amount of words and with the max word length that the challenge will render. The scoring system calculates your accuracy and words per minute; corrected and uncorrected errors are accounted for in the scoring calculation algorithm.",
 			"processSub": "I chose to write both the client and server in TypeScript which taught me an incredible amount about TypeScript. This presented me with a good opportunity to work with TypeScript namespaces and classes as well as Node.js design concepts which I dont normally work with in the React Ecosystem.",
 			"conclusion": [
-				"Expanded my knowledge of OOP trechniques and architecture",
+				"Expanded my knowledge of OOP techniques and architecture",
 				"Developed extensive experience with Socket.io API ",
-				"Became more knowledgable with real-time client to server communication"
+				"Became more knowledgeable with real-time client to server communication"
 			]
 		},
 		"stack": [
@@ -159,10 +159,10 @@
 	{
 		"title": "Apex Performance",
 		"slug": "apex-performance",
-		"description": "Local professional athlete training faclity client website showcasing services offered and roster of available personnel.",
+		"description": "Local professional athlete training facility client website showcasing services offered and roster of available personnel.",
 		"writing": {
-			"process": "A good friend at Apex Performance Facility gave me the opportunity to design and host their comapny website. The website is simple and direct to the point per specifications from the client. Essential inquiry information about services offered and personnel available for training was the main focus.",
-			"processSub": "Furthermore, the client also contacted me and a partner to create a training software for the business thus FitTrainer was born to accomadate this need. The software we built helps to keep track of clients, appoointments, goal progress, and performance. Next.js was a clear solution for this application as it would need to be very dynamic as well as performant to a modern scale.",
+			"process": "A good friend at Apex Performance Facility gave me the opportunity to design and host their company website. The website is simple and direct to the point per specifications from the client. Essential inquiry information about services offered and personnel available for training was the main focus.",
+			"processSub": "Furthermore, the client also contacted me and a partner to create a training software for the business thus FitTrainer was born to accommodate this need. The software we built helps to keep track of clients, appointments, goal progress, and performance. Next.js was a clear solution for this application as it would need to be very dynamic as well as performant to a modern scale.",
 			"conclusion": [
 				"Improved skills working in Next.js environment",
 				"Built a widely used application, encouraging feeling.",
@@ -248,7 +248,7 @@
 			"conclusion": [
 				"Improved UI/UX design skills",
 				"Learned about and implemented a reusable email server with express",
-				"Progressed customer service skills and ability to meet cuctomer expectations",
+				"Progressed customer service skills and ability to meet customer expectations",
 				"Acquired more possibility for referrals for new clients"
 			]
 		},
@@ -283,13 +283,13 @@
 		"slug": "godspeed",
 		"description": "NPM Package - React component and toolkit library simply built for quick use and extensive customizability",
 		"writing": {
-			"process": "With my earliest experiences working in React, I found component design to be the most intersting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
+			"process": "With my earliest experiences working in React, I found component design to be the most interesting. This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building great looking components. However, when it came simple customization, which is important to me, the complexity and amount of code needed was detrimental to the process.",
 			"processSub": "Every developer knows styling components can be very tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized endeavors to work on.",
 			"conclusion": [
 				"Expanded my knowledge about the inner workings of which NPM packages are made",
 				"Developed a comfort with working inside complex enterprise tailored code bases",
-				"Learned a lot about prop-types and error handling to esure correct use opf the package",
-				"Learned Gatsby.js to make the documention website"
+				"Learned a lot about prop-types and error handling to ensure correct use opf the package",
+				"Learned Gatsby.js to make the documentation website"
 			]
 		},
 		"stack": [
@@ -364,7 +364,7 @@
 			"process": "Building many web applications with JavaScript has brought me to love the language. I have also come to understand the quirks and shortcomings of the language. With this application, I wanted to build something I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to learn everything about it.",
 			"processSub": "As programmers, we strive to write better structured and organized code with less bugs. React and TypeScript are a match made in heaven for that purpose, in my opinion. In very little time, I realized how TypeScript expedites the building process and maintains a better structured code base. I also learned a lot about how React works under the hood when learning about type assertions and generics. This is something I feel is very important to know while developing in the React framework Building. This app has fueled my passion to keep learning and progressing my programmatic skills.",
 			"conclusion": [
-				"Learned TypeScript fundementals ( Interfaces, Type Assertion, Generics, Unions and Intersections )",
+				"Learned TypeScript fundamentals ( Interfaces, Type Assertion, Generics, Unions and Intersections )",
 				"Expanded knowledge about how React works under the hood",
 				"Progressed experience with debugging and error handling",
 				"Improved skills working with and manipulating deeply nested object properties",
@@ -477,9 +477,9 @@
 	{
 		"title": "DisArray",
 		"slug": "disarray",
-		"description": "Tile puzzle game challenging your strategic and critical thinking skills with an engouraged competitive aspect",
+		"description": "Tile puzzle game challenging your strategic and critical thinking skills with an encouraged competitive aspect",
 		"writing": {
-			"process": "The #100DaysOfCode challenge all across social media inspired me to build a JavaScript game. I Immediately had the perfect game in mind, a 16-tile sorting puzzle I had in my youth but could never truely solve. Planning the code structure came to me rather quickly, which made me more excited to build this game. The main challenge hit when it was time to write the tile movement and checking for wins. Once that was all sorted out it was time to introduce the competitive aspect. This entailed writing a timer to track the current game length, as well as writing the leaderboards server code to keep track of user wins and times.",
+			"process": "The #100DaysOfCode challenge all across social media inspired me to build a JavaScript game. I Immediately had the perfect game in mind, a 16-tile sorting puzzle I had in my youth but could never truly solve. Planning the code structure came to me rather quickly, which made me more excited to build this game. The main challenge hit when it was time to write the tile movement and checking for wins. Once that was all sorted out it was time to introduce the competitive aspect. This entailed writing a timer to track the current game length, as well as writing the leaderboards server code to keep track of user wins and times.",
 			"processSub": "",
 			"conclusion": [
 				"Extensively improved my array and object manipulation skills",
@@ -516,7 +516,7 @@
 	{
 		"title": "Portfolio v1",
 		"slug": "portfolio-v1",
-		"description": "Version One of my sofware developer portfolio, built with React.js alone",
+		"description": "Version One of my software developer portfolio, built with React.js alone",
 		"writing": {
 			"process": "The main goal was to create a space for people to visually see my skills and experience clearly. I strongly believe showcasing personal projects and professional endeavors is key for any software developer. After building the website structure, it came time to reflect on myself and what I've learned and accomplished over the years. This portfolio is something I hold dear to my heart as it is the forefront of what will land me my first job as a developer and change my life forever. This is who I am and what I love doing, take a look.",
 			"processSub": "",
@@ -556,7 +556,7 @@
 		"description": "Harnessing the power of socket.io to create a chatroom application. Fully functional with individual rooms, typing alerts and private messages.",
 		"writing": {
 			"process": "This was one of the first complex collaborative projects I have done, two main contributors being Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat room application. Socket.io and Express in Node were the foundation of this application. Learning about web sockets was extremely intriguing to me and taught me a lot about how countless other web applications work.",
-			"processSub": "The most difficult feature was the implementation of private messaging. After long sessions of brainstorming, discussing and planning we realized quite a few key foundations of code needed to be rewritten. We pushed through, and were very thankful we did, because the end result of this project and the chemistry built with eachother was something to be very proud of.",
+			"processSub": "The most difficult feature was the implementation of private messaging. After long sessions of brainstorming, discussing and planning we realized quite a few key foundations of code needed to be rewritten. We pushed through, and were very thankful we did, because the end result of this project and the chemistry built with each other was something to be very proud of.",
 			"conclusion": [
 				"Developed a proficient understanding of web sockets and server based applications",
 				"Progressed my teamwork skills working in professional-style environments",
@@ -673,7 +673,7 @@
 		"slug": "tookfeed",
 		"description": "Harnessing the power of News API to stay up to date on global or local news",
 		"writing": {
-			"process": "My goal of this project was to create a newsfeed application I could tailor to my own interests. During the development process, I greatly improved my JavaScript and Web Development skills. Teaching myself React was the big challenge of this project. My lack of knowledge about state management and lifecycles quickly changed as I devoted myself to this learning framework. I fell in love with React and have been using it exclusively ever since.",
+			"process": "My goal of this project was to create a news feed application I could tailor to my own interests. During the development process, I greatly improved my JavaScript and Web Development skills. Teaching myself React was the big challenge of this project. My lack of knowledge about state management and lifecycles quickly changed as I devoted myself to this learning framework. I fell in love with React and have been using it exclusively ever since.",
 			"processSub": "",
 			"conclusion": [
 				"Learned React from the ground up",
