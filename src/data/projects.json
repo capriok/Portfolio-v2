@@ -31,7 +31,10 @@
 			"./images/SWEETIE-SHOWCASE.jpg",
 			"./images/SWEETIE-PRODUCT.jpg",
 			"./images/SWEETIE-MOBILE1.jpg",
-			"./images/SWEETIE-MOBILE2.jpg"
+			"./images/SWEETIE-MOBILE2.jpg",
+			"./images/SWEETIE-MOBILE3.jpg",
+			"./images/SWEETIE-MOBILE4.jpg",
+			"./images/SWEETIE-MOBILE5.jpg"
 		],
 		"resources": [
 			"https://www.typescriptlang.org/docs/home.html",
@@ -159,7 +162,7 @@
 	{
 		"title": "Apex Performance",
 		"slug": "apex-performance",
-		"description": "Local professional athlete training facility client website showcasing services offered and roster of available personnel.",
+		"description": "Local client's professional athletic training facility website showcasing services offered and roster of available personnel.",
 		"writing": {
 			"process": "A good friend at Apex Performance Facility gave me the opportunity to design and host their company website. The website is simple and direct to the point per specifications from the client. Essential inquiry information about services offered and personnel available for training was the main focus.",
 			"processSub": "Furthermore, the client also contacted me and a partner to create a training software for the business thus FitTrainer was born to accommodate this need. The software we built helps to keep track of clients, appointments, goal progress, and performance. Next.js was a clear solution for this application as it would need to be very dynamic as well as performant to a modern scale.",
@@ -187,8 +190,9 @@
 		"thumb": "./images/APEXAPF-SHOWCASE.jpg",
 		"images": [
 			"./images/APEXAPF-SHOWCASE.jpg",
-			"./images/APEXFT-SHOWCASE.jpg",
-			"./images/APEXFT-SHOWCASE2.jpg",
+			"./images/APEXAPF-VISUAL.jpg",
+			"./images/APEXFT-VISUAL.jpg",
+			"./images/APEXFT-VISUAL2.jpg",
 			"./images/APEXFT-LAPTOP.jpg",
 			"./images/APEXFT-TABLET.jpg"
 		],

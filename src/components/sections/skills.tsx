@@ -25,15 +25,14 @@ import {
 	SiMariadbfoundation,
 	SiAmazonaws,
 	SiMicrosoftazure,
-	SiNetlify,
-	SiHeroku,
 	SiGithub,
+	SiNetlify,
 	SiNpm,
+	SiHeroku
 } from 'react-icons/si';
 import {
 	DiSass,
 	DiDotnet,
-	DiPhp,
 	DiPostgresql
 } from 'react-icons/di';
 import {
@@ -85,7 +84,7 @@ const Skills: React.FC = () => {
 
 	return (
 		<div className="skills-section">
-			<h1 className="section-title">Specialties</h1>
+			<h1 className="section-title">Technology</h1>
 			<div className="skills-cont">
 				<ul className="tabs">
 					<Tab t="a"><span>Programming </span><span>Languages</span></Tab>

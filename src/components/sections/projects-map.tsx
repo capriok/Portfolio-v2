@@ -51,23 +51,21 @@ const ProjectsMap = () => {
 
   return (
     <div className="projects-map-section">
-      <h1 className="section-title">Full Collection</h1>
+      <h1 className="section-title">Project Collection</h1>
       <div className="cards-cont">
         {projects.slice(0, atHome ? pg : projects.length).map(({ node: project }, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
       {atHome && <div className="button-cont">
-        <button
-          onClick={() => setPg(pg - 3)}
-          disabled={pg === 6}>
+        {pg > 6 && <button
+          onClick={() => setPg(pg - 3)}>
           <MdExpandLess />
-        </button>
-        <button
-          onClick={() => setPg(pg + 3)}
-          disabled={pg >= projects.length}>
+        </button>}
+        {pg <= projects.length && <button
+          onClick={() => setPg(pg + 3)}>
           <MdExpandMore />
-        </button>
+        </button>}
       </div>}
     </div>
   )

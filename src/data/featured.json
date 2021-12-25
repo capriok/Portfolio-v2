@@ -1,36 +1,8 @@
 [
 	{
-		"title": "SQLifting",
-		"slug": "sqlifting",
-		"description": "Exercise smarter with a personalized exercise and workout plan building application, packed with analytic and social features",
-		"tags": [
-			"React",
-			"Express.js",
-			"MySQL",
-			"2021"
-		],
-		"source": "https://github.com/capriok/SQLifting",
-		"demo": "https://sqlifting.kylecaprio.dev",
-		"thumb": "./images/SQLIFTING-WORKOUT.jpg"
-	},
-	{
-		"title": "Board Master",
-		"slug": "board-master",
-		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
-		"tags": [
-			"React",
-			"Express.js",
-			"Socket.io",
-			"2021"
-		],
-		"source": "https://github.com/capriok/Board-Master",
-		"demo": "https://board-master.kylecaprio.dev",
-		"thumb": "./images/BMASTER-HOME.jpg"
-	},
-	{
 		"title": "Apex Performance",
 		"slug": "apex-performance",
-		"description": "Local professional athlete training facility client website showcasing services offered and roster of available personnel.",
+		"description": "Local client's professional athletic training facility website showcasing services offered and roster of available personnel.",
 		"tags": [
 			"Next.js",
 			"TypeScript",
@@ -39,5 +11,33 @@
 		"source": "https://github.com/capriok/ApexPerformance",
 		"demo": "https://kylecaprio.dev/apex-performance",
 		"thumb": "./images/APEXAPF-SHOWCASE.jpg"
+	},
+	{
+		"title": "Board Master",
+		"slug": "board-master",
+		"description": "Head to head competitive typing test featuring words per minute and accuracy scoring, built on Express.js and Socket.io",
+		"tags": [
+			"React",
+			"TypeScript",
+			"Socket.io",
+			"2021"
+		],
+		"source": "https://github.com/capriok/Board-Master",
+		"demo": "https://board-master.kylecaprio.dev",
+		"thumb": "./images/BMASTER-SHOWCASE.jpg"
+	},
+	{
+		"title": "Sweetie",
+		"slug": "sweetie",
+		"description": "A personal home dashboard hosted on a Raspberry Pi featuring a calendar, weather stats, lists, and pet and plant schedules.",
+		"tags": [
+			"TypeScript",
+			"Raspberry Pi",
+			"MongoDB",
+			"2022"
+		],
+		"source": "https://github.com/capriok/sweetie",
+		"demo": "https://github.com/capriok/sweetie",
+		"thumb": "./images/SWEETIE-SHOWCASE.jpg"
 	}
 ]

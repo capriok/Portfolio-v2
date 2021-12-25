@@ -32,7 +32,7 @@ const ProjectsMap: React.FC = () => {
 
   return (
     <div className="featured-map-section">
-      <h1 className="section-title">Featured Collection</h1>
+      <h1 className="section-title">Featured</h1>
       {data.allFeaturedJson.edges.map(({ node: project }, i: number) => (
         <FeaturedCard key={i} project={project} index={i} />
       ))}
